@@ -1,0 +1,33 @@
+--QUESTION CATEGORIES--
+
+Linear Regression Basics
+
+Data Preparation & Cleaning
+
+Model Evaluation & Metrics
+
+Multiple Regression
+
+Encoding Techniques
+
+Advanced ML Concepts
+
+Error Debugging
+
+
+--CONTRIBUTING--
+
+Feel free to contribute by:
+
+Adding new questions
+
+Improving the UI/UX
+
+Adding new features
+
+Fixing bugs
+
+
+--LICENSE--
+
+MIT License

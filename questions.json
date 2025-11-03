@@ -1,0 +1,1081 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "type": "code_completion",
+            "category": "linear_regression_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to import LinearRegression from scikit-learn:",
+            "code_snippet": "from sklearn.______ import LinearRegression",
+            "options": [
+                "linear_model",
+                "models",
+                "linear",
+                "regression"
+            ],
+            "correct_answer": 0,
+            "explanation": "LinearRegression is located in sklearn.linear_model module"
+        },
+        {
+            "id": 2,
+            "type": "code_completion",
+            "category": "linear_regression_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to create a LinearRegression instance:",
+            "code_snippet": "model = ______()",
+            "options": [
+                "LinearRegression",
+                "Linear",
+                "Regression",
+                "LR"
+            ],
+            "correct_answer": 0,
+            "explanation": "LinearRegression() is the correct class constructor"
+        },
+        {
+            "id": 3,
+            "type": "error_debugging",
+            "category": "data_preparation",
+            "difficulty": "intermediate",
+            "question": "What's wrong with this feature selection code?",
+            "code_snippet": "X = df['annual_income_in_usd']  # Single brackets\nmodel.fit(X, y)",
+            "options": [
+                "X should use double brackets to remain 2D: df[['annual_income_in_usd']]",
+                "y should also use double brackets",
+                "The column name is incorrect",
+                "Nothing is wrong"
+            ],
+            "correct_answer": 0,
+            "explanation": "scikit-learn requires 2D array for features. Single brackets return Series (1D), double brackets return DataFrame (2D)"
+        },
+        {
+            "id": 4,
+            "type": "conceptual",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "What does R-squared value represent in linear regression?",
+            "options": [
+                "The proportion of variance in the target variable explained by the model",
+                "The average prediction error",
+                "The correlation between features",
+                "The model training time"
+            ],
+            "correct_answer": 0,
+            "explanation": "R-squared measures how well the independent variables explain the variability of the dependent variable"
+        },
+        {
+            "id": 5,
+            "type": "error_debugging",
+            "category": "imports",
+            "difficulty": "beginner",
+            "question": "Why does this code give 'NameError: name metrics is not defined'?",
+            "code_snippet": "from sklearn.model_selection import train_test_split\nfrom sklearn.linear_model import LinearRegression\nr_squared = metrics.r2_score(y_test, y_pred)",
+            "options": [
+                "metrics wasn't imported - use 'from sklearn.metrics import r2_score'",
+                "metrics should be sklearn.metrics",
+                "r2_score function doesn't exist",
+                "y_test and y_pred are undefined"
+            ],
+            "correct_answer": 0,
+            "explanation": "The metrics module wasn't imported. Either import the entire module or import r2_score directly"
+        },
+        {
+            "id": 6,
+            "type": "code_completion",
+            "category": "data_preparation",
+            "difficulty": "beginner",
+            "question": "Complete the train-test split code:",
+            "code_snippet": "X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, ______=42)",
+            "options": [
+                "random_state",
+                "shuffle",
+                "seed",
+                "random_seed"
+            ],
+            "correct_answer": 0,
+            "explanation": "random_state ensures reproducible splits across different runs"
+        },
+        {
+            "id": 7,
+            "type": "conceptual",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "When comparing MAE and MSE, which statement is true?",
+            "options": [
+                "MSE penalizes larger errors more heavily than MAE",
+                "MAE is always better than MSE",
+                "MSE is not sensitive to outliers",
+                "MAE squares the errors before averaging"
+            ],
+            "correct_answer": 0,
+            "explanation": "MSE squares the errors, giving more weight to larger errors, while MAE treats all errors equally"
+        },
+        {
+            "id": 8,
+            "type": "error_debugging",
+            "category": "data_preparation",
+            "difficulty": "intermediate",
+            "question": "What causes this KeyError and how to fix it?",
+            "code_snippet": "X = df[['Age']]\ny = df['Credit Amount']  # KeyError: 'Credit Amount'",
+            "options": [
+                "Check actual column names using df.columns.tolist() and use exact names",
+                "Use single quotes instead of double quotes",
+                "The column doesn't exist in any dataset",
+                "Use df.columns['Credit Amount'] instead"
+            ],
+            "correct_answer": 0,
+            "explanation": "Column names are case-sensitive and space-sensitive. Always verify exact column names from the dataset"
+        },
+        {
+            "id": 9,
+            "type": "conceptual",
+            "category": "model_evaluation",
+            "difficulty": "advanced",
+            "question": "What is the primary purpose of using cross-validation?",
+            "options": [
+                "To get a sense of whether the model will generalize well to unseen data",
+                "To improve model training speed by using smaller data splits",
+                "To increase the model's accuracy on the training set",
+                "To reduce the number of input features in a dataset"
+            ],
+            "correct_answer": 0,
+            "explanation": "Cross-validation helps estimate how well the model performs on unseen data by testing on multiple validation sets"
+        },
+        {
+            "id": 10,
+            "type": "best_practice",
+            "category": "data_preprocessing",
+            "difficulty": "intermediate",
+            "question": "When working with a DataFrame, why is it important to make a copy of the original data?",
+            "options": [
+                "It allows for testing and experimentation without altering the original dataset",
+                "It increases the computational requirements",
+                "It automatically categorizes data",
+                "It reduces the need for data cleaning"
+            ],
+            "correct_answer": 0,
+            "explanation": "Making a copy preserves data integrity and allows reverting to original data if needed"
+        },
+        {
+            "id": 11,
+            "type": "code_completion",
+            "category": "model_training",
+            "difficulty": "beginner",
+            "question": "Complete the model training code:",
+            "code_snippet": "model = LinearRegression()\nmodel.______(X_train, y_train)",
+            "options": [
+                "fit",
+                "train",
+                "learn",
+                "predict"
+            ],
+            "correct_answer": 0,
+            "explanation": "The fit() method trains the model on the training data"
+        },
+        {
+            "id": 12,
+            "type": "conceptual",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "In a confusion matrix for a rare disease prediction (100 out of 100,000 have disease), if a model classifies everyone as negative, what is the accuracy?",
+            "options": [
+                "~99%",
+                "~50%",
+                "~1%",
+                "~0%"
+            ],
+            "correct_answer": 0,
+            "explanation": "Accuracy = (TN + TP) / Total = (99,900 + 0) / 100,000 = 99.9%. This shows why accuracy alone can be misleading for imbalanced datasets."
+        },
+        {
+            "id": 13,
+            "type": "output_prediction",
+            "category": "data_preparation",
+            "difficulty": "beginner",
+            "question": "What does df.head() display?",
+            "options": [
+                "The first 5 rows of the DataFrame",
+                "The last 5 rows of the DataFrame",
+                "Summary statistics of the DataFrame",
+                "Column information and data types"
+            ],
+            "correct_answer": 0,
+            "explanation": "df.head() shows the first 5 rows by default, useful for quick data inspection"
+        },
+        {
+            "id": 14,
+            "type": "conceptual",
+            "category": "model_selection",
+            "difficulty": "advanced",
+            "question": "Given: Training Accuracy = 97%, Test Accuracy = 68%. What does this indicate?",
+            "options": [
+                "The model is overfitting",
+                "The model is underfitting",
+                "The model generalizes well",
+                "The data is perfectly balanced"
+            ],
+            "correct_answer": 0,
+            "explanation": "Large gap between training and test accuracy (29%) indicates overfitting - the model memorized training data but doesn't generalize"
+        },
+        {
+            "id": 15,
+            "type": "best_practice",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "For a model predicting customer churn (binary classification), which loss function is appropriate?",
+            "options": [
+                "Binary Cross-Entropy",
+                "Mean Squared Error",
+                "Mean Absolute Error",
+                "R-squared"
+            ],
+            "correct_answer": 0,
+            "explanation": "Binary cross-entropy is designed for classification problems with two classes, while MSE is for regression"
+        },
+        {
+            "id": 16,
+            "type": "conceptual",
+            "category": "advanced_metrics",
+            "difficulty": "advanced",
+            "question": "What is the key difference between R-squared and Adjusted R-squared?",
+            "options": [
+                "Adjusted R-squared penalizes for adding unnecessary variables",
+                "R-squared works better for multiple regression",
+                "Adjusted R-squared is always higher than R-squared",
+                "R-squared is only for simple linear regression"
+            ],
+            "correct_answer": 0,
+            "explanation": "Adjusted R-squared adjusts for the number of predictors in the model, preventing overfitting by penalizing irrelevant variables"
+        },
+        {
+            "id": 17,
+            "type": "code_completion",
+            "category": "advanced_metrics",
+            "difficulty": "advanced",
+            "question": "Complete the Adjusted R-squared calculation formula:",
+            "code_snippet": "adjusted_r_squared = 1 - (1 - r_squared) * (len(y_test) - 1) / (len(y_test) - X_test.shape[1] - ______)",
+            "options": [
+                "1",
+                "0",
+                "2",
+                "X_test.shape[0]"
+            ],
+            "correct_answer": 0,
+            "explanation": "The formula is: 1 - (1 - R²) * (n - 1) / (n - k - 1) where n = sample size, k = number of features"
+        },
+        {
+            "id": 18,
+            "type": "conceptual",
+            "category": "multiple_regression",
+            "difficulty": "intermediate",
+            "question": "When building a multiple linear regression model with Product Price, Advertising Expenditure, and Discount Percentage as features, what does this approach allow?",
+            "options": [
+                "Analyzing the combined impact of multiple factors on sales",
+                "Reducing the model training time",
+                "Eliminating the need for train-test split",
+                "Guaranteeing perfect predictions"
+            ],
+            "correct_answer": 0,
+            "explanation": "Multiple regression captures how several independent variables collectively influence the dependent variable"
+        },
+        {
+            "id": 19,
+            "type": "code_completion",
+            "category": "multiple_regression",
+            "difficulty": "intermediate",
+            "question": "Complete the code for multiple feature selection:",
+            "code_snippet": "X = df[['Product Price', 'Advertising Expenditure', '______']]",
+            "options": [
+                "Discount Percentage",
+                "Sales",
+                "Age",
+                "Income"
+            ],
+            "correct_answer": 0,
+            "explanation": "All three features (Product Price, Advertising Expenditure, Discount Percentage) should be included as predictors for Sales"
+        },
+        {
+            "id": 20,
+            "type": "conceptual",
+            "category": "encoding",
+            "difficulty": "intermediate",
+            "question": "What is the key difference between One-Hot Encoding and Label Encoding?",
+            "options": [
+                "One-Hot creates binary columns for each category; Label assigns integer values",
+                "Label Encoding is only for numerical data",
+                "One-Hot Encoding works only for binary classification",
+                "Label Encoding is always better for linear regression"
+            ],
+            "correct_answer": 0,
+            "explanation": "One-Hot Encoding creates separate binary columns for each category, while Label Encoding assigns integer values (0,1,2...) which may imply ordinal relationships"
+        },
+        {
+            "id": 21,
+            "type": "code_completion",
+            "category": "encoding",
+            "difficulty": "intermediate",
+            "question": "Complete the One-Hot Encoding code using scikit-learn:",
+            "code_snippet": "encoder = ______()\nX_encoded = encoder.fit_transform(X)",
+            "options": [
+                "OneHotEncoder",
+                "LabelEncoder",
+                "get_dummies",
+                "CategoryEncoder"
+            ],
+            "correct_answer": 0,
+            "explanation": "OneHotEncoder from sklearn.preprocessing is used for one-hot encoding categorical variables"
+        },
+        {
+            "id": 22,
+            "type": "code_completion",
+            "category": "encoding",
+            "difficulty": "intermediate",
+            "question": "Complete the Label Encoding code:",
+            "code_snippet": "label_encoder = LabelEncoder()\nencoded_job = label_encoder.______(df['Job'])",
+            "options": [
+                "fit_transform",
+                "transform",
+                "encode",
+                "fit"
+            ],
+            "correct_answer": 0,
+            "explanation": "fit_transform both learns the encoding mapping and applies it to the data"
+        },
+        {
+            "id": 23,
+            "type": "error_debugging",
+            "category": "encoding",
+            "difficulty": "intermediate",
+            "question": "Why does this Label Encoding code need reshaping?",
+            "code_snippet": "encoded_job = label_encoder.fit_transform(df['Job'])\nX = encoded_job  # Error when fitting model",
+            "options": [
+                "scikit-learn requires 2D input; use encoded_job.reshape(-1, 1)",
+                "Label Encoding cannot be used with linear regression",
+                "The encoded values should be converted to strings",
+                "One-Hot Encoding should be used instead"
+            ],
+            "correct_answer": 0,
+            "explanation": "scikit-learn expects features as 2D arrays. Reshape from (n,) to (n,1) using .reshape(-1, 1)"
+        },
+        {
+            "id": 24,
+            "type": "conceptual",
+            "category": "train_test_split",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of random_state in train_test_split?",
+            "options": [
+                "Ensures reproducible splits across different runs",
+                "Improves model accuracy",
+                "Reduces training time",
+                "Automatically selects the best split ratio"
+            ],
+            "correct_answer": 0,
+            "explanation": "random_state ensures that the data splitting is consistent across different executions, making results reproducible"
+        },
+        {
+            "id": 25,
+            "type": "best_practice",
+            "category": "train_test_split",
+            "difficulty": "intermediate",
+            "question": "When comparing 70:30 vs 80:20 train-test splits, which statement is true?",
+            "options": [
+                "80:20 provides more training data but less reliable evaluation",
+                "70:30 is always better for all datasets",
+                "The choice depends on dataset size and model complexity",
+                "Split ratio doesn't affect model performance"
+            ],
+            "correct_answer": 2,
+            "explanation": "The optimal split ratio depends on dataset size - larger datasets can use smaller test sets, while smaller datasets need larger test sets for reliable evaluation"
+        },
+        {
+            "id": 26,
+            "type": "conceptual",
+            "category": "model_evaluation",
+            "difficulty": "advanced",
+            "question": "In the scenario with Model A (RMSE=500, MAPE=4%) vs Model B (RMSE=300, MAPE=15%) for products with different volumes, which model is better for business use?",
+            "options": [
+                "Model A - Lower MAPE ensures better percentage accuracy across different product volumes",
+                "Model B - Lower RMSE is always better for inventory optimization",
+                "Model B - It performs better for high-volume products which generate more revenue",
+                "Neither - Both models need improvement"
+            ],
+            "correct_answer": 0,
+            "explanation": "MAPE (percentage error) provides fair comparison across different scales, making Model A more reliable for both low-volume and high-volume products"
+        },
+        {
+            "id": 27,
+            "type": "conceptual",
+            "category": "data_filtering",
+            "difficulty": "intermediate",
+            "question": "When filtering data for 'female' applicants with 'skilled' jobs before modeling, what potential issue arises?",
+            "options": [
+                "Limited variation in features after filtering may reduce predictive power",
+                "The model will overfit due to too much data",
+                "Linear regression cannot handle filtered datasets",
+                "Filtering improves model accuracy automatically"
+            ],
+            "correct_answer": 0,
+            "explanation": "Filtering to specific categories reduces data diversity and feature variation, which can limit the model's ability to find meaningful patterns"
+        },
+        {
+            "id": 28,
+            "type": "code_completion",
+            "category": "data_filtering",
+            "difficulty": "intermediate",
+            "question": "Complete the boolean filtering code:",
+            "code_snippet": "filtered_df = df[(df['Sex'] == 'female') & (df['______'] == 'skilled')]",
+            "options": [
+                "Job",
+                "Occupation",
+                "Skill",
+                "Type"
+            ],
+            "correct_answer": 0,
+            "explanation": "The filter selects records where both conditions are true: Sex is 'female' AND Job is 'skilled'"
+        },
+        {
+            "id": 29,
+            "type": "conceptual",
+            "category": "regression_theory",
+            "difficulty": "advanced",
+            "question": "If a regression line perfectly fits the training data, which statement is correct?",
+            "options": [
+                "The regression line passes through all training data points",
+                "The model will also perfectly fit test data",
+                "The model is guaranteed to generalize well",
+                "R-squared will be exactly 0"
+            ],
+            "correct_answer": 0,
+            "explanation": "Perfect fit on training data means zero training error (line passes through all points), but this often indicates overfitting and poor generalization"
+        },
+        {
+            "id": 30,
+            "type": "best_practice",
+            "category": "model_interpretation",
+            "difficulty": "intermediate",
+            "question": "When a regression line shows most data points above it (like in Model A from the document), what does this indicate?",
+            "options": [
+                "The model is systematically under-predicting the target variable",
+                "The model has high variance",
+                "The features are perfectly correlated",
+                "The model is overfitting to noise"
+            ],
+            "correct_answer": 0,
+            "explanation": "When most points are above the regression line, the model consistently predicts lower values than actual - indicating systematic bias in under-prediction"
+        },
+        {
+            "id": 31,
+            "type": "conceptual",
+            "category": "business_application",
+            "difficulty": "intermediate",
+            "question": "In lead scoring (identifying high-value leads), if a model correctly identifies most high-value leads but misses some, what should be improved?",
+            "options": [
+                "Recall - to capture more of the actual high-value leads",
+                "Precision - the model is too lenient",
+                "Accuracy - overall performance is poor",
+                "Specificity - too many false positives"
+            ],
+            "correct_answer": 0,
+            "explanation": "Missing actual high-value leads means low recall. Improving recall would help capture more of the valuable leads the model is currently missing"
+        },
+        {
+            "id": 32,
+            "type": "code_completion",
+            "category": "advanced_metrics",
+            "difficulty": "advanced",
+            "question": "Complete the code to calculate both R-squared and Adjusted R-squared:",
+            "code_snippet": "r_squared = model.score(X_test, y_test)\nadj_r_squared = 1 - (1 - r_squared) * (len(y_test) - 1) / (len(y_test) - X_test.shape[1] - ______)",
+            "options": [
+                "1",
+                "0",
+                "2",
+                "r_squared"
+            ],
+            "correct_answer": 0,
+            "explanation": "The adjusted R-squared formula uses (n - k - 1) in denominator, where n = sample size, k = number of features"
+        },
+        {
+            "id": 33,
+            "type": "conceptual",
+            "category": "feature_engineering",
+            "difficulty": "advanced",
+            "question": "Why might Adjusted R-squared be more useful than R-squared when comparing models with different numbers of features?",
+            "options": [
+                "It penalizes model complexity, preventing overfitting",
+                "It's always higher than R-squared",
+                "It works better with categorical data",
+                "It requires less computational power"
+            ],
+            "correct_answer": 0,
+            "explanation": "Adjusted R-squared accounts for the number of predictors, making it better for comparing models with different complexity levels"
+        },
+        {
+            "id": 34,
+            "type": "best_practice",
+            "category": "data_preprocessing",
+            "difficulty": "intermediate",
+            "question": "When encountering KeyError with column names, what's the recommended first step?",
+            "options": [
+                "Print df.columns.tolist() to see actual column names",
+                "Try different case variations of the column name",
+                "Assume the column doesn't exist and skip it",
+                "Use integer indexing instead of column names"
+            ],
+            "correct_answer": 0,
+            "explanation": "Always verify the exact column names in your dataset as they are case-sensitive and space-sensitive"
+        },
+        {
+            "id": 35,
+            "type": "conceptual",
+            "category": "model_selection",
+            "difficulty": "advanced",
+            "question": "What does a small gap between training and test accuracy indicate?",
+            "options": [
+                "The model generalizes well to unseen data",
+                "The model is underfitting the training data",
+                "The test set is too similar to training set",
+                "The model needs more complex features"
+            ],
+            "correct_answer": 0,
+            "explanation": "Small performance gap between training and test sets suggests good generalization - the model learned patterns rather than memorizing data"
+        },
+        {
+            "id": 36,
+            "type": "code_completion",
+            "category": "imports",
+            "difficulty": "beginner",
+            "question": "Complete the import statement for reading CSV files:",
+            "code_snippet": "import ______ as pd",
+            "options": [
+                "pandas",
+                "numpy",
+                "sklearn",
+                "csv"
+            ],
+            "correct_answer": 0,
+            "explanation": "pandas is imported as pd by convention and provides read_csv() function"
+        },
+        {
+            "id": 37,
+            "type": "code_completion",
+            "category": "data_loading",
+            "difficulty": "beginner",
+            "question": "Complete the code to read a CSV file:",
+            "code_snippet": "df = pd.______('data.csv')",
+            "options": [
+                "read_csv",
+                "read_csv_file",
+                "load_csv",
+                "import_csv"
+            ],
+            "correct_answer": 0,
+            "explanation": "pd.read_csv() is the standard pandas function for reading CSV files"
+        },
+        {
+            "id": 38,
+            "type": "conceptual",
+            "category": "basic_concepts",
+            "difficulty": "beginner",
+            "question": "What is the purpose of the fit() method in scikit-learn?",
+            "options": [
+                "To train the model on the provided data",
+                "To make predictions on new data",
+                "To evaluate model performance",
+                "To split the data into training and test sets"
+            ],
+            "correct_answer": 0,
+            "explanation": "The fit() method trains the model by learning patterns from the training data"
+        },
+        {
+            "id": 39,
+            "type": "code_completion",
+            "category": "predictions",
+            "difficulty": "beginner",
+            "question": "Complete the code to make predictions:",
+            "code_snippet": "y_pred = model.______(X_test)",
+            "options": [
+                "predict",
+                "fit",
+                "transform",
+                "score"
+            ],
+            "correct_answer": 0,
+            "explanation": "The predict() method uses the trained model to make predictions on new data"
+        },
+        {
+            "id": 40,
+            "type": "conceptual",
+            "category": "basic_concepts",
+            "difficulty": "beginner",
+            "question": "What does the predict() method return?",
+            "options": [
+                "Predicted values for the input data",
+                "Model accuracy score",
+                "Training loss values",
+                "Feature importance scores"
+            ],
+            "correct_answer": 0,
+            "explanation": "predict() returns the model's predictions for the input features"
+        },
+        {
+            "id": 41,
+            "type": "error_debugging",
+            "category": "data_types",
+            "difficulty": "beginner",
+            "question": "Why might this code fail with a ValueError?",
+            "code_snippet": "X = df['Age']  # Series (1D)\nmodel.fit(X, y)",
+            "options": [
+                "X should be 2D; use X = df[['Age']]",
+                "y should also be 2D",
+                "Age column contains strings",
+                "The model is not initialized"
+            ],
+            "correct_answer": 0,
+            "explanation": "scikit-learn expects features as 2D arrays. Single brackets return Series (1D), double brackets return DataFrame (2D)"
+        },
+        {
+            "id": 42,
+            "type": "code_completion",
+            "category": "metrics",
+            "difficulty": "beginner",
+            "question": "Complete the code to calculate Mean Absolute Error:",
+            "code_snippet": "from sklearn.metrics import ______\nmae = ______(y_test, y_pred)",
+            "options": [
+                "mean_absolute_error",
+                "mae",
+                "absolute_error",
+                "mean_error"
+            ],
+            "correct_answer": 0,
+            "explanation": "mean_absolute_error is the correct function name from sklearn.metrics"
+        },
+        {
+            "id": 43,
+            "type": "conceptual",
+            "category": "basic_concepts",
+            "difficulty": "beginner",
+            "question": "What is the role of the target variable (y) in supervised learning?",
+            "options": [
+                "The variable we want to predict",
+                "The input features for prediction",
+                "The model parameters",
+                "The evaluation metric"
+            ],
+            "correct_answer": 0,
+            "explanation": "The target variable (y) is what we're trying to predict based on the feature variables (X)"
+        },
+        {
+            "id": 44,
+            "type": "code_completion",
+            "category": "model_evaluation",
+            "difficulty": "beginner",
+            "question": "Complete the code to print the R-squared value:",
+            "code_snippet": "print(f\"R-squared: {______:.4f}\")",
+            "options": [
+                "r_squared",
+                "r2",
+                "score",
+                "accuracy"
+            ],
+            "correct_answer": 0,
+            "explanation": "Use the variable name where you stored the R-squared value, typically 'r_squared'"
+        },
+        {
+            "id": 45,
+            "type": "conceptual",
+            "category": "data_inspection",
+            "difficulty": "beginner",
+            "question": "What information does df.info() provide?",
+            "options": [
+                "Column names, data types, and non-null counts",
+                "First 5 rows of the DataFrame",
+                "Statistical summary of numerical columns",
+                "Correlation between variables"
+            ],
+            "correct_answer": 0,
+            "explanation": "df.info() shows the DataFrame's structure including column names, data types, and memory usage"
+        },
+        {
+            "id": 46,
+            "type": "best_practice",
+            "category": "data_preprocessing",
+            "difficulty": "intermediate",
+            "question": "When should you use train_test_split with stratification?",
+            "options": [
+                "When you have imbalanced classes in classification problems",
+                "Always, for every machine learning problem",
+                "Only for regression problems",
+                "When your dataset is very large"
+            ],
+            "correct_answer": 0,
+            "explanation": "Stratification ensures that the train and test sets have the same proportion of classes as the original dataset, crucial for imbalanced data"
+        },
+        {
+            "id": 47,
+            "type": "conceptual",
+            "category": "model_interpretation",
+            "difficulty": "intermediate",
+            "question": "What does a negative R-squared value indicate?",
+            "options": [
+                "The model performs worse than a horizontal line (mean predictor)",
+                "There's an error in the calculation",
+                "The model has perfect predictions",
+                "The data is normally distributed"
+            ],
+            "correct_answer": 0,
+            "explanation": "Negative R-squared means the model is worse than simply predicting the mean of the target variable"
+        },
+        {
+            "id": 48,
+            "type": "code_completion",
+            "category": "multiple_regression",
+            "difficulty": "intermediate",
+            "question": "Complete the code for multiple regression with two features:",
+            "code_snippet": "X = df[['Product Price', '______']]",
+            "options": [
+                "Advertising Expenditure",
+                "Sales",
+                "Age",
+                "Discount"
+            ],
+            "correct_answer": 0,
+            "explanation": "Both 'Product Price' and 'Advertising Expenditure' are features; 'Sales' would be the target variable"
+        },
+        {
+            "id": 49,
+            "type": "error_debugging",
+            "category": "imports",
+            "difficulty": "intermediate",
+            "question": "What's wrong with this import statement?",
+            "code_snippet": "from sklearn.Linear_model import LinearRegression",
+            "options": [
+                "Linear_model should be linear_model (lowercase L)",
+                "Should import from sklearn.regression instead",
+                "Need to import pandas first",
+                "LinearRegression is not in sklearn"
+            ],
+            "correct_answer": 0,
+            "explanation": "scikit-learn uses lowercase module names: from sklearn.linear_model import LinearRegression"
+        },
+        {
+            "id": 50,
+            "type": "conceptual",
+            "category": "feature_selection",
+            "difficulty": "intermediate",
+            "question": "Why might you use feature engineering before linear regression?",
+            "options": [
+                "To create better features that have linear relationships with the target",
+                "To reduce the dataset size for faster training",
+                "To eliminate the need for train-test split",
+                "To automatically handle missing values"
+            ],
+            "correct_answer": 0,
+            "explanation": "Feature engineering can create transformed features that have stronger linear relationships with the target variable"
+        },
+        {
+            "id": 51,
+            "type": "best_practice",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "When comparing models, why look at both training and test performance?",
+            "options": [
+                "To detect overfitting (good training performance but poor test performance)",
+                "To calculate the exact model parameters",
+                "To determine the optimal learning rate",
+                "To select the best activation function"
+            ],
+            "correct_answer": 0,
+            "explanation": "Comparing training vs test performance helps identify overfitting - when a model memorizes training data but fails to generalize"
+        },
+        {
+            "id": 52,
+            "type": "code_completion",
+            "category": "data_validation",
+            "difficulty": "intermediate",
+            "question": "Complete the code to check for missing values:",
+            "code_snippet": "missing_values = df.______()",
+            "options": [
+                "isnull",
+                "isna",
+                "missing",
+                "null"
+            ],
+            "correct_answer": 0,
+            "explanation": "df.isnull() returns a DataFrame indicating which values are missing (NaN)"
+        },
+        {
+            "id": 53,
+            "type": "conceptual",
+            "category": "data_preprocessing",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of scaling features in linear regression?",
+            "options": [
+                "To ensure all features contribute equally regardless of their scale",
+                "To reduce the number of features",
+                "To convert categorical features to numerical",
+                "To handle missing values automatically"
+            ],
+            "correct_answer": 0,
+            "explanation": "Feature scaling prevents features with large scales from dominating the model, especially important for regularization"
+        },
+        {
+            "id": 54,
+            "type": "error_debugging",
+            "category": "predictions",
+            "difficulty": "intermediate",
+            "question": "Why might predictions be exactly the same for all test samples?",
+            "options": [
+                "The model is predicting the mean (underfitting)",
+                "The test data is identical to training data",
+                "The random_state parameter is set incorrectly",
+                "The model is overfitting perfectly"
+            ],
+            "correct_answer": 0,
+            "explanation": "Constant predictions often indicate the model failed to learn meaningful patterns and is just predicting the average target value"
+        },
+        {
+            "id": 55,
+            "type": "conceptual",
+            "category": "model_interpretation",
+            "difficulty": "intermediate",
+            "question": "What does the coefficient in linear regression represent?",
+            "options": [
+                "The change in target variable for a one-unit change in the feature",
+                "The probability of correct prediction",
+                "The model's accuracy score",
+                "The correlation between features"
+            ],
+            "correct_answer": 0,
+            "explanation": "Each coefficient represents the expected change in the target variable for a one-unit change in that feature, holding other features constant"
+        },
+        {
+            "id": 56,
+            "type": "conceptual",
+            "category": "advanced_metrics",
+            "difficulty": "advanced",
+            "question": "When would you prefer MAPE over RMSE for model evaluation?",
+            "options": [
+                "When you need percentage errors that are comparable across different scales",
+                "When you want to penalize large errors more heavily",
+                "When working with binary classification problems",
+                "When your data follows a perfect normal distribution"
+            ],
+            "correct_answer": 0,
+            "explanation": "MAPE provides relative error percentages, making it useful for comparing model performance across datasets with different scales"
+        },
+        {
+            "id": 57,
+            "type": "code_completion",
+            "category": "cross_validation",
+            "difficulty": "advanced",
+            "question": "Complete the code for k-fold cross-validation:",
+            "code_snippet": "from sklearn.model_selection import ______\ncv_scores = ______(model, X, y, cv=5)",
+            "options": [
+                "cross_val_score",
+                "kfold_score",
+                "cross_validate",
+                "validate_model"
+            ],
+            "correct_answer": 0,
+            "explanation": "cross_val_score performs k-fold cross-validation and returns scores for each fold"
+        },
+        {
+            "id": 58,
+            "type": "conceptual",
+            "category": "regularization",
+            "difficulty": "advanced",
+            "question": "What is the purpose of regularization in linear regression?",
+            "options": [
+                "To prevent overfitting by penalizing large coefficients",
+                "To increase model training speed",
+                "To handle categorical variables automatically",
+                "To ensure perfect fit on training data"
+            ],
+            "correct_answer": 0,
+            "explanation": "Regularization adds a penalty term to the loss function to discourage complex models and reduce overfitting"
+        },
+        {
+            "id": 59,
+            "type": "best_practice",
+            "category": "model_selection",
+            "difficulty": "advanced",
+            "question": "When should you use Ridge regression over Ordinary Least Squares?",
+            "options": [
+                "When you have multicollinearity among features",
+                "When your dataset is very small",
+                "When you need the fastest possible training",
+                "When all features are perfectly independent"
+            ],
+            "correct_answer": 0,
+            "explanation": "Ridge regression handles multicollinearity by penalizing correlated features, providing more stable coefficient estimates"
+        },
+        {
+            "id": 60,
+            "type": "conceptual",
+            "category": "assumptions",
+            "difficulty": "advanced",
+            "question": "What is the homoscedasticity assumption in linear regression?",
+            "options": [
+                "Constant variance of errors across all prediction levels",
+                "Linear relationship between features and target",
+                "Normally distributed errors",
+                "No perfect multicollinearity between features"
+            ],
+            "correct_answer": 0,
+            "explanation": "Homoscedasticity means the variance of the errors is constant across all values of the independent variables"
+        },
+        {
+            "id": 61,
+            "type": "code_completion",
+            "category": "pipeline",
+            "difficulty": "advanced",
+            "question": "Complete the code to create a preprocessing and modeling pipeline:",
+            "code_snippet": "from sklearn.pipeline import ______\nfrom sklearn.preprocessing import StandardScaler",
+            "options": [
+                "Pipeline",
+                "ModelPipeline",
+                "SKPipeline",
+                "LinearPipeline"
+            ],
+            "correct_answer": 0,
+            "explanation": "Pipeline chains multiple processing steps together, such as scaling followed by regression"
+        },
+        {
+            "id": 62,
+            "type": "conceptual",
+            "category": "bias_variance",
+            "difficulty": "advanced",
+            "question": "In the bias-variance tradeoff, what does high bias indicate?",
+            "options": [
+                "The model is too simple and underfits the data",
+                "The model is too complex and overfits the data",
+                "The training data is insufficient",
+                "The features are poorly scaled"
+            ],
+            "correct_answer": 0,
+            "explanation": "High bias means the model makes strong assumptions about the data and is too simple to capture underlying patterns (underfitting)"
+        },
+        {
+            "id": 63,
+            "type": "best_practice",
+            "category": "feature_engineering",
+            "difficulty": "advanced",
+            "question": "When creating polynomial features for linear regression, what risk increases?",
+            "options": [
+                "Overfitting due to increased model complexity",
+                "Underfitting from too many features",
+                "Training time decreases exponentially",
+                "Model interpretability improves dramatically"
+            ],
+            "correct_answer": 0,
+            "explanation": "Polynomial features increase model flexibility but can lead to overfitting, especially with high-degree polynomials"
+        },
+        {
+            "id": 64,
+            "type": "conceptual",
+            "category": "model_diagnostics",
+            "difficulty": "advanced",
+            "question": "What pattern in residual plots indicates heteroscedasticity?",
+            "options": [
+                "Fan-shaped spread of residuals (increasing variance)",
+                "Straight horizontal line of residuals",
+                "U-shaped curve of residuals",
+                "Random scatter with constant spread"
+            ],
+            "correct_answer": 0,
+            "explanation": "Heteroscedasticity appears as a fan shape in residual plots, where error variance changes with predicted values"
+        },
+        {
+            "id": 65,
+            "type": "code_completion",
+            "category": "advanced_evaluation",
+            "difficulty": "advanced",
+            "question": "Complete the code for calculating multiple metrics:",
+            "code_snippet": "from sklearn.metrics import ______, mean_squared_error, r2_score",
+            "options": [
+                "mean_absolute_error",
+                "accuracy_score",
+                "f1_score",
+                "precision_score"
+            ],
+            "correct_answer": 0,
+            "explanation": "For regression problems, common metrics include MAE, MSE, and R-squared from sklearn.metrics"
+        },
+        {
+            "id": 66,
+            "type": "conceptual",
+            "category": "business_applications",
+            "difficulty": "advanced",
+            "question": "In a business context, why might you prefer a slightly less accurate but more interpretable model?",
+            "options": [
+                "To build trust and enable actionable insights from coefficients",
+                "To reduce computational costs",
+                "To comply with data privacy regulations",
+                "To make the model training faster"
+            ],
+            "correct_answer": 0,
+            "explanation": "Interpretable models allow stakeholders to understand relationships and make data-driven decisions, which is often more valuable than marginal accuracy gains"
+        },
+        {
+            "id": 67,
+            "type": "best_practice",
+            "category": "deployment",
+            "difficulty": "advanced",
+            "question": "What is the purpose of saving a trained model with joblib or pickle?",
+            "options": [
+                "To reuse the model without retraining for future predictions",
+                "To improve model accuracy on new data",
+                "To reduce the model's memory footprint",
+                "To automatically update the model with new data"
+            ],
+            "correct_answer": 0,
+            "explanation": "Model serialization allows you to save the trained model and load it later for making predictions without going through the training process again"
+        },
+        {
+            "id": 68,
+            "type": "conceptual",
+            "category": "assumptions",
+            "difficulty": "advanced",
+            "question": "What is the consequence of violating the linearity assumption in linear regression?",
+            "options": [
+                "The model will have systematic prediction errors and poor performance",
+                "The model will automatically correct for non-linearity",
+                "The R-squared value becomes meaningless",
+                "The training process will fail completely"
+            ],
+            "correct_answer": 0,
+            "explanation": "If the true relationship is non-linear, a linear model will consistently mispredict, leading to biased estimates and poor performance"
+        },
+        {
+            "id": 69,
+            "type": "code_completion",
+            "category": "model_persistence",
+            "difficulty": "advanced",
+            "question": "Complete the code to save a trained model:",
+            "code_snippet": "import joblib\njoblib.______(model, 'linear_model.pkl')",
+            "options": [
+                "dump",
+                "save",
+                "export",
+                "write"
+            ],
+            "correct_answer": 0,
+            "explanation": "joblib.dump() saves the model to a file, which can be loaded later with joblib.load()"
+        },
+        {
+            "id": 70,
+            "type": "conceptual",
+            "category": "advanced_topics",
+            "difficulty": "advanced",
+            "question": "What is the key advantage of using ElasticNet over Ridge or Lasso regression?",
+            "options": [
+                "It combines both L1 and L2 regularization for feature selection and handling correlated features",
+                "It trains faster than both Ridge and Lasso",
+                "It doesn't require feature scaling",
+                "It automatically detects non-linear relationships"
+            ],
+            "correct_answer": 0,
+            "explanation": "ElasticNet combines the benefits of both Lasso (feature selection) and Ridge (handling correlated features) regularization"
+        }
+    ]
+}

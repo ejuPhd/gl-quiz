@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Quiz Game - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 Machine Learning Quiz</h1>
+            <p>Test your knowledge of Linear Regression and scikit-learn!</p>
+        </header>
+
+        <div class="difficulty-selection">
+            <h2>Choose Your Difficulty</h2>
+            <form action="{{ url_for('start_quiz') }}" method="post">
+                <div class="difficulty-options">
+                    <button type="submit" name="difficulty" value="beginner" class="difficulty-btn beginner">
+                        <h3>🎯 Beginner</h3>
+                        <p>Basic concepts and simple code completion</p>
+                        <ul>
+                            <li>10 questions</li>
+                            <li>10 points per question</li>
+                            <li>Perfect for newcomers</li>
+                        </ul>
+                    </button>
+
+                    <button type="submit" name="difficulty" value="intermediate" class="difficulty-btn intermediate">
+                        <h3>⚡ Intermediate</h3>
+                        <p>Error debugging and conceptual questions</p>
+                        <ul>
+                            <li>10 questions</li>
+                            <li>20 points per question</li>
+                            <li>For those with some experience</li>
+                        </ul>
+                    </button>
+
+                    <button type="submit" name="difficulty" value="advanced" class="difficulty-btn advanced">
+                        <h3>🚀 Advanced</h3>
+                        <p>Complex scenarios and best practices</p>
+                        <ul>
+                            <li>10 questions</li>
+                            <li>30 points per question</li>
+                            <li>Challenge for experts</li>
+                        </ul>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="leaderboard-link">
+            <a href="{{ url_for('leaderboard') }}" class="btn secondary">View Leaderboard</a>
+        </div>
+
+        <div class="features">
+            <h3>What you'll learn:</h3>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h4>📊 Linear Regression</h4>
+                    <p>Model creation, fitting, and prediction</p>
+                </div>
+                <div class="feature">
+                    <h4>🔧 scikit-learn</h4>
+                    <p>Proper usage and common pitfalls</p>
+                </div>
+                <div class="feature">
+                    <h4>📈 Model Evaluation</h4>
+                    <p>Metrics like R-squared, MSE, MAE</p>
+                </div>
+                <div class="feature">
+                    <h4>🎯 Best Practices</h4>
+                    <p>Data preprocessing and validation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

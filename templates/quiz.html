@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question {{ question_num }} - ML Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <header class="quiz-header">
+            <div class="progress-info">
+                <h2>Question {{ question_num }} of {{ total_questions }}</h2>
+                <div class="progress-bar">
+                    <div class="progress {{ progress_class }}"></div>
+                </div>
+            </div>
+            <div class="difficulty-badge {{ question.difficulty }}">
+                {{ question.difficulty|title }}
+            </div>
+        </header>
+
+        <main class="question-container">
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="category">{{ question.category|replace('_', ' ')|title }}</span>
+                    <span class="type">{{ question.type|replace('_', ' ')|title }}</span>
+                </div>
+
+                <h3 class="question-text">{{ question.question }}</h3>
+
+                {% if question.code_snippet %}
+                <div class="code-snippet">
+                    <pre><code>{{ question.code_snippet }}</code></pre>
+                </div>
+                {% endif %}
+
+                <form action="{{ url_for('submit_answer') }}" method="post" class="options-form">
+                    <div class="options-grid">
+                        {% for option in question.options %}
+                        <label class="option-card">
+                            <input type="radio" name="answer" value="{{ loop.index0 }}" required>
+                            <span class="option-text">{{ option }}</span>
+                        </label>
+                        {% endfor %}
+                    </div>
+
+                    <div class="navigation-buttons">
+                        <button type="submit" class="btn primary">
+                            {% if question_num == total_questions %}
+                            Finish Quiz
+                            {% else %}
+                            Next Question →
+                            {% endif %}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

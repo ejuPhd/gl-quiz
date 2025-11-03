@@ -1,0 +1,13 @@
+gl-quiz/
+├── app.py                 # Main Flask application
+├── questions.json         # Quiz questions database
+├── requirements.txt       # Python dependencies
+├── .gitignore           # Git ignore rules
+├── README.md            # Project documentation
+├── templates/           # HTML templates
+│   ├── index.html
+│   ├── quiz.html
+│   ├── results.html
+│   └── leaderboard.html
+└── static/             # CSS and static files
+    └── style.css

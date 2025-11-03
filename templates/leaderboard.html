@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - ML Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🏆 Leaderboard</h1>
+            <p>Top performers across all difficulty levels</p>
+        </header>
+
+        <div class="leaderboard-actions">
+            <a href="{{ url_for('index') }}" class="btn primary">← Back to Home</a>
+            <a href="{{ url_for('restart') }}" class="btn secondary">Play Again</a>
+        </div>
+
+        {% if leaderboard %}
+        <div class="leaderboard-table">
+            <div class="table-header">
+                <span>Rank</span>
+                <span>Player</span>
+                <span>Score</span>
+                <span>Difficulty</span>
+                <span>Date</span>
+            </div>
+
+            {% for entry in leaderboard %}
+            <div class="table-row {% if loop.index <= 3 %}podium{% endif %}">
+                <span class="rank">
+                    {% if loop.index == 1 %}🥇
+                    {% elif loop.index == 2 %}🥈
+                    {% elif loop.index == 3 %}🥉
+                    {% else %}#{{ loop.index }}
+                    {% endif %}
+                </span>
+                <span class="player">{{ entry.name }}</span>
+                <span class="score">{{ entry.score }}</span>
+                <span class="difficulty-badge {{ entry.difficulty }}">{{ entry.difficulty|title }}</span>
+                <span class="date">{{ entry.date }}</span>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-state">
+            <h3>No scores yet!</h3>
+            <p>Be the first to appear on the leaderboard by completing a quiz.</p>
+            <a href="{{ url_for('index') }}" class="btn primary">Start Quiz</a>
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>
