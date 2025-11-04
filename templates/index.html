@@ -10,9 +10,31 @@
 
 <body>
     <div class="container">
-        <header>
-            <h1>🧠 Machine Learning Quiz</h1>
-            <p>Test your knowledge of Linear Regression and scikit-learn!</p>
+        <header class="quiz-header">
+            <div class="progress-info">
+                <!-- Enhanced question counter -->
+                <div class="question-counter">
+                    <h2>Question <span class="current-number">{{ question_num }}</span> of <span class="total-number">{{
+                            total_questions }}</span></h2>
+                    <div class="counter-subtitle">
+                        {{ question.difficulty|title }} Level • {{ question.category|replace('_', ' ')|title }}
+                    </div>
+                </div>
+
+                <!-- Progress bar -->
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress {{ progress_class }}"></div>
+                    </div>
+                    <div class="progress-text">
+                        {{ question_num }}/{{ total_questions }} ({{ progress_percent|round|int }}%)
+                    </div>
+                </div>
+            </div>
+
+            <div class="difficulty-badge {{ question.difficulty }}">
+                {{ question.difficulty|title }}
+            </div>
         </header>
 
         <div class="difficulty-selection">
@@ -23,7 +45,7 @@
                         <h3>🎯 Beginner</h3>
                         <p>Basic concepts and simple code completion</p>
                         <ul>
-                            <li>50 questions</li>
+                            <li>50 questions</li> <!-- Changed from 10 to 50 -->
                             <li>10 points per question</li>
                             <li>Perfect for newcomers</li>
                         </ul>
@@ -33,7 +55,7 @@
                         <h3>⚡ Intermediate</h3>
                         <p>Error debugging and conceptual questions</p>
                         <ul>
-                            <li>50 questions</li>
+                            <li>50 questions</li> <!-- Changed from 10 to 50 -->
                             <li>20 points per question</li>
                             <li>For those with some experience</li>
                         </ul>
@@ -43,7 +65,7 @@
                         <h3>🚀 Advanced</h3>
                         <p>Complex scenarios and best practices</p>
                         <ul>
-                            <li>50 questions</li>
+                            <li>50 questions</li> <!-- Changed from 10 to 50 -->
                             <li>30 points per question</li>
                             <li>Challenge for experts</li>
                         </ul>

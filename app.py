@@ -47,8 +47,8 @@ def start_quiz():
     difficulty = request.form.get('difficulty', 'beginner')
     questions = load_questions()
 
-    # Select questions based on difficulty
-    quiz_questions = get_questions_by_difficulty(questions, difficulty, 10)
+    # Select questions based on difficulty - CHANGED FROM 10 TO 50
+    quiz_questions = get_questions_by_difficulty(questions, difficulty, 50)
 
     # Initialize session
     session['quiz_questions'] = quiz_questions
@@ -74,14 +74,19 @@ def quiz():
 
     question = questions[current_idx]
 
-    # Calculate progress percentage
+    # Calculate progress percentage and round to nearest 10 for class name
     progress_percent = (current_idx / len(questions)) * 100
+    progress_class = f"progress-{int(round(progress_percent / 10) * 10)}"
+
+    # Calculate exact progress percentage for display
+    exact_progress = (current_idx / len(questions)) * 100
 
     return render_template('quiz.html',
                            question=question,
                            question_num=current_idx + 1,
                            total_questions=len(questions),
-                           progress_percent=progress_percent)
+                           progress_class=progress_class,
+                           progress_percent=exact_progress)  # Add this line
 
 
 @app.route('/submit_answer', methods=['POST'])
