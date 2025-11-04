@@ -16,7 +16,7 @@ def load_questions():
     return data['questions']
 
 
-def get_questions_by_difficulty(questions, difficulty, count=10):
+def get_questions_by_difficulty(questions, difficulty, count=50):
     """Get specified number of questions by difficulty level"""
     filtered = [q for q in questions if q['difficulty'] == difficulty]
     return random.sample(filtered, min(count, len(filtered)))

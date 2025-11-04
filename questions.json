@@ -4074,6 +4074,3785 @@
             ],
             "correct_answer": 0,
             "explanation": "na_value parameter specifies replacement for NA/missing values during conversion"
+        },
+        {
+            "id": 266,
+            "type": "multiple_choice",
+            "category": "neural_networks_fundamentals",
+            "difficulty": "beginner",
+            "question": "What does AI being a 'mathematical approximation' of the real world mean?",
+            "options": [
+                "AI relies solely on predefined rules, making it inflexible and unable to learn from data",
+                "AI tries to represent patterns in the real world using math",
+                "AI works only when the data is perfect",
+                "AI copies the exact behavior of humans"
+            ],
+            "correct_answer": 1,
+            "explanation": "AI models use mathematical structures to capture and represent patterns found in real-world data, creating approximate models rather than exact replicas of reality."
+        },
+        {
+            "id": 267,
+            "type": "multiple_choice",
+            "category": "neural_networks_fundamentals",
+            "difficulty": "beginner",
+            "question": "What is the key difference between designing a microprocessor and training a neural network?",
+            "options": [
+                "Microprocessors are built with fixed instructions, while neural networks learn from data",
+                "Microprocessors use more data",
+                "Neural networks are fully hand-coded",
+                "Neural networks never need any structure"
+            ],
+            "correct_answer": 0,
+            "explanation": "Microprocessors execute predefined instructions with fixed behavior, while neural networks learn patterns from data through training and adjust their weights accordingly."
+        },
+        {
+            "id": 268,
+            "type": "multiple_choice",
+            "category": "neural_networks_fundamentals",
+            "difficulty": "beginner",
+            "question": "What is the role of an artificial neuron in a Neural Network?",
+            "options": [
+                "Store large datasets",
+                "Process inputs and generate outputs based on a weighted sum of the inputs and activation functions",
+                "Control hardware devices",
+                "Transmit data over long distances on the internet"
+            ],
+            "correct_answer": 1,
+            "explanation": "An artificial neuron processes inputs by multiplying them by weights, summing them with a bias, and passing the result through an activation function to produce an output."
+        },
+        {
+            "id": 269,
+            "type": "multiple_choice",
+            "category": "neural_networks_fundamentals",
+            "difficulty": "intermediate",
+            "question": "What happens if a neural network only uses linear functions throughout?",
+            "options": [
+                "It becomes equivalent to performing simple linear regression",
+                "It can perform complex, non-linear tasks",
+                "It can simulate brain activity perfectly",
+                "It can achieve high accuracy on all types of data without any additional tuning"
+            ],
+            "correct_answer": 0,
+            "explanation": "Without non-linear activation functions, the entire network reduces to a single linear transformation, equivalent to linear regression and unable to learn complex patterns."
+        },
+        {
+            "id": 270,
+            "type": "multiple_choice",
+            "category": "neural_networks_fundamentals",
+            "difficulty": "intermediate",
+            "question": "Why is nonlinearity important in a neural network?",
+            "options": [
+                "It reduces the number of inputs required",
+                "It makes the network faster to train",
+                "It allows the network to learn more complex patterns and functions",
+                "It helps the network perform simple linear regression"
+            ],
+            "correct_answer": 2,
+            "explanation": "Nonlinear activation functions enable neural networks to model complex, non-linear relationships in data that linear models cannot capture."
+        },
+        {
+            "id": 271,
+            "type": "multiple_choice",
+            "category": "neural_networks_fundamentals",
+            "difficulty": "intermediate",
+            "question": "How does bias affect the output of a neuron in a Neural Network?",
+            "options": [
+                "They change the input values",
+                "They adjust the weighted sum before applying the activation function",
+                "They determine the number of neurons in a hidden layer",
+                "They are irrelevant to the output calculation"
+            ],
+            "correct_answer": 1,
+            "explanation": "Bias is an additive constant that shifts the weighted sum before it passes through the activation function, improving the model's flexibility to fit data."
+        },
+        {
+            "id": 272,
+            "type": "multiple_choice",
+            "category": "neural_networks_architecture",
+            "difficulty": "beginner",
+            "question": "What is a multi-layer perceptron (MLP)?",
+            "options": [
+                "A single-layer neural network that can only classify data",
+                "A network of neurons that requires no training",
+                "A type of decision tree model used in Machine Learning",
+                "A network of connected neurons arranged in multiple layers for solving complex problems"
+            ],
+            "correct_answer": 3,
+            "explanation": "MLP is a feedforward neural network with input, hidden, and output layers that can learn non-linear relationships through backpropagation."
+        },
+        {
+            "id": 273,
+            "type": "multiple_choice",
+            "category": "neural_networks_architecture",
+            "difficulty": "beginner",
+            "question": "How are the layers in a neural network typically structured?",
+            "options": [
+                "The network uses layers, but only randomly connects neurons",
+                "Only one layer of neurons is used",
+                "Only an input layer and an output layer are necessary",
+                "There are input, hidden, and output layers, with one or more neurons in each layer"
+            ],
+            "correct_answer": 3,
+            "explanation": "Standard neural networks have input layers for data reception, hidden layers for computation, and output layers for final predictions."
+        },
+        {
+            "id": 274,
+            "type": "fill_in_blank",
+            "category": "training_fundamentals",
+            "difficulty": "beginner",
+            "question": "In one sentence, describe what is an epoch in the context of training a Neural Network?",
+            "correct_answer": "An epoch is one complete pass of the entire training dataset through the neural network during the training process.",
+            "explanation": "An epoch represents one full cycle through the entire training dataset, allowing the model to learn from all available training examples."
+        },
+        {
+            "id": 275,
+            "type": "multiple_choice",
+            "category": "training_fundamentals",
+            "difficulty": "intermediate",
+            "question": "What is one major risk of training a model on noisy data?",
+            "options": [
+                "The model becomes simpler",
+                "The model may overfit and perform poorly on new data",
+                "The model trains faster",
+                "The model requires less memory"
+            ],
+            "correct_answer": 1,
+            "explanation": "Noisy data can cause overfitting, where the model learns noise rather than underlying patterns, leading to poor generalization on new data."
+        },
+        {
+            "id": 276,
+            "type": "multiple_choice",
+            "category": "training_fundamentals",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of batch training?",
+            "options": [
+                "To break data into smaller parts for efficient learning",
+                "To increase file size",
+                "To delete unnecessary data",
+                "To train all the data at once"
+            ],
+            "correct_answer": 0,
+            "explanation": "Batch training divides data into smaller subsets for more efficient memory usage, frequent weight updates, and better convergence during training."
+        },
+        {
+            "id": 277,
+            "type": "multiple_choice",
+            "category": "model_comparison",
+            "difficulty": "beginner",
+            "question": "Which best describes a key difference between linear regression and Neural Networks?",
+            "options": [
+                "Linear regression can handle complex, nonlinear relationships",
+                "Neural Networks are ideal for simple tasks with a single variable",
+                "Linear regression is suited for linear relationships, while Neural Networks can model complex patterns",
+                "Neural Networks are always faster to train than linear regression models"
+            ],
+            "correct_answer": 2,
+            "explanation": "Linear regression assumes linear relationships, while neural networks with non-linear activations can capture complex, non-linear patterns in data."
+        },
+        {
+            "id": 278,
+            "type": "true_false",
+            "category": "model_comparison",
+            "difficulty": "beginner",
+            "question": "Linear regression models predict continuous outcomes by fitting lines to data, while Neural Networks handle complex patterns through interconnected nodes.",
+            "correct_answer": true,
+            "explanation": "This statement accurately distinguishes linear regression's linear modeling approach from neural networks' ability to capture complex, non-linear patterns."
+        },
+        {
+            "id": 279,
+            "type": "multiple_choice",
+            "category": "training_fundamentals",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of the Loss Function in neural network training?",
+            "options": [
+                "To adjust the network's architecture",
+                "To calculate the total number of neurons in the network",
+                "To measure the difference between predicted values and actual data during training",
+                "To increase the number of parameters"
+            ],
+            "correct_answer": 2,
+            "explanation": "The loss function quantifies prediction errors and provides the feedback signal for optimizing model weights during training."
+        },
+        {
+            "id": 280,
+            "type": "true_false",
+            "category": "neural_networks_fundamentals",
+            "difficulty": "beginner",
+            "question": "Changing the weight of a neuron results in a change in the prediction value.",
+            "correct_answer": true,
+            "explanation": "Weights determine connection strengths between neurons, and changing them alters the network's computations and final predictions."
+        },
+        {
+            "id": 281,
+            "type": "multiple_choice",
+            "category": "mnist_basics",
+            "difficulty": "beginner",
+            "question": "How many input nodes does the MNIST neural network have?",
+            "options": [
+                "64",
+                "10",
+                "784",
+                "28"
+            ],
+            "correct_answer": 2,
+            "explanation": "The MNIST network has 784 input nodes, corresponding to the 28x28 pixels in each handwritten digit image."
+        },
+        {
+            "id": 282,
+            "type": "multiple_choice",
+            "category": "mnist_basics",
+            "difficulty": "beginner",
+            "question": "How many output nodes does the MNIST neural network have?",
+            "options": [
+                "64",
+                "10",
+                "784",
+                "28"
+            ],
+            "correct_answer": 1,
+            "explanation": "The MNIST network has 10 output nodes, each representing one digit class from 0 to 9."
+        },
+        {
+            "id": 283,
+            "type": "multiple_choice",
+            "category": "problem_types",
+            "difficulty": "beginner",
+            "question": "What type of problem is the MNIST dataset used for?",
+            "options": [
+                "Regression",
+                "Classification",
+                "Clustering",
+                "Reinforcement Learning"
+            ],
+            "correct_answer": 1,
+            "explanation": "MNIST is a classification problem where the goal is to assign each image to one of 10 digit classes."
+        },
+        {
+            "id": 284,
+            "type": "multiple_choice",
+            "category": "problem_types",
+            "difficulty": "beginner",
+            "question": "What is the key difference between classification and regression?",
+            "options": [
+                "Classification predicts continuous values, regression predicts categories",
+                "Classification predicts categories, regression predicts continuous values",
+                "Classification uses neural networks, regression uses decision trees",
+                "Classification is faster, regression is more accurate"
+            ],
+            "correct_answer": 1,
+            "explanation": "Classification predicts discrete categories/labels, while regression predicts continuous numerical values."
+        },
+        {
+            "id": 285,
+            "type": "multiple_choice",
+            "category": "data_preprocessing",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of one-hot encoding?",
+            "options": [
+                "To reduce the dataset size",
+                "To convert text to lowercase",
+                "To convert categorical data into a numeric format",
+                "To normalize numeric data"
+            ],
+            "correct_answer": 2,
+            "explanation": "One-hot encoding converts categorical labels into binary vectors, allowing ML models to work with categorical data without assuming ordinal relationships."
+        },
+        {
+            "id": 286,
+            "type": "multiple_choice",
+            "category": "model_outputs",
+            "difficulty": "intermediate",
+            "question": "What do the output probabilities from a neural network represent?",
+            "options": [
+                "The model's confidence level for each possible class",
+                "The model is unsure about the input",
+                "The model is overfitting",
+                "The frequency of each class in the dataset"
+            ],
+            "correct_answer": 0,
+            "explanation": "Output probabilities represent the model's confidence or likelihood that the input belongs to each class, with all probabilities summing to 1."
+        },
+        {
+            "id": 287,
+            "type": "multiple_choice",
+            "category": "activation_functions",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of the Softmax function?",
+            "options": [
+                "To convert inputs into a continuous range",
+                "To apply random values to the outputs",
+                "To scale the inputs to a common range",
+                "To ensure output values are between 0 and 1 and sum to 1"
+            ],
+            "correct_answer": 3,
+            "explanation": "Softmax converts raw output scores into probabilities that sum to 1, making them interpretable as confidence levels for each class."
+        },
+        {
+            "id": 288,
+            "type": "multiple_choice",
+            "category": "training_process",
+            "difficulty": "intermediate",
+            "question": "How many images are typically used for training in the MNIST dataset?",
+            "options": [
+                "10,000",
+                "50,000",
+                "60,000",
+                "70,000"
+            ],
+            "correct_answer": 2,
+            "explanation": "The standard MNIST dataset uses 60,000 images for training and 10,000 images for testing."
+        },
+        {
+            "id": 289,
+            "type": "multiple_choice",
+            "category": "training_process",
+            "difficulty": "intermediate",
+            "question": "What accuracy indicates a well-trained MNIST network?",
+            "options": [
+                "10%",
+                "50%",
+                "80%",
+                "95%"
+            ],
+            "correct_answer": 3,
+            "explanation": "Achieving around 95% accuracy on the test set indicates the network has effectively learned to classify handwritten digits, significantly better than random guessing (10%)."
+        },
+        {
+            "id": 290,
+            "type": "true_false",
+            "category": "mnist_basics",
+            "difficulty": "beginner",
+            "question": "Neural Networks can process the MNIST dataset to recognize handwritten digits by learning complex patterns.",
+            "correct_answer": true,
+            "explanation": "Neural networks learn to recognize digits by identifying patterns like edges, curves, and shapes from pixel inputs through training."
+        },
+        {
+            "id": 291,
+            "type": "multiple_choice",
+            "category": "activation_functions",
+            "difficulty": "intermediate",
+            "question": "What is the common activation function in the output layer for binary classification problems?",
+            "options": [
+                "ReLU",
+                "Linear",
+                "Softmax",
+                "Sigmoid"
+            ],
+            "correct_answer": 3,
+            "explanation": "Sigmoid is used for binary classification as it outputs values between 0 and 1 that can be interpreted as probabilities for the positive class."
+        },
+        {
+            "id": 292,
+            "type": "multiple_choice",
+            "category": "activation_functions",
+            "difficulty": "intermediate",
+            "question": "When should a neural network typically use the ReLU activation function?",
+            "options": [
+                "In the output layer for binary classification",
+                "In the hidden layers, irrespective of problem type",
+                "In the output layer for multi-class classification",
+                "In the output layer for regression problems with non-negative targets"
+            ],
+            "correct_answer": 1,
+            "explanation": "ReLU is most commonly used in hidden layers across various problem types due to its efficiency and ability to mitigate vanishing gradient problems."
+        },
+        {
+            "id": 293,
+            "type": "multiple_choice",
+            "category": "neural_network_types",
+            "difficulty": "intermediate",
+            "question": "Which type of Neural Network is specifically designed to process sequential data like text or time series?",
+            "options": [
+                "Multi-Layer Perceptron (MLP)",
+                "Convolutional Neural Network (CNN)",
+                "Recurrent Neural Network (RNN)",
+                "Autoencoder"
+            ],
+            "correct_answer": 2,
+            "explanation": "RNNs are designed for sequential data with memory capabilities that allow them to process inputs where order matters, like text or time series."
+        },
+        {
+            "id": 294,
+            "type": "true_false",
+            "category": "neural_network_types",
+            "difficulty": "intermediate",
+            "question": "Convolutional Neural Networks (CNN) are specialized for processing grid-like data such as images, using convolutional layers to detect spatial patterns.",
+            "correct_answer": true,
+            "explanation": "CNNs use convolutional and pooling layers to efficiently recognize spatial hierarchies and patterns in grid-like data such as images."
+        },
+        {
+            "id": 295,
+            "type": "multiple_choice",
+            "category": "neural_network_types",
+            "difficulty": "intermediate",
+            "question": "Which architecture is commonly used for image recognition tasks?",
+            "options": [
+                "Recurrent Neural Networks (RNNs)",
+                "Long Short-Term Memory (LSTM) Networks",
+                "Convolutional Neural Networks (CNNs)",
+                "Rule-Based System"
+            ],
+            "correct_answer": 2,
+            "explanation": "CNNs are specifically designed for image recognition with convolutional layers that detect spatial patterns and hierarchical features in images."
+        },
+        {
+            "id": 296,
+            "type": "multiple_choice",
+            "category": "neural_network_types",
+            "difficulty": "intermediate",
+            "question": "What type of neural network architecture is best for tasks involving sequences or time series data?",
+            "options": [
+                "Recurrent Neural Networks (RNNs)",
+                "Autoencoders",
+                "Deep Neural Networks (DNNs)",
+                "Convolutional Neural Networks (CNNs)"
+            ],
+            "correct_answer": 0,
+            "explanation": "RNNs are specifically designed for sequential data like time series, text, or speech because they have feedback connections that allow information to persist and maintain memory of previous elements."
+        },
+        {
+            "id": 297,
+            "type": "multiple_choice",
+            "category": "neural_network_types",
+            "difficulty": "advanced",
+            "question": "What is a key feature of Long Short-Term Memory (LSTM) networks compared to regular RNNs?",
+            "options": [
+                "They are faster to train",
+                "They use convolutional layers for better image processing",
+                "They do not require data preprocessing",
+                "They have enhanced memory capabilities to learn which information to retain or forget over long sequences"
+            ],
+            "correct_answer": 3,
+            "explanation": "LSTMs have gating mechanisms (input, forget, and output gates) that allow them to selectively remember important information and forget irrelevant details over long sequences, solving the vanishing gradient problem of regular RNNs."
+        },
+        {
+            "id": 298,
+            "type": "true_false",
+            "category": "neural_network_types",
+            "difficulty": "advanced",
+            "question": "Long Short-Term Memory (LSTM) is a type of RNN that handles long-term dependencies more effectively, suited for tasks requiring memory of past inputs over extended sequences.",
+            "correct_answer": true,
+            "explanation": "LSTMs use gating mechanisms to control information flow, allowing them to remember important information over long periods and solve the vanishing gradient problem in standard RNNs."
+        },
+        {
+            "id": 299,
+            "type": "true_false",
+            "category": "neural_network_types",
+            "difficulty": "advanced",
+            "question": "An Autoencoder is a type of Neural Network designed for unsupervised learning that compresses input data into lower-dimensional representations and reconstructs the output, useful for dimensionality reduction and anomaly detection.",
+            "correct_answer": true,
+            "explanation": "Autoencoders consist of encoder and decoder components that learn efficient data representations through compression and reconstruction, making them valuable for dimensionality reduction and anomaly detection tasks."
+        },
+        {
+            "id": 300,
+            "type": "multiple_choice",
+            "category": "mnist_dataset",
+            "difficulty": "beginner",
+            "question": "What is the range of pixel values in the MNIST dataset after scaling images using division by 255?",
+            "options": [
+                "[0, 255]",
+                "[0, 1]",
+                "[-1, 1]",
+                "[-255, 255]"
+            ],
+            "correct_answer": 1,
+            "explanation": "Dividing original pixel values (0-255) by 255 scales them to the range [0, 1], which is a common normalization technique that helps neural networks train faster and more stably."
+        },
+        {
+            "id": 301,
+            "type": "multiple_choice",
+            "category": "mnist_dataset",
+            "difficulty": "intermediate",
+            "question": "Which of the following statements about the MNIST dataset is true?",
+            "options": [
+                "It contains 100,000 handwritten images of digits 0-9",
+                "Each image is 32x32 pixels with values between 0-1",
+                "The dataset is only used for image classification",
+                "None of the above are fully correct"
+            ],
+            "correct_answer": 3,
+            "explanation": "MNIST has 70,000 images (not 100,000), images are 28x28 pixels (not 32x32), and while primarily for classification, it's also used for other tasks like generative modeling and anomaly detection."
+        },
+        {
+            "id": 302,
+            "type": "true_false",
+            "category": "data_preprocessing",
+            "difficulty": "intermediate",
+            "question": "In TensorFlow, the variable num_classes must equal the number of unique classes in the dataset for one-hot encoding to work correctly.",
+            "correct_answer": true,
+            "explanation": "If num_classes is less than actual unique classes, some classes won't get encoded properly; if greater, it creates unnecessary extra columns. For MNIST, num_classes=10 matches the 10 digit classes."
+        },
+        {
+            "id": 303,
+            "type": "multiple_choice",
+            "category": "activation_functions",
+            "difficulty": "intermediate",
+            "question": "What is the activation function used in the output layer for the MNIST dataset?",
+            "options": [
+                "Sigmoid",
+                "ReLU",
+                "Softmax",
+                "Linear"
+            ],
+            "correct_answer": 2,
+            "explanation": "Softmax is used for multi-class classification problems like MNIST (10 digit classes) because it converts output scores into probabilities that sum to 1, with each output node representing a digit class probability."
+        },
+        {
+            "id": 304,
+            "type": "multiple_choice",
+            "category": "tensorflow_basics",
+            "difficulty": "intermediate",
+            "question": "Which of the following is true while compiling the model in TensorFlow?",
+            "options": [
+                "We initialize the model with random weights",
+                "We define the architecture of the model",
+                "We specify the loss function and optimizer for training",
+                "We evaluate the model on the test data"
+            ],
+            "correct_answer": 2,
+            "explanation": "model.compile() configures the learning process by specifying the loss function, optimizer, and metrics. Weights are initialized when layers are created, architecture is defined during model building, and evaluation happens after training."
+        },
+        {
+            "id": 305,
+            "type": "calculation",
+            "category": "training_process",
+            "difficulty": "advanced",
+            "question": "Given a dataset of 1000 rows, batch size of 10, and 10 epochs, how many weight updates occur during training?",
+            "correct_answer": "1000",
+            "explanation": "Batches per epoch = 1000/10 = 100. Weight updates per epoch = 100. Total updates = 100 × 10 = 1000. Each batch processing results in one weight update via backpropagation."
+        },
+        {
+            "id": 306,
+            "type": "true_false",
+            "category": "training_process",
+            "difficulty": "intermediate",
+            "question": "Increasing the number of epochs results in a proportional increase in the time taken to train the model.",
+            "correct_answer": true,
+            "explanation": "While not perfectly proportional due to hardware optimizations and convergence variations, doubling epochs typically roughly doubles training time since the model processes the entire dataset more times."
+        },
+        {
+            "id": 307,
+            "type": "calculation",
+            "category": "neural_network_architecture",
+            "difficulty": "intermediate",
+            "question": "How many hidden layers are present in a neural network with: Dense(128), Dense(64), Dense(10) layers?",
+            "correct_answer": "2",
+            "explanation": "The first Dense(128) and second Dense(64) layers are hidden layers, while Dense(10) is the output layer. Input layer is implicit from input_dim parameter."
+        },
+        {
+            "id": 308,
+            "type": "multiple_choice",
+            "category": "activation_functions",
+            "difficulty": "intermediate",
+            "question": "Which activation function is characterized by an S-shaped curve mapping inputs to 0-1 range?",
+            "options": [
+                "ReLU",
+                "Sigmoid",
+                "Tanh",
+                "Linear"
+            ],
+            "correct_answer": 1,
+            "explanation": "Sigmoid has an S-shaped curve that squashes inputs to the range (0,1), making it suitable for binary classification outputs interpretable as probabilities."
+        },
+        {
+            "id": 309,
+            "type": "multiple_choice",
+            "category": "activation_functions",
+            "difficulty": "intermediate",
+            "question": "Which activation function maps inputs to the range -1 to 1 and helps center data around zero?",
+            "options": [
+                "ReLU",
+                "Sigmoid",
+                "Tanh",
+                "Softmax"
+            ],
+            "correct_answer": 2,
+            "explanation": "Tanh (hyperbolic tangent) transforms inputs to (-1,1) range, providing zero-centered outputs that can speed up convergence during training compared to sigmoid."
+        },
+        {
+            "id": 310,
+            "type": "multiple_choice",
+            "category": "activation_functions",
+            "difficulty": "intermediate",
+            "question": "Which activation function outputs the input directly if positive, otherwise outputs zero?",
+            "options": [
+                "Sigmoid",
+                "Tanh",
+                "ReLU",
+                "Linear"
+            ],
+            "correct_answer": 2,
+            "explanation": "ReLU (Rectified Linear Unit) outputs max(0,input), making it computationally efficient and effective at mitigating vanishing gradient problems in hidden layers."
+        },
+        {
+            "id": 311,
+            "type": "multiple_choice",
+            "category": "activation_functions",
+            "difficulty": "advanced",
+            "question": "What problem does Leaky ReLU address that can occur with standard ReLU?",
+            "options": [
+                "Vanishing gradient problem",
+                "Exploding gradients",
+                "Dying ReLU problem",
+                "Overfitting"
+            ],
+            "correct_answer": 2,
+            "explanation": "Leaky ReLU addresses the 'dying ReLU' problem where neurons can become permanently inactive by allowing a small, non-zero gradient for negative inputs."
+        },
+        {
+            "id": 312,
+            "type": "true_false",
+            "category": "activation_functions",
+            "difficulty": "intermediate",
+            "question": "The step function is a simple threshold-based activation function with binary outputs.",
+            "correct_answer": true,
+            "explanation": "The step function outputs 1 if input exceeds a threshold, otherwise 0, making it the simplest activation function but limited for modern neural networks."
+        },
+        {
+            "id": 313,
+            "type": "multiple_choice",
+            "category": "layer_selection",
+            "difficulty": "intermediate",
+            "question": "Which activation function is generally avoided in hidden layers because it doesn't introduce non-linearity?",
+            "options": [
+                "ReLU",
+                "Sigmoid",
+                "Linear",
+                "Tanh"
+            ],
+            "correct_answer": 2,
+            "explanation": "Linear activation functions don't introduce non-linearity, making deep networks equivalent to single-layer networks and unable to learn complex patterns."
+        },
+        {
+            "id": 314,
+            "type": "multiple_choice",
+            "category": "layer_selection",
+            "difficulty": "intermediate",
+            "question": "For which type of problem would you use linear activation in the output layer?",
+            "options": [
+                "Binary classification",
+                "Multi-class classification",
+                "Regression with continuous outputs",
+                "Image segmentation"
+            ],
+            "correct_answer": 2,
+            "explanation": "Linear activation is suitable for regression problems where the output needs to be a continuous value without range restrictions."
+        },
+        {
+            "id": 315,
+            "type": "true_false",
+            "category": "activation_functions",
+            "difficulty": "intermediate",
+            "question": "Tanh activation function outputs are zero-centered, which can make learning faster and more stable in some neural networks.",
+            "correct_answer": true,
+            "explanation": "Tanh's output range of (-1,1) is zero-centered, which often helps speed up convergence during training compared to sigmoid's (0,1) range."
+        },
+        {
+            "id": 316,
+            "type": "code_completion",
+            "category": "tensorflow_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to create a Sequential model in Keras:",
+            "code_snippet": "model = ______()",
+            "options": [
+                "Sequential",
+                "Model",
+                "Network",
+                "Keras"
+            ],
+            "correct_answer": 0,
+            "explanation": "Sequential() creates a linear stack of layers in Keras/TensorFlow, which is the simplest way to build neural network models."
+        },
+        {
+            "id": 317,
+            "type": "code_completion",
+            "category": "tensorflow_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to add a Dense layer with 64 units and ReLU activation:",
+            "code_snippet": "model.add(______(64, activation='relu'))",
+            "options": [
+                "Dense",
+                "Layer",
+                "Neural",
+                "Linear"
+            ],
+            "correct_answer": 0,
+            "explanation": "Dense() creates a fully connected layer in Keras, where all neurons in the current layer connect to all neurons in the next layer."
+        },
+        {
+            "id": 318,
+            "type": "code_completion",
+            "category": "tensorflow_basics",
+            "difficulty": "intermediate",
+            "question": "Complete the code to compile a model with Adam optimizer and categorical crossentropy loss:",
+            "code_snippet": "model.compile(optimizer='______', loss='categorical_crossentropy', metrics=['accuracy'])",
+            "options": [
+                "adam",
+                "sgd",
+                "rmsprop",
+                "adagrad"
+            ],
+            "correct_answer": 0,
+            "explanation": "'adam' is a popular optimizer that combines benefits of RMSProp and Momentum, often providing good performance with default parameters."
+        },
+        {
+            "id": 319,
+            "type": "multiple_choice",
+            "category": "training_process",
+            "difficulty": "intermediate",
+            "question": "What does the loss function measure during neural network training?",
+            "options": [
+                "The speed of training",
+                "The difference between predictions and actual values",
+                "The number of parameters in the model",
+                "The learning rate efficiency"
+            ],
+            "correct_answer": 1,
+            "explanation": "The loss function quantifies how well the model's predictions match the true target values, providing the feedback signal for weight updates during training."
+        },
+        {
+            "id": 320,
+            "type": "multiple_choice",
+            "category": "optimization",
+            "difficulty": "intermediate",
+            "question": "What is the role of the optimizer in neural network training?",
+            "options": [
+                "To initialize random weights",
+                "To determine how weights are updated based on the loss",
+                "To select the best activation functions",
+                "To preprocess the input data"
+            ],
+            "correct_answer": 1,
+            "explanation": "The optimizer determines how the model's weights are updated based on the loss gradient, using algorithms like gradient descent, Adam, or RMSProp."
+        },
+        {
+            "id": 321,
+            "type": "multiple_choice",
+            "category": "evaluation",
+            "difficulty": "beginner",
+            "question": "What does model.evaluate() return in Keras?",
+            "options": [
+                "The model architecture",
+                "The loss value and metrics values on test data",
+                "The training history",
+                "The optimized weights"
+            ],
+            "correct_answer": 1,
+            "explanation": "model.evaluate() returns the loss value and any specified metrics (like accuracy) calculated on the provided test dataset."
+        },
+        {
+            "id": 322,
+            "type": "multiple_choice",
+            "category": "data_splitting",
+            "difficulty": "intermediate",
+            "question": "Why is the test set kept separate from the training set?",
+            "options": [
+                "To make training faster",
+                "To evaluate model performance on unseen data",
+                "To reduce memory usage",
+                "To increase model complexity"
+            ],
+            "correct_answer": 1,
+            "explanation": "The test set provides unbiased evaluation on data the model hasn't seen during training, helping assess real-world generalization performance."
+        },
+        {
+            "id": 323,
+            "type": "multiple_choice",
+            "category": "overfitting",
+            "difficulty": "intermediate",
+            "question": "What indicates that a model is overfitting?",
+            "options": [
+                "High training accuracy and high test accuracy",
+                "Low training accuracy and low test accuracy",
+                "High training accuracy and low test accuracy",
+                "Consistent accuracy across all datasets"
+            ],
+            "correct_answer": 2,
+            "explanation": "Overfitting occurs when a model performs well on training data but poorly on unseen test data, indicating it memorized noise rather than learning general patterns."
+        },
+        {
+            "id": 324,
+            "type": "multiple_choice",
+            "category": "regularization",
+            "difficulty": "advanced",
+            "question": "Which technique can help prevent overfitting in neural networks?",
+            "options": [
+                "Increasing model complexity",
+                "Training for more epochs",
+                "Using dropout regularization",
+                "Removing the test set"
+            ],
+            "correct_answer": 2,
+            "explanation": "Dropout randomly disables neurons during training, preventing over-reliance on specific neurons and encouraging more robust feature learning."
+        },
+        {
+            "id": 325,
+            "type": "multiple_choice",
+            "category": "training_process",
+            "difficulty": "advanced",
+            "question": "What is the purpose of validation data during training?",
+            "options": [
+                "To replace the test set",
+                "To monitor overfitting and tune hyperparameters during training",
+                "To increase the training dataset size",
+                "To speed up training convergence"
+            ],
+            "correct_answer": 1,
+            "explanation": "Validation data provides ongoing evaluation during training to monitor for overfitting and helps tune hyperparameters without touching the final test set."
+        },
+        {
+            "id": 326,
+            "type": "multiple_choice",
+            "category": "gradient_descent",
+            "difficulty": "intermediate",
+            "question": "What is the primary purpose of gradient descent in neural network training?",
+            "options": [
+                "To initialize weights randomly",
+                "To minimize the loss function by updating weights",
+                "To select the best activation functions",
+                "To normalize input data"
+            ],
+            "correct_answer": 1,
+            "explanation": "Gradient descent iteratively updates model weights in the direction that reduces the loss function, gradually minimizing prediction errors during training."
+        },
+        {
+            "id": 327,
+            "type": "multiple_choice",
+            "category": "gradient_descent",
+            "difficulty": "advanced",
+            "question": "What is the vanishing gradient problem?",
+            "options": [
+                "Gradients become too large and cause unstable training",
+                "Gradients become very small and slow down learning in early layers",
+                "Gradients disappear completely after one epoch",
+                "Gradients change direction randomly"
+            ],
+            "correct_answer": 1,
+            "explanation": "In deep networks, gradients can become extremely small during backpropagation, causing early layers to learn very slowly or stop learning altogether."
+        },
+        {
+            "id": 328,
+            "type": "multiple_choice",
+            "category": "optimizers",
+            "difficulty": "advanced",
+            "question": "How does the Adam optimizer differ from basic gradient descent?",
+            "options": [
+                "It doesn't use gradients at all",
+                "It combines momentum and adaptive learning rates for each parameter",
+                "It only works for convolutional networks",
+                "It requires manual learning rate tuning for each layer"
+            ],
+            "correct_answer": 1,
+            "explanation": "Adam combines ideas from Momentum (acceleration in consistent directions) and RMSProp (adaptive learning rates per parameter), making it efficient and requiring less manual tuning."
+        },
+        {
+            "id": 329,
+            "type": "code_completion",
+            "category": "tensorflow_basics",
+            "difficulty": "intermediate",
+            "question": "Complete the code to train a model for 10 epochs with batch size 32:",
+            "code_snippet": "history = model.fit(x_train, y_train, epochs=______, batch_size=32)",
+            "options": [
+                "10",
+                "32",
+                "100",
+                "0.1"
+            ],
+            "correct_answer": 0,
+            "explanation": "The epochs parameter specifies how many times the model will iterate over the entire training dataset during the training process."
+        },
+        {
+            "id": 330,
+            "type": "multiple_choice",
+            "category": "loss_functions",
+            "difficulty": "intermediate",
+            "question": "Which loss function is commonly used for multi-class classification problems?",
+            "options": [
+                "Mean Squared Error",
+                "Binary Crossentropy",
+                "Categorical Crossentropy",
+                "Absolute Error"
+            ],
+            "correct_answer": 2,
+            "explanation": "Categorical Crossentropy is used for multi-class classification where each sample belongs to exactly one class, measuring the difference between predicted probability distribution and true distribution."
+        },
+        {
+            "id": 331,
+            "type": "multiple_choice",
+            "category": "loss_functions",
+            "difficulty": "intermediate",
+            "question": "When would you use binary crossentropy loss?",
+            "options": [
+                "For regression problems",
+                "For multi-class classification with 10+ classes",
+                "For binary classification problems",
+                "For unsupervised learning"
+            ],
+            "correct_answer": 2,
+            "explanation": "Binary crossentropy is designed for binary classification tasks where there are only two possible output classes (e.g., spam/not spam, cat/dog)."
+        },
+        {
+            "id": 332,
+            "type": "multiple_choice",
+            "category": "metrics",
+            "difficulty": "beginner",
+            "question": "What does accuracy metric measure in classification tasks?",
+            "options": [
+                "The average distance from predictions to true values",
+                "The proportion of correct predictions",
+                "The speed of training",
+                "The model complexity"
+            ],
+            "correct_answer": 1,
+            "explanation": "Accuracy calculates the percentage of correct predictions out of all predictions made, providing a straightforward measure of classification performance."
+        },
+        {
+            "id": 333,
+            "type": "true_false",
+            "category": "data_preprocessing",
+            "difficulty": "intermediate",
+            "question": "Normalizing input data to a common range (like 0-1) can help neural networks train faster and more stably.",
+            "correct_answer": true,
+            "explanation": "Normalization prevents features with large scales from dominating the learning process and helps gradient-based optimization converge faster."
+        },
+        {
+            "id": 334,
+            "type": "multiple_choice",
+            "category": "initialization",
+            "difficulty": "advanced",
+            "question": "Why is proper weight initialization important in neural networks?",
+            "options": [
+                "To make the model deterministic",
+                "To prevent gradients from vanishing or exploding during early training",
+                "To reduce the number of parameters",
+                "To eliminate the need for bias terms"
+            ],
+            "correct_answer": 1,
+            "explanation": "Proper initialization (like He or Xavier initialization) sets initial weights to appropriate scales that prevent gradients from becoming too small or too large during early training stages."
+        },
+        {
+            "id": 335,
+            "type": "multiple_choice",
+            "category": "backpropagation",
+            "difficulty": "advanced",
+            "question": "What is the chain rule used for in backpropagation?",
+            "options": [
+                "To initialize network weights",
+                "To calculate gradients through multiple layers",
+                "To select learning rates",
+                "To normalize input data"
+            ],
+            "correct_answer": 1,
+            "explanation": "The chain rule from calculus allows backpropagation to compute gradients for early layers by multiplying gradients from subsequent layers, enabling efficient gradient calculation through deep networks."
+        },
+        {
+            "id": 336,
+            "type": "multiple_choice",
+            "category": "batch_training",
+            "difficulty": "intermediate",
+            "question": "What is the advantage of using smaller batch sizes during training?",
+            "options": [
+                "More accurate gradient estimates",
+                "Faster computation per update",
+                "More frequent weight updates and better generalization",
+                "Lower memory requirements"
+            ],
+            "correct_answer": 2,
+            "explanation": "Smaller batches provide more frequent weight updates and can help escape local minima, often leading to better generalization despite noisier gradient estimates."
+        },
+        {
+            "id": 337,
+            "type": "multiple_choice",
+            "category": "batch_training",
+            "difficulty": "intermediate",
+            "question": "What is stochastic gradient descent (SGD)?",
+            "options": [
+                "Gradient descent with batch size equal to the entire dataset",
+                "Gradient descent with batch size of 1",
+                "Gradient descent with adaptive learning rates",
+                "Gradient descent with momentum"
+            ],
+            "correct_answer": 1,
+            "explanation": "Stochastic Gradient Descent uses a batch size of 1, updating weights after each individual training sample, providing very frequent updates but noisy gradients."
+        },
+        {
+            "id": 338,
+            "type": "multiple_choice",
+            "category": "learning_rate",
+            "difficulty": "intermediate",
+            "question": "What happens if the learning rate is set too high?",
+            "options": [
+                "Training becomes very slow",
+                "The model may converge to a poor solution or diverge",
+                "Gradients become zero",
+                "The model stops learning after first epoch"
+            ],
+            "correct_answer": 1,
+            "explanation": "Too high learning rate causes large weight updates that can overshoot the optimal solution, leading to oscillation around the minimum or complete divergence."
+        },
+        {
+            "id": 339,
+            "type": "multiple_choice",
+            "category": "learning_rate",
+            "difficulty": "intermediate",
+            "question": "What happens if the learning rate is set too low?",
+            "options": [
+                "Training becomes very fast",
+                "The model may get stuck in local minima",
+                "Training becomes very slow and may not converge in reasonable time",
+                "Gradients explode"
+            ],
+            "correct_answer": 2,
+            "explanation": "Too low learning rate results in very small weight updates, making training extremely slow and potentially preventing convergence within practical time limits."
+        },
+        {
+            "id": 340,
+            "type": "multiple_choice",
+            "category": "regularization",
+            "difficulty": "advanced",
+            "question": "What is L2 regularization (weight decay)?",
+            "options": [
+                "Adding a penalty proportional to the absolute value of weights",
+                "Adding a penalty proportional to the square of weights",
+                "Randomly dropping neurons during training",
+                "Stopping training early when validation performance stops improving"
+            ],
+            "correct_answer": 1,
+            "explanation": "L2 regularization adds a penalty term proportional to the square of the weights to the loss function, encouraging smaller weights and reducing overfitting."
+        },
+        {
+            "id": 341,
+            "type": "multiple_choice",
+            "category": "regularization",
+            "difficulty": "advanced",
+            "question": "How does dropout regularization work during training?",
+            "options": [
+                "It removes entire layers from the network",
+                "It randomly sets a fraction of input units to 0 at each update",
+                "It reduces the learning rate over time",
+                "It adds noise to the input data"
+            ],
+            "correct_answer": 1,
+            "explanation": "Dropout randomly disables a percentage of neurons during each training iteration, preventing complex co-adaptations and making the network more robust."
+        },
+        {
+            "id": 342,
+            "type": "multiple_choice",
+            "category": "early_stopping",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of early stopping in neural network training?",
+            "options": [
+                "To speed up the initial training phase",
+                "To prevent overfitting by stopping when validation performance degrades",
+                "To ensure all weights are properly initialized",
+                "To automatically select the best optimizer"
+            ],
+            "correct_answer": 1,
+            "explanation": "Early stopping monitors validation performance and halts training when it starts to degrade, preventing the model from overfitting to the training data."
+        },
+        {
+            "id": 343,
+            "type": "multiple_choice",
+            "category": "callbacks",
+            "difficulty": "intermediate",
+            "question": "In Keras, what is the purpose of the ModelCheckpoint callback?",
+            "options": [
+                "To periodically save the model during training",
+                "To check the model architecture for errors",
+                "To validate input data format",
+                "To optimize the learning rate"
+            ],
+            "correct_answer": 0,
+            "explanation": "ModelCheckpoint callback saves the model weights (or entire model) at specified intervals, allowing recovery of the best model or resuming training from checkpoints."
+        },
+        {
+            "id": 344,
+            "type": "code_completion",
+            "category": "tensorflow_basics",
+            "difficulty": "intermediate",
+            "question": "Complete the code to add dropout regularization to a layer:",
+            "code_snippet": "model.add(______(0.2))",
+            "options": [
+                "Dropout",
+                "Regularization",
+                "Noise",
+                "Skip"
+            ],
+            "correct_answer": 0,
+            "explanation": "Dropout(0.2) adds a dropout layer that randomly sets 20% of input units to 0 during training, helping prevent overfitting."
+        },
+        {
+            "id": 345,
+            "type": "multiple_choice",
+            "category": "batch_normalization",
+            "difficulty": "advanced",
+            "question": "What is the main benefit of batch normalization?",
+            "options": [
+                "Reduces the number of model parameters",
+                "Faster and more stable training by normalizing layer inputs",
+                "Eliminates the need for activation functions",
+                "Automatically selects the optimal learning rate"
+            ],
+            "correct_answer": 1,
+            "explanation": "Batch normalization normalizes the inputs to each layer, reducing internal covariate shift and allowing higher learning rates and faster, more stable training."
+        },
+        {
+            "id": 346,
+            "type": "multiple_choice",
+            "category": "convolutional_networks",
+            "difficulty": "intermediate",
+            "question": "What is the primary purpose of convolutional layers in CNNs?",
+            "options": [
+                "To process sequential data",
+                "To detect spatial patterns and features in images",
+                "To reduce model size",
+                "To increase training speed"
+            ],
+            "correct_answer": 1,
+            "explanation": "Convolutional layers use filters to detect spatial patterns like edges, textures, and shapes in images, building hierarchical feature representations."
+        },
+        {
+            "id": 347,
+            "type": "multiple_choice",
+            "category": "convolutional_networks",
+            "difficulty": "intermediate",
+            "question": "What is parameter sharing in convolutional neural networks?",
+            "options": [
+                "Using the same weights across different spatial locations",
+                "Sharing weights between different models",
+                "Using the same bias for all neurons",
+                "Reusing the same dataset multiple times"
+            ],
+            "correct_answer": 0,
+            "explanation": "Parameter sharing means the same filter weights are applied across all spatial locations in the input, dramatically reducing the number of parameters compared to fully connected layers."
+        },
+        {
+            "id": 348,
+            "type": "multiple_choice",
+            "category": "pooling_layers",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of pooling layers in CNNs?",
+            "options": [
+                "To increase the spatial dimensions",
+                "To reduce spatial size while retaining important features",
+                "To add more parameters to the model",
+                "To replace convolutional layers"
+            ],
+            "correct_answer": 1,
+            "explanation": "Pooling layers (like max pooling) reduce spatial dimensions, making the network more computationally efficient and providing translation invariance to small shifts."
+        },
+        {
+            "id": 349,
+            "type": "multiple_choice",
+            "category": "convolutional_networks",
+            "difficulty": "advanced",
+            "question": "What is the receptive field in convolutional neural networks?",
+            "options": [
+                "The area of input that affects a particular neuron",
+                "The learning rate for convolutional layers",
+                "The number of filters in a layer",
+                "The padding size around the input"
+            ],
+            "correct_answer": 0,
+            "explanation": "The receptive field is the region in the input space that a particular CNN's feature is looking at, which grows larger in deeper layers through successive convolutions."
+        },
+        {
+            "id": 350,
+            "type": "multiple_choice",
+            "category": "padding_stride",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of padding in convolutional layers?",
+            "options": [
+                "To reduce the output size",
+                "To preserve spatial dimensions of the input",
+                "To increase the number of parameters",
+                "To speed up computation"
+            ],
+            "correct_answer": 1,
+            "explanation": "Padding adds zeros around the input border, allowing the convolutional layer to maintain the spatial dimensions of the input rather than reducing them."
+        },
+        {
+            "id": 351,
+            "type": "multiple_choice",
+            "category": "padding_stride",
+            "difficulty": "intermediate",
+            "question": "How does stride affect the output size in convolutional layers?",
+            "options": [
+                "Larger stride increases output size",
+                "Stride has no effect on output size",
+                "Larger stride decreases output size",
+                "Stride only affects training speed"
+            ],
+            "correct_answer": 2,
+            "explanation": "Larger stride values cause the filter to skip more positions, resulting in smaller output dimensions and more aggressive downsampling."
+        },
+        {
+            "id": 352,
+            "type": "calculation",
+            "category": "convolutional_networks",
+            "difficulty": "advanced",
+            "question": "Given an input of size 32x32, filter size 3x3, padding 'same', and stride 1, what is the output size?",
+            "correct_answer": "32x32",
+            "explanation": "With 'same' padding and stride 1, the convolutional layer maintains the same spatial dimensions as the input (32x32)."
+        },
+        {
+            "id": 353,
+            "type": "multiple_choice",
+            "category": "feature_maps",
+            "difficulty": "intermediate",
+            "question": "What do feature maps represent in convolutional neural networks?",
+            "options": [
+                "The input images to the network",
+                "The learned patterns detected by filters at different locations",
+                "The training loss over time",
+                "The validation accuracy scores"
+            ],
+            "correct_answer": 1,
+            "explanation": "Feature maps are the outputs of convolutional layers, showing where specific patterns (detected by filters) appear in the input image."
+        },
+        {
+            "id": 354,
+            "type": "multiple_choice",
+            "category": "transfer_learning",
+            "difficulty": "advanced",
+            "question": "What is the main advantage of transfer learning?",
+            "options": [
+                "Eliminates the need for any training",
+                "Leverages pre-trained models for new tasks with limited data",
+                "Makes models smaller in size",
+                "Increases model interpretability"
+            ],
+            "correct_answer": 1,
+            "explanation": "Transfer learning uses features learned from large datasets (like ImageNet) on new tasks with limited data, significantly reducing training time and data requirements."
+        },
+        {
+            "id": 355,
+            "type": "multiple_choice",
+            "category": "data_augmentation",
+            "difficulty": "intermediate",
+            "question": "How does data augmentation help prevent overfitting?",
+            "options": [
+                "By reducing the model size",
+                "By artificially increasing training data diversity",
+                "By removing noisy samples from the dataset",
+                "By slowing down the training process"
+            ],
+            "correct_answer": 1,
+            "explanation": "Data augmentation creates modified versions of training images (rotations, flips, zooms, etc.), effectively increasing dataset size and diversity to improve generalization."
+        },
+        {
+            "id": 356,
+            "type": "multiple_choice",
+            "category": "rnn_architecture",
+            "difficulty": "intermediate",
+            "question": "What makes RNNs suitable for sequential data processing?",
+            "options": [
+                "They have larger parameter counts than CNNs",
+                "They maintain internal state/memory of previous inputs",
+                "They process all sequence elements simultaneously",
+                "They require less training data"
+            ],
+            "correct_answer": 1,
+            "explanation": "RNNs have recurrent connections that allow them to maintain an internal state representing information from previous time steps, making them ideal for sequences where context matters."
+        },
+        {
+            "id": 357,
+            "type": "multiple_choice",
+            "category": "rnn_limitations",
+            "difficulty": "advanced",
+            "question": "What is the fundamental limitation of basic RNNs that LSTMs address?",
+            "options": [
+                "They are too slow for real-time applications",
+                "They cannot handle variable-length sequences",
+                "They struggle with long-term dependencies due to vanishing gradients",
+                "They require too much memory"
+            ],
+            "correct_answer": 2,
+            "explanation": "Basic RNNs suffer from vanishing gradient problems that make it difficult to learn long-range dependencies in sequences, which LSTMs solve through gating mechanisms."
+        },
+        {
+            "id": 358,
+            "type": "multiple_choice",
+            "category": "lstm_gates",
+            "difficulty": "advanced",
+            "question": "What are the three gates in an LSTM cell?",
+            "options": [
+                "Input, Output, and Memory gates",
+                "Forget, Remember, and Output gates",
+                "Input, Forget, and Output gates",
+                "Read, Write, and Update gates"
+            ],
+            "correct_answer": 2,
+            "explanation": "LSTMs contain three gates: Input gate (what new information to store), Forget gate (what information to discard), and Output gate (what information to output)."
+        },
+        {
+            "id": 359,
+            "type": "multiple_choice",
+            "category": "gru_architecture",
+            "difficulty": "advanced",
+            "question": "How does GRU (Gated Recurrent Unit) differ from LSTM?",
+            "options": [
+                "GRU has more parameters than LSTM",
+                "GRU combines forget and input gates into a single update gate",
+                "GRU doesn't use any gating mechanisms",
+                "GRU cannot handle long sequences"
+            ],
+            "correct_answer": 1,
+            "explanation": "GRU simplifies the LSTM architecture by combining the input and forget gates into a single update gate and merging the cell state with hidden state, resulting in fewer parameters."
+        },
+        {
+            "id": 360,
+            "type": "multiple_choice",
+            "category": "bidirectional_rnn",
+            "difficulty": "advanced",
+            "question": "What is the advantage of bidirectional RNNs?",
+            "options": [
+                "They train twice as fast as regular RNNs",
+                "They process sequences in both forward and backward directions",
+                "They require half the parameters of regular RNNs",
+                "They eliminate the need for activation functions"
+            ],
+            "correct_answer": 1,
+            "explanation": "Bidirectional RNNs process sequences in both forward and backward directions, allowing them to capture context from both past and future elements simultaneously."
+        },
+        {
+            "id": 361,
+            "type": "multiple_choice",
+            "category": "attention_mechanism",
+            "difficulty": "advanced",
+            "question": "What problem does the attention mechanism solve in sequence models?",
+            "options": [
+                "Slow training speed",
+                "Difficulty in focusing on relevant parts of long sequences",
+                "High memory consumption",
+                "Lack of non-linearity"
+            ],
+            "correct_answer": 1,
+            "explanation": "Attention mechanisms allow models to dynamically focus on different parts of the input sequence when producing each output, improving performance on long sequences and complex tasks."
+        },
+        {
+            "id": 362,
+            "type": "multiple_choice",
+            "category": "transformer_architecture",
+            "difficulty": "advanced",
+            "question": "What is the key innovation of transformer models over RNNs?",
+            "options": [
+                "They use convolutional layers instead of recurrent ones",
+                "They rely entirely on self-attention mechanisms without recurrence",
+                "They eliminate the need for backpropagation",
+                "They use smaller embedding dimensions"
+            ],
+            "correct_answer": 1,
+            "explanation": "Transformers replace recurrence with self-attention mechanisms, allowing parallel processing of entire sequences and better handling of long-range dependencies."
+        },
+        {
+            "id": 363,
+            "type": "multiple_choice",
+            "category": "embedding_layers",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of embedding layers in neural networks for NLP?",
+            "options": [
+                "To convert text to images",
+                "To represent categorical data as dense vectors",
+                "To reduce model size",
+                "To increase training speed"
+            ],
+            "correct_answer": 1,
+            "explanation": "Embedding layers learn dense vector representations of categorical data (like words) where similar items have similar vector representations, capturing semantic relationships."
+        },
+        {
+            "id": 364,
+            "type": "multiple_choice",
+            "category": "word_embeddings",
+            "difficulty": "intermediate",
+            "question": "What do word embeddings like Word2Vec and GloVe capture?",
+            "options": [
+                "Only word frequency information",
+                "Syntactic and semantic relationships between words",
+                "The visual appearance of words",
+                "The pronunciation of words"
+            ],
+            "correct_answer": 1,
+            "explanation": "Word embeddings capture syntactic and semantic relationships, so words with similar meanings or usage patterns have similar vector representations in the embedding space."
+        },
+        {
+            "id": 365,
+            "type": "multiple_choice",
+            "category": "autoencoders",
+            "difficulty": "advanced",
+            "question": "What is the typical structure of an autoencoder?",
+            "options": [
+                "Two separate networks trained independently",
+                "An encoder that compresses input and a decoder that reconstructs it",
+                "A single layer with recurrent connections",
+                "Multiple convolutional layers without pooling"
+            ],
+            "correct_answer": 1,
+            "explanation": "Autoencoders consist of an encoder network that compresses input into a latent representation and a decoder network that reconstructs the input from this representation."
+        },
+        {
+            "id": 366,
+            "type": "multiple_choice",
+            "category": "autoencoder_applications",
+            "difficulty": "intermediate",
+            "question": "Which task is NOT typically suited for autoencoders?",
+            "options": [
+                "Dimensionality reduction",
+                "Anomaly detection",
+                "Image denoising",
+                "Multi-class classification with 1000 classes"
+            ],
+            "correct_answer": 3,
+            "explanation": "While autoencoders excel at unsupervised tasks like dimensionality reduction, denoising, and anomaly detection, they are not directly designed for supervised multi-class classification with many classes."
+        },
+        {
+            "id": 367,
+            "type": "multiple_choice",
+            "category": "variational_autoencoders",
+            "difficulty": "advanced",
+            "question": "How do Variational Autoencoders (VAEs) differ from standard autoencoders?",
+            "options": [
+                "VAEs learn deterministic encodings",
+                "VAEs learn probabilistic latent representations",
+                "VAEs have more encoder layers",
+                "VAEs don't use decoder networks"
+            ],
+            "correct_answer": 1,
+            "explanation": "VAEs learn probabilistic latent representations by modeling the latent space as a probability distribution, enabling generative capabilities unlike deterministic standard autoencoders."
+        },
+        {
+            "id": 368,
+            "type": "multiple_choice",
+            "category": "gan_architecture",
+            "difficulty": "advanced",
+            "question": "What are the two main components of a Generative Adversarial Network (GAN)?",
+            "options": [
+                "Encoder and Decoder",
+                "Generator and Discriminator",
+                "Teacher and Student",
+                "Producer and Consumer"
+            ],
+            "correct_answer": 1,
+            "explanation": "GANs consist of a Generator that creates synthetic data and a Discriminator that distinguishes between real and generated data, trained adversarially against each other."
+        },
+        {
+            "id": 369,
+            "type": "multiple_choice",
+            "category": "gan_training",
+            "difficulty": "advanced",
+            "question": "What is the training objective in GANs?",
+            "options": [
+                "Both networks cooperate to minimize the same loss",
+                "Generator tries to fool Discriminator, Discriminator tries to detect fakes",
+                "Only the Generator is trained, Discriminator is fixed",
+                "Networks take turns being frozen during training"
+            ],
+            "correct_answer": 1,
+            "explanation": "In GAN training, the Generator aims to produce realistic data to fool the Discriminator, while the Discriminator learns to better distinguish real from fake data - creating an adversarial training dynamic."
+        },
+        {
+            "id": 370,
+            "type": "multiple_choice",
+            "category": "reinforcement_learning",
+            "difficulty": "advanced",
+            "question": "How does deep reinforcement learning differ from supervised learning?",
+            "options": [
+                "It uses deeper neural networks",
+                "It learns from rewards rather than labeled examples",
+                "It requires more training data",
+                "It only works for image data"
+            ],
+            "correct_answer": 1,
+            "explanation": "Deep reinforcement learning uses neural networks to learn policies that maximize cumulative rewards through interaction with an environment, unlike supervised learning which uses labeled examples."
+        },
+        {
+            "id": 371,
+            "type": "multiple_choice",
+            "category": "ethical_ai",
+            "difficulty": "intermediate",
+            "question": "What is a major ethical concern when using neural networks in criminal justice applications?",
+            "options": [
+                "They are too accurate",
+                "They can perpetuate biases from historical data",
+                "They require too much computational power",
+                "They are too transparent in their decision-making"
+            ],
+            "correct_answer": 1,
+            "explanation": "Neural networks trained on historical criminal justice data may learn and amplify existing biases, leading to unfair treatment of certain demographic groups."
+        },
+        {
+            "id": 372,
+            "type": "multiple_choice",
+            "category": "model_interpretability",
+            "difficulty": "intermediate",
+            "question": "What is the 'black box' problem in neural networks?",
+            "options": [
+                "The difficulty in understanding how models arrive at decisions",
+                "The use of dark color schemes in visualization tools",
+                "The tendency to overfit on training data",
+                "The requirement for specialized hardware"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'black box' problem refers to the difficulty in interpreting and understanding the reasoning behind neural network predictions, which is crucial for applications requiring transparency."
+        },
+        {
+            "id": 373,
+            "type": "multiple_choice",
+            "category": "hyperparameter_tuning",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of hyperparameter tuning?",
+            "options": [
+                "To adjust the model architecture during training",
+                "To find optimal settings that control the learning process",
+                "To change the input data distribution",
+                "To reduce the model size"
+            ],
+            "correct_answer": 1,
+            "explanation": "Hyperparameter tuning involves finding the best settings for parameters that control the learning process (like learning rate, batch size) rather than the weights learned during training."
+        },
+        {
+            "id": 374,
+            "type": "multiple_choice",
+            "category": "cross_validation",
+            "difficulty": "intermediate",
+            "question": "Why is k-fold cross-validation used?",
+            "options": [
+                "To reduce training time",
+                "To get more reliable performance estimates using all data",
+                "To increase model complexity",
+                "To eliminate the need for a test set"
+            ],
+            "correct_answer": 1,
+            "explanation": "K-fold cross-validation uses all data for both training and validation in different folds, providing more reliable performance estimates and better use of limited data."
+        },
+        {
+            "id": 375,
+            "type": "multiple_choice",
+            "category": "learning_rate_scheduling",
+            "difficulty": "advanced",
+            "question": "What is the benefit of learning rate scheduling?",
+            "options": [
+                "It eliminates the need for gradient descent",
+                "It allows larger steps initially and finer adjustments later",
+                "It reduces the number of model parameters",
+                "It automatically selects the best optimizer"
+            ],
+            "correct_answer": 1,
+            "explanation": "Learning rate scheduling starts with higher learning rates for faster progress and gradually reduces them for finer convergence near the optimum."
+        },
+        {
+            "id": 376,
+            "type": "code_completion",
+            "category": "tensorflow_basics",
+            "difficulty": "intermediate",
+            "question": "Complete the code to create a learning rate scheduler that reduces LR when validation loss plateaus:",
+            "code_snippet": "reduce_lr = ______(monitor='val_loss', factor=0.5, patience=3)",
+            "options": [
+                "ReduceLROnPlateau",
+                "LearningRateScheduler",
+                "LRCallback",
+                "AdjustLR"
+            ],
+            "correct_answer": 0,
+            "explanation": "ReduceLROnPlateau is a Keras callback that reduces the learning rate when a monitored metric (like val_loss) stops improving."
+        },
+        {
+            "id": 377,
+            "type": "multiple_choice",
+            "category": "model_ensembling",
+            "difficulty": "advanced",
+            "question": "What is the main advantage of model ensembling?",
+            "options": [
+                "Reduces training time",
+                "Combines predictions from multiple models for better performance",
+                "Makes models more interpretable",
+                "Eliminates the need for validation data"
+            ],
+            "correct_answer": 1,
+            "explanation": "Ensembling combines predictions from multiple models, often reducing variance and improving overall performance through diversity and collective decision-making."
+        },
+        {
+            "id": 378,
+            "type": "multiple_choice",
+            "category": "transfer_learning_techniques",
+            "difficulty": "intermediate",
+            "question": "What is feature extraction in transfer learning?",
+            "options": [
+                "Using a pre-trained model as a fixed feature extractor",
+                "Extracting features manually from images",
+                "Training only the last layer of a model",
+                "Removing features from the dataset"
+            ],
+            "correct_answer": 0,
+            "explanation": "Feature extraction uses a pre-trained model with frozen weights as a fixed feature extractor, then trains a new classifier on top of these features."
+        },
+        {
+            "id": 379,
+            "type": "multiple_choice",
+            "category": "transfer_learning_techniques",
+            "difficulty": "intermediate",
+            "question": "What is fine-tuning in transfer learning?",
+            "options": [
+                "Using only the pre-trained model's architecture",
+                "Unfreezing and retraining some layers of a pre-trained model",
+                "Making the model smaller",
+                "Training with a very small learning rate"
+            ],
+            "correct_answer": 1,
+            "explanation": "Fine-tuning involves unfreezing some layers of a pre-trained model and continuing training on the new dataset to adapt the learned features."
+        },
+        {
+            "id": 380,
+            "type": "multiple_choice",
+            "category": "computer_vision",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of data augmentation in computer vision?",
+            "options": [
+                "To reduce image quality for faster processing",
+                "To artificially increase dataset size and diversity",
+                "To convert color images to grayscale",
+                "To eliminate the need for validation sets"
+            ],
+            "correct_answer": 1,
+            "explanation": "Data augmentation creates modified versions of training images through transformations, effectively increasing dataset size and improving model generalization."
+        },
+        {
+            "id": 381,
+            "type": "multiple_choice",
+            "category": "computer_vision",
+            "difficulty": "intermediate",
+            "question": "Which transformation is commonly used in image data augmentation?",
+            "options": [
+                "Random rotations and flips",
+                "Changing image file formats",
+                "Reducing image resolution",
+                "Converting to black and white only"
+            ],
+            "correct_answer": 0,
+            "explanation": "Random rotations, flips, zooms, and brightness adjustments are common augmentations that help models become invariant to these transformations."
+        },
+        {
+            "id": 382,
+            "type": "multiple_choice",
+            "category": "nlp_preprocessing",
+            "difficulty": "intermediate",
+            "question": "What is tokenization in natural language processing?",
+            "options": [
+                "Converting words to numbers",
+                "Splitting text into individual words or subwords",
+                "Removing stop words from text",
+                "Converting text to lowercase"
+            ],
+            "correct_answer": 1,
+            "explanation": "Tokenization breaks text into individual tokens (words, subwords, or characters) that can be processed by neural networks."
+        },
+        {
+            "id": 383,
+            "type": "multiple_choice",
+            "category": "nlp_preprocessing",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of padding sequences in NLP?",
+            "options": [
+                "To make all sequences the same length for batch processing",
+                "To add random noise to text data",
+                "To encrypt sensitive information",
+                "To reduce vocabulary size"
+            ],
+            "correct_answer": 0,
+            "explanation": "Padding ensures all sequences in a batch have the same length by adding special tokens, which is necessary for efficient batch processing in neural networks."
+        },
+        {
+            "id": 384,
+            "type": "multiple_choice",
+            "category": "sequence_models",
+            "difficulty": "advanced",
+            "question": "What is teacher forcing in sequence-to-sequence models?",
+            "options": [
+                "Using the true previous output as input during training",
+                "Forcing the model to learn faster",
+                "Using a teacher model to guide training",
+                "Making the model output longer sequences"
+            ],
+            "correct_answer": 0,
+            "explanation": "Teacher forcing uses the ground truth from previous time steps as input during training, which helps stabilize and accelerate training of RNN-based models."
+        },
+        {
+            "id": 385,
+            "type": "multiple_choice",
+            "category": "model_deployment",
+            "difficulty": "intermediate",
+            "question": "What is model quantization?",
+            "options": [
+                "Reducing precision of model weights to decrease size and speed up inference",
+                "Increasing model complexity",
+                "Converting models to quantum computing format",
+                "Counting the number of parameters in a model"
+            ],
+            "correct_answer": 0,
+            "explanation": "Quantization reduces the precision of weights and activations (e.g., from 32-bit to 8-bit), significantly reducing model size and speeding up inference with minimal accuracy loss."
+        },
+        {
+            "id": 386,
+            "type": "multiple_choice",
+            "category": "neural_network_math",
+            "difficulty": "intermediate",
+            "question": "What mathematical operation is at the core of a neuron's computation?",
+            "options": [
+                "Matrix multiplication and addition",
+                "Trigonometric functions",
+                "Logarithmic transformations",
+                "Differential equations"
+            ],
+            "correct_answer": 0,
+            "explanation": "Each neuron computes a weighted sum of inputs (matrix multiplication) plus a bias (addition), then applies an activation function to produce the output."
+        },
+        {
+            "id": 387,
+            "type": "multiple_choice",
+            "category": "neural_network_math",
+            "difficulty": "advanced",
+            "question": "Why are derivatives important in neural network training?",
+            "options": [
+                "They determine the model architecture",
+                "They indicate the direction and magnitude for weight updates",
+                "They calculate the model's accuracy",
+                "They normalize the input data"
+            ],
+            "correct_answer": 1,
+            "explanation": "Derivatives (gradients) indicate how the loss changes with respect to each weight, showing the direction and magnitude needed for weight updates during backpropagation."
+        },
+        {
+            "id": 388,
+            "type": "multiple_choice",
+            "category": "optimization_math",
+            "difficulty": "advanced",
+            "question": "What is the purpose of the chain rule in backpropagation?",
+            "options": [
+                "To initialize network weights",
+                "To compute gradients through composite functions",
+                "To determine the learning rate",
+                "To calculate the loss function"
+            ],
+            "correct_answer": 1,
+            "explanation": "The chain rule allows computation of gradients through multiple layers by breaking down the derivative of composite functions into simpler multiplicative components."
+        },
+        {
+            "id": 389,
+            "type": "multiple_choice",
+            "category": "probability_ml",
+            "difficulty": "intermediate",
+            "question": "How are probabilities used in classification neural networks?",
+            "options": [
+                "They determine the number of layers",
+                "They represent confidence scores for each class",
+                "They calculate training time",
+                "They set the learning rate"
+            ],
+            "correct_answer": 1,
+            "explanation": "Output probabilities represent the model's confidence that an input belongs to each class, with the highest probability indicating the predicted class."
+        },
+        {
+            "id": 390,
+            "type": "multiple_choice",
+            "category": "loss_functions_math",
+            "difficulty": "advanced",
+            "question": "What does cross-entropy loss measure?",
+            "options": [
+                "The Euclidean distance between predictions and targets",
+                "The difference between two probability distributions",
+                "The absolute error of predictions",
+                "The variance of the predictions"
+            ],
+            "correct_answer": 1,
+            "explanation": "Cross-entropy measures the difference between two probability distributions - the true distribution (labels) and the predicted distribution."
+        },
+        {
+            "id": 391,
+            "type": "multiple_choice",
+            "category": "convolution_math",
+            "difficulty": "intermediate",
+            "question": "What mathematical operation does a convolutional layer perform?",
+            "options": [
+                "Matrix multiplication",
+                "Cross-correlation or convolution",
+                "Element-wise addition",
+                "Fourier transform"
+            ],
+            "correct_answer": 1,
+            "explanation": "Convolutional layers perform cross-correlation (sliding dot product) between input patches and learned filters, which is mathematically similar to convolution."
+        },
+        {
+            "id": 392,
+            "type": "calculation",
+            "category": "convolution_math",
+            "difficulty": "advanced",
+            "question": "Given input size 28x28, filter size 3x3, padding 0, stride 1, what is the output size?",
+            "correct_answer": "26x26",
+            "explanation": "Output size = floor((input_size - filter_size + 2*padding)/stride) + 1 = floor((28-3+0)/1) + 1 = 25 + 1 = 26"
+        },
+        {
+            "id": 393,
+            "type": "multiple_choice",
+            "category": "pooling_math",
+            "difficulty": "intermediate",
+            "question": "What operation does max pooling perform?",
+            "options": [
+                "Takes the average of values in a window",
+                "Takes the maximum value in a window",
+                "Multiplies values in a window",
+                "Sums values in a window"
+            ],
+            "correct_answer": 1,
+            "explanation": "Max pooling slides a window over the input and outputs the maximum value within each window, providing translation invariance and reducing spatial dimensions."
+        },
+        {
+            "id": 394,
+            "type": "multiple_choice",
+            "category": "activation_math",
+            "difficulty": "intermediate",
+            "question": "What is the derivative of the ReLU activation function?",
+            "options": [
+                "1 for positive inputs, 0 for negative inputs",
+                "Always 1",
+                "S-shaped curve",
+                "Linear function"
+            ],
+            "correct_answer": 0,
+            "explanation": "ReLU derivative is 1 for inputs > 0 and 0 for inputs ≤ 0, which is computationally efficient but can cause dying ReLU problems."
+        },
+        {
+            "id": 395,
+            "type": "multiple_choice",
+            "category": "softmax_math",
+            "difficulty": "advanced",
+            "question": "What mathematical property makes softmax suitable for classification?",
+            "options": [
+                "It outputs values that sum to 1",
+                "It always outputs the same value",
+                "It increases the output range",
+                "It reduces computational complexity"
+            ],
+            "correct_answer": 0,
+            "explanation": "Softmax outputs a probability distribution where all values are between 0-1 and sum to 1, making them interpretable as class probabilities."
+        },
+        {
+            "id": 396,
+            "type": "multiple_choice",
+            "category": "gradient_descent_math",
+            "difficulty": "intermediate",
+            "question": "What is the weight update formula in gradient descent?",
+            "options": [
+                "w_new = w_old - learning_rate * gradient",
+                "w_new = w_old + learning_rate * gradient",
+                "w_new = gradient * learning_rate",
+                "w_new = w_old * gradient"
+            ],
+            "correct_answer": 0,
+            "explanation": "Weights are updated by subtracting the learning_rate multiplied by the gradient, moving in the direction that decreases the loss function."
+        },
+        {
+            "id": 397,
+            "type": "multiple_choice",
+            "category": "momentum_math",
+            "difficulty": "advanced",
+            "question": "How does momentum improve gradient descent?",
+            "options": [
+                "It eliminates the need for learning rates",
+                "It accumulates past gradients to smooth updates",
+                "It reduces the number of parameters",
+                "It increases the learning rate over time"
+            ],
+            "correct_answer": 1,
+            "explanation": "Momentum accumulates a moving average of past gradients, helping to smooth out oscillations and accelerate convergence in relevant directions."
+        },
+        {
+            "id": 398,
+            "type": "multiple_choice",
+            "category": "batch_norm_math",
+            "difficulty": "advanced",
+            "question": "What does batch normalization compute for each feature?",
+            "options": [
+                "Mean and standard deviation across the batch",
+                "Maximum and minimum values",
+                "Median and mode",
+                "Variance and covariance"
+            ],
+            "correct_answer": 0,
+            "explanation": "Batch normalization computes the mean and standard deviation of each feature across the current mini-batch, then normalizes and scales the features."
+        },
+        {
+            "id": 399,
+            "type": "multiple_choice",
+            "category": "attention_math",
+            "difficulty": "advanced",
+            "question": "What is the attention mechanism mathematically?",
+            "options": [
+                "A weighted sum of values based on relevance scores",
+                "A matrix multiplication operation",
+                "A convolution operation",
+                "A pooling operation"
+            ],
+            "correct_answer": 0,
+            "explanation": "Attention computes a weighted sum of values, where weights (attention scores) represent the relevance of each value to the current context."
+        },
+        {
+            "id": 400,
+            "type": "multiple_choice",
+            "category": "evaluation_metrics",
+            "difficulty": "intermediate",
+            "question": "What does precision measure in classification?",
+            "options": [
+                "The proportion of true positives among all positive predictions",
+                "The proportion of true positives among all actual positives",
+                "The overall correctness of predictions",
+                "The balance between different classes"
+            ],
+            "correct_answer": 0,
+            "explanation": "Precision = TP / (TP + FP) - it measures how many of the predicted positive cases are actually positive, important when false positives are costly."
+        },
+        {
+            "id": 401,
+            "type": "multiple_choice",
+            "category": "evaluation_metrics",
+            "difficulty": "intermediate",
+            "question": "What does recall measure in classification?",
+            "options": [
+                "The proportion of true positives among all positive predictions",
+                "The proportion of true positives among all actual positives",
+                "The overall accuracy of the model",
+                "The balance between precision and specificity"
+            ],
+            "correct_answer": 1,
+            "explanation": "Recall = TP / (TP + FN) - it measures how many of the actual positive cases were correctly identified, important when false negatives are costly."
+        },
+        {
+            "id": 402,
+            "type": "multiple_choice",
+            "category": "evaluation_metrics",
+            "difficulty": "intermediate",
+            "question": "What is the F1-score?",
+            "options": [
+                "The average of precision and recall",
+                "The harmonic mean of precision and recall",
+                "The product of precision and recall",
+                "The difference between precision and recall"
+            ],
+            "correct_answer": 1,
+            "explanation": "F1-score is the harmonic mean of precision and recall, providing a single metric that balances both concerns: F1 = 2 * (precision * recall) / (precision + recall)."
+        },
+        {
+            "id": 403,
+            "type": "multiple_choice",
+            "category": "confusion_matrix",
+            "difficulty": "intermediate",
+            "question": "What does a confusion matrix show?",
+            "options": [
+                "The training loss over time",
+                "The distribution of predictions vs actual labels",
+                "The model architecture",
+                "The gradient values during backpropagation"
+            ],
+            "correct_answer": 1,
+            "explanation": "A confusion matrix displays the counts of true positives, false positives, true negatives, and false negatives, providing detailed insight into model performance across classes."
+        },
+        {
+            "id": 404,
+            "type": "multiple_choice",
+            "category": "roc_auc",
+            "difficulty": "advanced",
+            "question": "What does AUC-ROC measure?",
+            "options": [
+                "The model's overall accuracy",
+                "The model's ability to distinguish between classes across all thresholds",
+                "The training speed of the model",
+                "The number of parameters in the model"
+            ],
+            "correct_answer": 1,
+            "explanation": "AUC-ROC (Area Under the Receiver Operating Characteristic curve) measures the model's ability to distinguish between positive and negative classes across all possible classification thresholds."
+        },
+        {
+            "id": 405,
+            "type": "multiple_choice",
+            "category": "feature_importance",
+            "difficulty": "intermediate",
+            "question": "What is feature importance in neural networks?",
+            "options": [
+                "The number of features in the dataset",
+                "How much each feature contributes to predictions",
+                "The size of feature vectors",
+                "The correlation between features"
+            ],
+            "correct_answer": 1,
+            "explanation": "Feature importance measures how much each input feature contributes to the model's predictions, though this can be challenging to interpret in deep neural networks due to their complex interactions."
+        },
+        {
+            "id": 406,
+            "type": "multiple_choice",
+            "category": "model_debugging",
+            "difficulty": "advanced",
+            "question": "What does it indicate if training loss decreases but validation loss increases?",
+            "options": [
+                "The model is underfitting",
+                "The model is overfitting",
+                "The learning rate is too low",
+                "The batch size is too small"
+            ],
+            "correct_answer": 1,
+            "explanation": "When training loss decreases but validation loss increases, it typically indicates overfitting - the model is memorizing training data rather than learning general patterns."
+        },
+        {
+            "id": 407,
+            "type": "multiple_choice",
+            "category": "model_debugging",
+            "difficulty": "intermediate",
+            "question": "What might cause exploding gradients?",
+            "options": [
+                "Learning rate too small",
+                "Weights initialized with very small values",
+                "Deep networks with large weight updates",
+                "Using ReLU activation functions"
+            ],
+            "correct_answer": 2,
+            "explanation": "Exploding gradients occur in deep networks when large weight updates cause gradients to grow exponentially through backpropagation, often due to high learning rates or poor weight initialization."
+        },
+        {
+            "id": 408,
+            "type": "multiple_choice",
+            "category": "hardware_acceleration",
+            "difficulty": "intermediate",
+            "question": "Why are GPUs preferred for neural network training?",
+            "options": [
+                "They have higher clock speeds than CPUs",
+                "They are better at parallel matrix operations",
+                "They consume less power",
+                "They have more cache memory"
+            ],
+            "correct_answer": 1,
+            "explanation": "GPUs excel at parallel processing of matrix operations, which are fundamental to neural network computations, allowing much faster training than CPUs."
+        },
+        {
+            "id": 409,
+            "type": "multiple_choice",
+            "category": "distributed_training",
+            "difficulty": "advanced",
+            "question": "What is data parallelism in distributed training?",
+            "options": [
+                "Splitting the model across multiple devices",
+                "Processing different data batches on different devices",
+                "Using different models for different data types",
+                "Storing data in distributed file systems"
+            ],
+            "correct_answer": 1,
+            "explanation": "Data parallelism involves replicating the model across multiple devices and processing different batches of data on each device, then synchronizing gradients."
+        },
+        {
+            "id": 410,
+            "type": "multiple_choice",
+            "category": "model_compression",
+            "difficulty": "advanced",
+            "question": "What is knowledge distillation?",
+            "options": [
+                "Compressing model weights",
+                "Training a small model to mimic a large model's behavior",
+                "Removing unnecessary layers from a model",
+                "Converting models to lower precision"
+            ],
+            "correct_answer": 1,
+            "explanation": "Knowledge distillation trains a smaller student model to reproduce the outputs of a larger teacher model, preserving performance while reducing model size and computational requirements."
+        },
+        {
+            "id": 411,
+            "type": "multiple_choice",
+            "category": "pruning",
+            "difficulty": "advanced",
+            "question": "What is neural network pruning?",
+            "options": [
+                "Removing training data samples",
+                "Eliminating less important weights or neurons",
+                "Reducing the number of epochs",
+                "Decreasing the learning rate gradually"
+            ],
+            "correct_answer": 1,
+            "explanation": "Pruning removes weights or neurons that contribute little to the model's output, creating sparser networks that are smaller and faster with minimal accuracy loss."
+        },
+        {
+            "id": 412,
+            "type": "multiple_choice",
+            "category": "production_monitoring",
+            "difficulty": "intermediate",
+            "question": "What is model drift in production systems?",
+            "options": [
+                "The model becoming slower over time",
+                "The model's performance degrading as data distributions change",
+                "The model's weights changing during inference",
+                "The model consuming more memory"
+            ],
+            "correct_answer": 1,
+            "explanation": "Model drift occurs when the statistical properties of real-world data change over time, causing the model's performance to degrade as it encounters data different from what it was trained on."
+        },
+        {
+            "id": 413,
+            "type": "multiple_choice",
+            "category": "mlops",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of model versioning?",
+            "options": [
+                "To track different iterations of models and their performance",
+                "To make models compatible with different frameworks",
+                "To reduce model file sizes",
+                "To speed up model training"
+            ],
+            "correct_answer": 0,
+            "explanation": "Model versioning tracks different model iterations, their hyperparameters, training data, and performance metrics, enabling reproducibility and easy rollback if needed."
+        },
+        {
+            "id": 414,
+            "type": "multiple_choice",
+            "category": "experiment_tracking",
+            "difficulty": "intermediate",
+            "question": "What should be tracked in machine learning experiments?",
+            "options": [
+                "Only the final model accuracy",
+                "Hyperparameters, metrics, code versions, and data versions",
+                "Only the training time and model size",
+                "Only the loss values"
+            ],
+            "correct_answer": 1,
+            "explanation": "Comprehensive experiment tracking includes hyperparameters, performance metrics, code versions, data versions, and environmental details to ensure reproducibility and facilitate comparison."
+        },
+        {
+            "id": 415,
+            "type": "multiple_choice",
+            "category": "ai_ethics",
+            "difficulty": "intermediate",
+            "question": "What is fairness in AI systems?",
+            "options": [
+                "Equal performance across all demographic groups",
+                "The fastest possible inference time",
+                "The smallest model size",
+                "The highest possible accuracy"
+            ],
+            "correct_answer": 0,
+            "explanation": "Fairness in AI involves ensuring models perform equitably across different demographic groups and don't perpetuate or amplify existing biases."
+        },
+        {
+            "id": 416,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to import the Sequential model from Keras:",
+            "code_snippet": "from keras.models import ______",
+            "options": [
+                "Sequential",
+                "Model",
+                "Network",
+                "SequentialModel"
+            ],
+            "correct_answer": 0,
+            "explanation": "Sequential is the class used for creating linear stacks of layers in Keras"
+        },
+        {
+            "id": 417,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to add an Input layer to a Sequential model:",
+            "code_snippet": "model.add(Input(shape=(______,)))",
+            "options": [
+                "X_train.shape[1]",
+                "X_train.shape[0]",
+                "X_train.columns",
+                "X_train.size"
+            ],
+            "correct_answer": 0,
+            "explanation": "X_train.shape[1] gives the number of features which defines the input dimension"
+        },
+        {
+            "id": 418,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to add a Dense layer with 64 neurons and ReLU activation:",
+            "code_snippet": "model.add(Dense(64, activation='______'))",
+            "options": [
+                "relu",
+                "sigmoid",
+                "tanh",
+                "linear"
+            ],
+            "correct_answer": 0,
+            "explanation": "ReLU (rectified linear unit) is commonly used in hidden layers for its effectiveness"
+        },
+        {
+            "id": 419,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to compile a model with Mean Squared Error loss:",
+            "code_snippet": "model.compile(optimizer='adam', loss=______())",
+            "options": [
+                "MeanSquaredError",
+                "MSE",
+                "mse",
+                "MeanSquare"
+            ],
+            "correct_answer": 0,
+            "explanation": "MeanSquaredError is the correct class name for MSE loss in Keras"
+        },
+        {
+            "id": 420,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to fit a model for 10 epochs:",
+            "code_snippet": "model.fit(X_train, y_train, epochs=______)",
+            "options": [
+                "10",
+                "5",
+                "20",
+                "100"
+            ],
+            "correct_answer": 0,
+            "explanation": "The epochs parameter specifies how many times the model will iterate through the entire dataset"
+        },
+        {
+            "id": 421,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "beginner",
+            "question": "Which component is used to introduce non-linearity in neural networks?",
+            "options": [
+                "Weights",
+                "Bias",
+                "Activation Function",
+                "Epochs"
+            ],
+            "correct_answer": 2,
+            "explanation": "Activation functions like ReLU, sigmoid, and tanh introduce non-linearity, allowing neural networks to learn complex patterns"
+        },
+        {
+            "id": 422,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "beginner",
+            "question": "What is the purpose of the final Dense layer with 1 neuron in regression problems?",
+            "options": [
+                "To output class probabilities",
+                "To output a single continuous value",
+                "To add non-linearity",
+                "To reduce overfitting"
+            ],
+            "correct_answer": 1,
+            "explanation": "In regression tasks, the output layer typically has 1 neuron that predicts a continuous value without activation function"
+        },
+        {
+            "id": 423,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "Which activation function is most appropriate for the output layer in binary classification?",
+            "options": [
+                "Softmax",
+                "Sigmoid",
+                "ReLU",
+                "Tanh"
+            ],
+            "correct_answer": 1,
+            "explanation": "Sigmoid outputs values between 0-1, making it ideal for binary classification probability outputs"
+        },
+        {
+            "id": 424,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What does batch_size=16 mean in model training?",
+            "options": [
+                "The model trains on 16 samples before updating weights",
+                "The model trains for 16 epochs",
+                "The model has 16 hidden layers",
+                "The learning rate is 16"
+            ],
+            "correct_answer": 0,
+            "explanation": "Batch size determines how many samples are processed before the model's internal parameters are updated"
+        },
+        {
+            "id": 425,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to add validation data during training:",
+            "code_snippet": "history = model.fit(X_train, y_train, validation_data=(______))",
+            "options": [
+                "X_test, y_test",
+                "X_val, y_val",
+                "X_train, y_train",
+                "X_test, y_train"
+            ],
+            "correct_answer": 0,
+            "explanation": "validation_data should contain the test features and labels to monitor performance on unseen data"
+        },
+        {
+            "id": 426,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to compile a model with additional metrics:",
+            "code_snippet": "model.compile(optimizer='adam', loss=MeanSquaredError(), metrics=['______'])",
+            "options": [
+                "mae",
+                "mse",
+                "accuracy",
+                "precision"
+            ],
+            "correct_answer": 0,
+            "explanation": "MAE (Mean Absolute Error) is a common additional metric for regression problems"
+        },
+        {
+            "id": 427,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the main advantage of using hidden layers in neural networks?",
+            "options": [
+                "They reduce training time",
+                "They allow the network to learn more complex patterns",
+                "They prevent overfitting",
+                "They increase interpretability"
+            ],
+            "correct_answer": 1,
+            "explanation": "Hidden layers with activation functions enable neural networks to learn non-linear relationships and complex patterns in data"
+        },
+        {
+            "id": 428,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "Which optimizer is commonly used as a default in Keras?",
+            "options": [
+                "SGD",
+                "Adam",
+                "RMSprop",
+                "Adagrad"
+            ],
+            "correct_answer": 1,
+            "explanation": "Adam optimizer is widely used as a default because it combines the advantages of RMSprop and momentum"
+        },
+        {
+            "id": 429,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "What happens when a model's loss function flattens out early during training?",
+            "options": [
+                "The model has converged to optimal performance",
+                "The model may be stuck in a local minimum",
+                "The model is overfitting",
+                "The model needs more data"
+            ],
+            "correct_answer": 1,
+            "explanation": "A flattening loss curve suggests the model may be stuck and not continuing to learn effectively"
+        },
+        {
+            "id": 430,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "Why are CNNs preferred over MLPs for image classification?",
+            "options": [
+                "CNNs are faster to train",
+                "CNNs preserve spatial relationships in images",
+                "CNNs have fewer parameters",
+                "CNNs don't require preprocessing"
+            ],
+            "correct_answer": 1,
+            "explanation": "CNNs use convolutional layers that preserve spatial relationships and are better at detecting local patterns like edges and textures in images"
+        },
+        {
+            "id": 431,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to load the diabetes dataset from scikit-learn:",
+            "code_snippet": "diabetes = ______()",
+            "options": [
+                "load_diabetes",
+                "load_dataset",
+                "datasets.load_diabetes",
+                "get_diabetes"
+            ],
+            "correct_answer": 0,
+            "explanation": "load_diabetes() is the function to load the diabetes dataset from sklearn.datasets"
+        },
+        {
+            "id": 432,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to split data into training and test sets:",
+            "code_snippet": "X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, ______=1)",
+            "options": [
+                "random_state",
+                "shuffle",
+                "seed",
+                "random"
+            ],
+            "correct_answer": 0,
+            "explanation": "random_state ensures reproducible splits by controlling the randomness of the shuffle"
+        },
+        {
+            "id": 433,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "beginner",
+            "question": "What does the Sequential model in Keras represent?",
+            "options": [
+                "A model with parallel layers",
+                "A linear stack of layers",
+                "A recurrent neural network",
+                "A convolutional network"
+            ],
+            "correct_answer": 1,
+            "explanation": "The Sequential model is a linear stack of layers where each layer has exactly one input and one output tensor"
+        },
+        {
+            "id": 434,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "Which activation function outputs values between -1 and 1?",
+            "options": [
+                "ReLU",
+                "Sigmoid",
+                "Tanh",
+                "Softmax"
+            ],
+            "correct_answer": 2,
+            "explanation": "Tanh (hyperbolic tangent) activation function outputs values in the range [-1, 1]"
+        },
+        {
+            "id": 435,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to create a model with tanh activation in hidden layers:",
+            "code_snippet": "model.add(Dense(10, activation='______'))",
+            "options": [
+                "tanh",
+                "relu",
+                "sigmoid",
+                "linear"
+            ],
+            "correct_answer": 0,
+            "explanation": "tanh activation can be used in hidden layers and outputs values between -1 and 1"
+        },
+        {
+            "id": 436,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of the Adam optimizer?",
+            "options": [
+                "To initialize weights randomly",
+                "To adjust learning rates for each parameter",
+                "To add regularization",
+                "To select the best activation function"
+            ],
+            "correct_answer": 1,
+            "explanation": "Adam optimizer adapts the learning rate for each parameter individually, combining advantages of AdaGrad and RMSProp"
+        },
+        {
+            "id": 437,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to import Dense layers from Keras:",
+            "code_snippet": "from keras.layers import ______",
+            "options": [
+                "Dense",
+                "Layer",
+                "NeuralLayer",
+                "FullyConnected"
+            ],
+            "correct_answer": 0,
+            "explanation": "Dense is the class for fully connected layers in Keras"
+        },
+        {
+            "id": 438,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "Why is Mean Squared Error commonly used for regression problems?",
+            "options": [
+                "It works best for classification",
+                "It penalizes large errors more heavily",
+                "It's the only loss function available",
+                "It prevents overfitting"
+            ],
+            "correct_answer": 1,
+            "explanation": "MSE squares the errors, giving higher penalty to larger errors, which is suitable for regression tasks"
+        },
+        {
+            "id": 439,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to use SGD optimizer instead of Adam:",
+            "code_snippet": "model.compile(optimizer='______', loss=MeanSquaredError())",
+            "options": [
+                "sgd",
+                "SGD",
+                "gradient_descent",
+                "sdg"
+            ],
+            "correct_answer": 0,
+            "explanation": "'sgd' is the string identifier for Stochastic Gradient Descent optimizer in Keras"
+        },
+        {
+            "id": 440,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "What is the effect of increasing the number of epochs during training?",
+            "options": [
+                "The model trains faster",
+                "The model sees the entire dataset more times",
+                "The batch size increases",
+                "The learning rate decreases"
+            ],
+            "correct_answer": 1,
+            "explanation": "Each epoch represents one complete pass through the entire training dataset"
+        },
+        {
+            "id": 441,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "Which of these is NOT a typical activation function for hidden layers?",
+            "options": [
+                "ReLU",
+                "Tanh",
+                "Sigmoid",
+                "Softmax"
+            ],
+            "correct_answer": 3,
+            "explanation": "Softmax is typically used in the output layer for multi-class classification, not in hidden layers"
+        },
+        {
+            "id": 442,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to extract features and target from diabetes dataset:",
+            "code_snippet": "X, y = diabetes['______'], diabetes['target']",
+            "options": [
+                "data",
+                "features",
+                "X",
+                "inputs"
+            ],
+            "correct_answer": 0,
+            "explanation": "The diabetes dataset stores features in 'data' key and target values in 'target' key"
+        },
+        {
+            "id": 443,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "What is the main advantage of using a smaller batch size?",
+            "options": [
+                "Faster training per epoch",
+                "More stable convergence",
+                "More frequent weight updates",
+                "Lower memory usage"
+            ],
+            "correct_answer": 2,
+            "explanation": "Smaller batch sizes result in more frequent weight updates, which can help escape local minima"
+        },
+        {
+            "id": 444,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "In the diabetes dataset, what does X_train.shape[1] represent?",
+            "options": [
+                "Number of training samples",
+                "Number of features",
+                "Number of test samples",
+                "Number of target classes"
+            ],
+            "correct_answer": 1,
+            "explanation": "X_train.shape[1] gives the number of columns/features in the training data"
+        },
+        {
+            "id": 445,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to create a model with mixed activation functions:",
+            "code_snippet": "model.add(Dense(8, activation='relu'))\nmodel.add(Dense(4, activation='______'))",
+            "options": [
+                "tanh",
+                "softmax",
+                "linear",
+                "sigmoid"
+            ],
+            "correct_answer": 0,
+            "explanation": "Using different activation functions like ReLU and tanh in different layers can help the model learn diverse patterns"
+        },
+        {
+            "id": 446,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the primary purpose of the validation_data parameter in model.fit()?",
+            "options": [
+                "To provide additional training data",
+                "To monitor model performance on unseen data during training",
+                "To speed up the training process",
+                "To reduce overfitting by adding noise"
+            ],
+            "correct_answer": 1,
+            "explanation": "validation_data allows monitoring of model performance on test data during training to detect overfitting and determine when to stop training"
+        },
+        {
+            "id": 447,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to import MeanSquaredError loss from Keras:",
+            "code_snippet": "from keras.losses import ______",
+            "options": [
+                "MeanSquaredError",
+                "MSE",
+                "mean_squared_error",
+                "LossMSE"
+            ],
+            "correct_answer": 0,
+            "explanation": "MeanSquaredError is the class name for MSE loss in Keras"
+        },
+        {
+            "id": 448,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "Why might a model with sigmoid activation in hidden layers suffer from vanishing gradients?",
+            "options": [
+                "Sigmoid outputs are always positive",
+                "Sigmoid gradients approach zero for large inputs",
+                "Sigmoid requires more memory",
+                "Sigmoid is too computationally expensive"
+            ],
+            "correct_answer": 1,
+            "explanation": "Sigmoid activation saturates for large positive/negative inputs, causing gradients to approach zero and slowing down learning in deep networks"
+        },
+        {
+            "id": 449,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to train a model with batch size 16:",
+            "code_snippet": "model.fit(X_train, y_train, epochs=10, ______=16)",
+            "options": [
+                "batch_size",
+                "batch",
+                "samples_per_batch",
+                "batch_num"
+            ],
+            "correct_answer": 0,
+            "explanation": "batch_size parameter controls how many samples are processed before updating model weights"
+        },
+        {
+            "id": 450,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the key difference between ReLU and Leaky ReLU activation functions?",
+            "options": [
+                "Leaky ReLU allows small negative outputs",
+                "ReLU works only for classification",
+                "Leaky ReLU is faster to compute",
+                "ReLU has bounded outputs"
+            ],
+            "correct_answer": 0,
+            "explanation": "Leaky ReLU allows a small, non-zero gradient when the input is negative, helping to prevent 'dying ReLU' problem"
+        },
+        {
+            "id": 451,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to create the final output layer for regression:",
+            "code_snippet": "model.add(Dense(______))",
+            "options": [
+                "1",
+                "2",
+                "10",
+                "0"
+            ],
+            "correct_answer": 0,
+            "explanation": "Regression problems typically use 1 neuron in the output layer to predict a continuous value"
+        },
+        {
+            "id": 452,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "How does increasing the number of neurons in a hidden layer affect the model?",
+            "options": [
+                "Increases model capacity and potential for overfitting",
+                "Decreases training time",
+                "Reduces model complexity",
+                "Forces linear relationships"
+            ],
+            "correct_answer": 0,
+            "explanation": "More neurons increase the model's capacity to learn complex patterns but also increase the risk of overfitting if not properly regularized"
+        },
+        {
+            "id": 453,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to use sigmoid activation in a hidden layer:",
+            "code_snippet": "model.add(Dense(5, activation='______'))",
+            "options": [
+                "sigmoid",
+                "relu",
+                "tanh",
+                "softmax"
+            ],
+            "correct_answer": 0,
+            "explanation": "Sigmoid activation can be used in hidden layers, though ReLU is more common in modern architectures"
+        },
+        {
+            "id": 454,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the role of the optimizer in neural network training?",
+            "options": [
+                "To initialize the model weights",
+                "To update model parameters to minimize loss",
+                "To select the best activation functions",
+                "To determine the number of layers"
+            ],
+            "correct_answer": 1,
+            "explanation": "Optimizers adjust the model's weights and biases during training to minimize the loss function through gradient-based optimization"
+        },
+        {
+            "id": 455,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "beginner",
+            "question": "Which of these is a key property of the Sequential model in Keras?",
+            "options": [
+                "It allows multiple inputs and outputs",
+                "It creates a linear stack of layers",
+                "It automatically selects the best architecture",
+                "It only works for convolutional networks"
+            ],
+            "correct_answer": 1,
+            "explanation": "The Sequential model is designed for simple layer-by-layer architectures where each layer has exactly one input and one output tensor"
+        },
+        {
+            "id": 456,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to import the necessary modules for neural network regression:",
+            "code_snippet": "from tensorflow import ______",
+            "options": [
+                "keras",
+                "tensorflow",
+                "nn",
+                "models"
+            ],
+            "correct_answer": 0,
+            "explanation": "Keras is the high-level neural networks API that runs on top of TensorFlow"
+        },
+        {
+            "id": 457,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "Why is it important to set random_state in train_test_split?",
+            "options": [
+                "To ensure reproducible results across runs",
+                "To make training faster",
+                "To improve model accuracy",
+                "To reduce memory usage"
+            ],
+            "correct_answer": 0,
+            "explanation": "random_state ensures that the data splitting is consistent across different runs, making experiments reproducible"
+        },
+        {
+            "id": 458,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to train a model for 20 epochs with validation:",
+            "code_snippet": "history = model.fit(X_train, y_train, epochs=20, ______=(X_test, y_test))",
+            "options": [
+                "validation_data",
+                "val_data",
+                "test_data",
+                "eval_data"
+            ],
+            "correct_answer": 0,
+            "explanation": "validation_data parameter takes a tuple of (X_test, y_test) to evaluate the model during training"
+        },
+        {
+            "id": 459,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the typical range of output values for a sigmoid activation function?",
+            "options": [
+                "0 to 1",
+                "-1 to 1",
+                "0 to infinity",
+                "Negative infinity to positive infinity"
+            ],
+            "correct_answer": 0,
+            "explanation": "Sigmoid function outputs values between 0 and 1, making it suitable for probability outputs"
+        },
+        {
+            "id": 460,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "beginner",
+            "question": "In the context of the diabetes dataset, what type of problem is being solved?",
+            "options": [
+                "Regression - predicting continuous values",
+                "Binary classification - predicting two classes",
+                "Multi-class classification - predicting multiple classes",
+                "Clustering - grouping similar samples"
+            ],
+            "correct_answer": 0,
+            "explanation": "The diabetes dataset involves predicting a quantitative measure of disease progression, which is a regression problem"
+        },
+        {
+            "id": 461,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the main advantage of using ReLU over sigmoid activation in hidden layers?",
+            "options": [
+                "ReLU helps mitigate the vanishing gradient problem",
+                "ReLU outputs probabilities between 0 and 1",
+                "ReLU is more computationally expensive",
+                "ReLU works better for output layers"
+            ],
+            "correct_answer": 0,
+            "explanation": "ReLU doesn't saturate for positive inputs, which helps prevent vanishing gradients and allows for faster convergence in deep networks"
+        },
+        {
+            "id": 462,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to create a Sequential model instance:",
+            "code_snippet": "model = ______()",
+            "options": [
+                "Sequential",
+                "Model",
+                "Network",
+                "KerasModel"
+            ],
+            "correct_answer": 0,
+            "explanation": "Sequential() creates a new Sequential model instance for building neural networks layer by layer"
+        },
+        {
+            "id": 463,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "What does it indicate when training loss decreases but validation loss increases?",
+            "options": [
+                "The model is underfitting",
+                "The model is overfitting",
+                "The learning rate is too low",
+                "The batch size is too small"
+            ],
+            "correct_answer": 1,
+            "explanation": "When training loss decreases but validation loss increases, it typically indicates overfitting - the model is memorizing training data rather than learning general patterns"
+        },
+        {
+            "id": 464,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to add a hidden layer with 32 neurons and tanh activation:",
+            "code_snippet": "model.add(Dense(32, ______='tanh'))",
+            "options": [
+                "activation",
+                "act",
+                "function",
+                "activ"
+            ],
+            "correct_answer": 0,
+            "explanation": "The parameter name for specifying the activation function in Dense layers is 'activation'"
+        },
+        {
+            "id": 465,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "Why is the diabetes dataset suitable for regression with neural networks?",
+            "options": [
+                "It has continuous target values and multiple features",
+                "It has categorical target values",
+                "It has only two features",
+                "It requires image processing"
+            ],
+            "correct_answer": 0,
+            "explanation": "The diabetes dataset contains continuous target values (disease progression) and multiple input features, making it ideal for regression problems with neural networks"
+        },
+        {
+            "id": 466,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "beginner",
+            "question": "What is the purpose of the input layer in a neural network?",
+            "options": [
+                "To specify the shape of input data",
+                "To add non-linearity",
+                "To compute the final output",
+                "To regularize the model"
+            ],
+            "correct_answer": 0,
+            "explanation": "The input layer defines the expected input shape and doesn't contain any trainable parameters - it simply passes the input to the first hidden layer"
+        },
+        {
+            "id": 467,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to split the diabetes dataset with 30% test data:",
+            "code_snippet": "X_train, X_test, y_train, y_test = train_test_split(X, y, ______=0.3)",
+            "options": [
+                "test_size",
+                "split_size",
+                "test_ratio",
+                "validation_size"
+            ],
+            "correct_answer": 0,
+            "explanation": "test_size parameter specifies the proportion of the dataset to include in the test split"
+        },
+        {
+            "id": 468,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "How does batch size affect the training process?",
+            "options": [
+                "Smaller batches provide noisier but more frequent updates",
+                "Larger batches always lead to better convergence",
+                "Batch size doesn't affect training dynamics",
+                "Smaller batches reduce memory usage"
+            ],
+            "correct_answer": 0,
+            "explanation": "Smaller batch sizes result in noisier gradient estimates but more frequent weight updates, which can help escape local minima"
+        },
+        {
+            "id": 469,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to create a model with multiple hidden layers:",
+            "code_snippet": "model.add(Dense(64, activation='relu'))\nmodel.add(Dense(32, ______='relu'))",
+            "options": [
+                "activation",
+                "act",
+                "function",
+                "layer_activation"
+            ],
+            "correct_answer": 0,
+            "explanation": "Each Dense layer can specify its own activation function using the 'activation' parameter"
+        },
+        {
+            "id": 470,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the key difference between regression and classification in neural networks?",
+            "options": [
+                "Regression predicts continuous values, classification predicts discrete classes",
+                "Regression uses softmax, classification uses linear activation",
+                "Regression requires more layers",
+                "Classification always uses sigmoid activation"
+            ],
+            "correct_answer": 0,
+            "explanation": "Regression predicts continuous numerical values, while classification predicts discrete class labels - this affects the output layer design and loss function"
+        },
+        {
+            "id": 471,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "beginner",
+            "question": "Why do we need to compile a neural network model before training?",
+            "options": [
+                "To configure the learning process with optimizer, loss, and metrics",
+                "To convert the model to executable code",
+                "To initialize random weights",
+                "To validate the model architecture"
+            ],
+            "correct_answer": 0,
+            "explanation": "Compiling configures the model for training by specifying the optimizer, loss function, and evaluation metrics"
+        },
+        {
+            "id": 472,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to access the target values from diabetes dataset:",
+            "code_snippet": "y = diabetes['______']",
+            "options": [
+                "target",
+                "y",
+                "labels",
+                "output"
+            ],
+            "correct_answer": 0,
+            "explanation": "The target values in scikit-learn datasets are stored under the 'target' key"
+        },
+        {
+            "id": 473,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "What is the effect of increasing the number of epochs too much?",
+            "options": [
+                "Increased risk of overfitting",
+                "Faster convergence",
+                "Better generalization",
+                "Reduced model capacity"
+            ],
+            "correct_answer": 0,
+            "explanation": "Too many epochs can lead to overfitting as the model continues to learn noise and specific patterns in the training data"
+        },
+        {
+            "id": 474,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "Which of these is NOT a typical characteristic of a good regression model?",
+            "options": [
+                "High training accuracy with poor validation performance",
+                "Consistent performance on training and validation data",
+                "Decreasing loss over epochs",
+                "Reasonable prediction error on new data"
+            ],
+            "correct_answer": 0,
+            "explanation": "High training performance with poor validation performance indicates overfitting, which is not desirable"
+        },
+        {
+            "id": 475,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to store training history for analysis:",
+            "code_snippet": "______ = model.fit(X_train, y_train, epochs=10, validation_data=(X_test, y_test))",
+            "options": [
+                "history",
+                "training_history",
+                "results",
+                "log"
+            ],
+            "correct_answer": 0,
+            "explanation": "The fit() method returns a History object that contains training metrics, which can be stored for plotting and analysis"
+        },
+        {
+            "id": 476,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the primary role of the loss function in neural network training?",
+            "options": [
+                "To measure how well the model's predictions match the true values",
+                "To determine the learning rate",
+                "To select the best activation function",
+                "To initialize the model weights"
+            ],
+            "correct_answer": 0,
+            "explanation": "The loss function quantifies the difference between predicted and actual values, providing the objective that the optimizer tries to minimize"
+        },
+        {
+            "id": 477,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to import train_test_split from scikit-learn:",
+            "code_snippet": "from sklearn.model_selection import ______",
+            "options": [
+                "train_test_split",
+                "split_data",
+                "train_split",
+                "data_split"
+            ],
+            "correct_answer": 0,
+            "explanation": "train_test_split is the function used to split datasets into training and testing subsets"
+        },
+        {
+            "id": 478,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "Why might a neural network with too many hidden layers perform poorly?",
+            "options": [
+                "Vanishing gradients and overfitting",
+                "Too few parameters to learn",
+                "Insufficient non-linearity",
+                "Automatic feature selection"
+            ],
+            "correct_answer": 0,
+            "explanation": "Very deep networks can suffer from vanishing gradients during backpropagation and are more prone to overfitting without proper regularization"
+        },
+        {
+            "id": 479,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to create a model with a specific input shape for 10 features:",
+            "code_snippet": "model.add(Input(shape=(______,)))",
+            "options": [
+                "10",
+                "X_train.shape[1]",
+                "X.shape[1]",
+                "All of the above"
+            ],
+            "correct_answer": 3,
+            "explanation": "All options are valid ways to specify input shape for 10 features - using the actual number 10, or dynamically using .shape[1] from the data"
+        },
+        {
+            "id": 480,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the main advantage of using the Adam optimizer over basic SGD?",
+            "options": [
+                "Adaptive learning rates for each parameter",
+                "Faster computation time",
+                "Fewer hyperparameters to tune",
+                "Better for small datasets only"
+            ],
+            "correct_answer": 0,
+            "explanation": "Adam adapts the learning rate for each parameter individually and includes momentum, which often leads to faster and more stable convergence"
+        },
+        {
+            "id": 481,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "beginner",
+            "question": "In the diabetes dataset context, what does the target variable represent?",
+            "options": [
+                "A quantitative measure of disease progression",
+                "Whether a patient has diabetes or not",
+                "The type of diabetes diagnosis",
+                "Patient age in years"
+            ],
+            "correct_answer": 0,
+            "explanation": "The diabetes dataset target is a continuous value representing disease progression one year after baseline, making it a regression problem"
+        },
+        {
+            "id": 482,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to train a model without storing history:",
+            "code_snippet": "model.______(X_train, y_train, epochs=10)",
+            "options": [
+                "fit",
+                "train",
+                "run",
+                "execute"
+            ],
+            "correct_answer": 0,
+            "explanation": "The fit() method is used to train the model on the provided data for the specified number of epochs"
+        },
+        {
+            "id": 483,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "What is the significance of monitoring both training and validation loss?",
+            "options": [
+                "To detect overfitting and determine early stopping",
+                "To calculate model accuracy",
+                "To select the best optimizer",
+                "To determine the optimal batch size"
+            ],
+            "correct_answer": 0,
+            "explanation": "Comparing training and validation loss helps identify when the model starts overfitting (when validation loss stops improving or increases while training loss continues to decrease)"
+        },
+        {
+            "id": 484,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to use a custom batch size during training:",
+            "code_snippet": "model.fit(X_train, y_train, epochs=10, batch_size=______)",
+            "options": [
+                "32",
+                "16",
+                "64",
+                "Any positive integer"
+            ],
+            "correct_answer": 3,
+            "explanation": "batch_size can be any positive integer, though typical values are powers of 2 (16, 32, 64, 128, etc.) for hardware optimization"
+        },
+        {
+            "id": 485,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "Why is Mean Squared Error particularly suitable for regression problems?",
+            "options": [
+                "It penalizes large errors more heavily due to squaring",
+                "It works only with normalized data",
+                "It's the fastest loss function to compute",
+                "It automatically handles categorical variables"
+            ],
+            "correct_answer": 0,
+            "explanation": "MSE squares the errors, which means larger errors contribute disproportionately more to the total loss, encouraging the model to focus on reducing large prediction errors"
+        },
+        {
+            "id": 486,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "beginner",
+            "question": "What is the purpose of the Dense layer in Keras?",
+            "options": [
+                "To create fully connected layers where each neuron connects to all previous layer neurons",
+                "To add convolutional filters for image processing",
+                "To implement recurrent connections for sequence data",
+                "To regularize the model and prevent overfitting"
+            ],
+            "correct_answer": 0,
+            "explanation": "Dense layers are fully connected layers where each neuron receives input from all neurons in the previous layer and connects to all neurons in the next layer"
+        },
+        {
+            "id": 487,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to access the feature data from diabetes dataset:",
+            "code_snippet": "X = diabetes['______']",
+            "options": [
+                "data",
+                "features",
+                "X",
+                "inputs"
+            ],
+            "correct_answer": 0,
+            "explanation": "The feature data in scikit-learn datasets is stored under the 'data' key"
+        },
+        {
+            "id": 488,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "How does the choice of activation function affect gradient flow during backpropagation?",
+            "options": [
+                "Some functions can cause vanishing or exploding gradients",
+                "Activation functions don't affect gradient flow",
+                "All functions provide the same gradient behavior",
+                "Only output layer activation affects gradients"
+            ],
+            "correct_answer": 0,
+            "explanation": "Different activation functions have different gradient properties - sigmoid/tanh can cause vanishing gradients, while ReLU can cause dying neurons, both affecting how well gradients flow during backpropagation"
+        },
+        {
+            "id": 489,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the relationship between batch size and training stability?",
+            "options": [
+                "Larger batches provide more stable gradient estimates",
+                "Smaller batches always provide more stable training",
+                "Batch size doesn't affect training stability",
+                "Only very small batches (1-2) are stable"
+            ],
+            "correct_answer": 0,
+            "explanation": "Larger batch sizes average gradients over more samples, resulting in more stable (less noisy) gradient estimates and smoother convergence"
+        },
+        {
+            "id": 490,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to create a model with increasing then decreasing layer sizes:",
+            "code_snippet": "model.add(Dense(64, activation='relu'))\nmodel.add(Dense(32, activation='relu'))\nmodel.add(Dense(______, activation='relu'))",
+            "options": [
+                "16",
+                "128",
+                "64",
+                "32"
+            ],
+            "correct_answer": 0,
+            "explanation": "A common architecture pattern is to gradually decrease layer sizes (64→32→16) to compress information and extract higher-level features"
+        },
+        {
+            "id": 491,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the key difference between training a neural network and traditional machine learning models?",
+            "options": [
+                "Neural networks learn hierarchical feature representations automatically",
+                "Neural networks require less data",
+                "Neural networks don't need feature scaling",
+                "Neural networks always converge faster"
+            ],
+            "correct_answer": 0,
+            "explanation": "Neural networks automatically learn hierarchical feature representations through multiple layers, whereas traditional ML often requires manual feature engineering"
+        },
+        {
+            "id": 492,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to create a simple neural network with one hidden layer:",
+            "code_snippet": "model = Sequential()\nmodel.add(Input(shape=(10,)))\nmodel.add(Dense(32, activation='relu'))\nmodel.add(Dense(______))",
+            "options": [
+                "1",
+                "32",
+                "10",
+                "64"
+            ],
+            "correct_answer": 0,
+            "explanation": "For regression problems, the final layer should have 1 neuron to output a single continuous value"
+        },
+        {
+            "id": 493,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "Why might a neural network with tanh activation perform differently than one with ReLU?",
+            "options": [
+                "Tanh outputs are centered around zero which can help with gradient flow",
+                "ReLU is always better for all problems",
+                "Tanh requires more computational resources",
+                "ReLU outputs are bounded between -1 and 1"
+            ],
+            "correct_answer": 0,
+            "explanation": "Tanh outputs are zero-centered (-1 to 1), which can help with gradient flow during training, while ReLU outputs are only positive (0 to infinity)"
+        },
+        {
+            "id": 494,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to compile a model with both loss and metrics:",
+            "code_snippet": "model.compile(optimizer='adam', loss=MeanSquaredError(), ______=['mae'])",
+            "options": [
+                "metrics",
+                "metric",
+                "evaluation",
+                "monitor"
+            ],
+            "correct_answer": 0,
+            "explanation": "The 'metrics' parameter allows specifying additional evaluation metrics like MAE (Mean Absolute Error) to monitor during training"
+        },
+        {
+            "id": 495,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the role of the learning rate in neural network optimization?",
+            "options": [
+                "It controls the step size during weight updates",
+                "It determines the number of layers",
+                "It selects the activation function",
+                "It sets the batch size"
+            ],
+            "correct_answer": 0,
+            "explanation": "The learning rate determines how much to adjust the model weights with respect to the loss gradient - too high may overshoot minima, too low may converge slowly"
+        },
+        {
+            "id": 496,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "beginner",
+            "question": "In the context of the diabetes dataset, what does X_train represent?",
+            "options": [
+                "The feature values used for training the model",
+                "The target values for testing",
+                "The validation dataset",
+                "The preprocessed features only"
+            ],
+            "correct_answer": 0,
+            "explanation": "X_train contains the input features (age, BMI, blood pressure, etc.) that the model uses during training to learn patterns"
+        },
+        {
+            "id": 497,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to import the diabetes dataset:",
+            "code_snippet": "from sklearn.datasets import ______",
+            "options": [
+                "load_diabetes",
+                "diabetes",
+                "get_diabetes",
+                "load_dataset"
+            ],
+            "correct_answer": 0,
+            "explanation": "load_diabetes is the specific function to import the diabetes dataset from scikit-learn"
+        },
+        {
+            "id": 498,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "What is the 'dying ReLU' problem and how can it be addressed?",
+            "options": [
+                "Neurons that only output zero, addressed using Leaky ReLU or proper initialization",
+                "Neurons that output very large values, fixed with gradient clipping",
+                "Neurons that stop learning after few epochs, fixed with more data",
+                "Neurons that become too sensitive, fixed with regularization"
+            ],
+            "correct_answer": 0,
+            "explanation": "Dying ReLU occurs when neurons get stuck outputting only zero (negative inputs), which can be mitigated using Leaky ReLU, proper weight initialization, or different activation functions"
+        },
+        {
+            "id": 499,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to create a model with mixed activation functions:",
+            "code_snippet": "model.add(Dense(16, activation='relu'))\nmodel.add(Dense(8, activation='______'))\nmodel.add(Dense(1))",
+            "options": [
+                "tanh",
+                "softmax",
+                "linear",
+                "sigmoid"
+            ],
+            "correct_answer": 0,
+            "explanation": "Using different activation functions like ReLU and tanh in different layers can help the network learn diverse types of non-linear relationships"
+        },
+        {
+            "id": 500,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "Why is it important to use both training and testing data in model development?",
+            "options": [
+                "To evaluate how well the model generalizes to unseen data",
+                "To make the model train faster",
+                "To reduce the number of parameters",
+                "To automatically select the best architecture"
+            ],
+            "correct_answer": 0,
+            "explanation": "Testing data provides an unbiased evaluation of the model's performance on unseen data, helping assess its generalization capability and detect overfitting"
+        },
+        {
+            "id": 501,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "beginner",
+            "question": "What does the term 'epoch' mean in neural network training?",
+            "options": [
+                "One complete pass through the entire training dataset",
+                "One weight update using a single batch",
+                "The time to process one sample",
+                "The convergence point of the model"
+            ],
+            "correct_answer": 0,
+            "explanation": "An epoch represents one complete cycle through the entire training dataset, which may consist of multiple batches depending on the batch size"
+        },
+        {
+            "id": 502,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to define a Sequential model with input layer:",
+            "code_snippet": "model = ______()\nmodel.add(Input(shape=(X_train.shape[1],)))",
+            "options": [
+                "Sequential",
+                "Model",
+                "Network",
+                "Keras"
+            ],
+            "correct_answer": 0,
+            "explanation": "Sequential() creates a linear stack of layers, which is the most common way to build neural networks in Keras"
+        },
+        {
+            "id": 503,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "How does the number of features in the diabetes dataset affect the input layer?",
+            "options": [
+                "The input layer shape must match the number of features",
+                "The input layer size is always fixed at 10",
+                "The number of features determines the number of hidden layers",
+                "Features don't affect the input layer design"
+            ],
+            "correct_answer": 0,
+            "explanation": "The input layer's shape parameter must match the number of features in the dataset, which for the diabetes dataset is 10 features after normalization"
+        },
+        {
+            "id": 504,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of using multiple metrics during model compilation?",
+            "options": [
+                "To get different perspectives on model performance",
+                "To make training faster",
+                "To reduce memory usage",
+                "To automatically tune hyperparameters"
+            ],
+            "correct_answer": 0,
+            "explanation": "Different metrics (like MSE and MAE) provide complementary views of model performance - MSE emphasizes large errors, MAE gives equal weight to all errors"
+        },
+        {
+            "id": 505,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to train with a specific batch size and store history:",
+            "code_snippet": "______ = model.fit(X_train, y_train, epochs=15, batch_size=32, validation_data=(X_test, y_test))",
+            "options": [
+                "history",
+                "results",
+                "training_log",
+                "output"
+            ],
+            "correct_answer": 0,
+            "explanation": "Storing the return value of fit() in a variable called 'history' allows access to training metrics for visualization and analysis"
+        },
+        {
+            "id": 506,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the fundamental building block of a neural network?",
+            "options": [
+                "The neuron (perceptron) with weights, bias, and activation",
+                "The convolutional filter",
+                "The loss function",
+                "The optimizer"
+            ],
+            "correct_answer": 0,
+            "explanation": "The basic building block is the neuron (perceptron), which takes weighted inputs, adds a bias, and applies an activation function to produce output"
+        },
+        {
+            "id": 507,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to create a model with sigmoid activation in hidden layer:",
+            "code_snippet": "model.add(Dense(10, activation='______'))",
+            "options": [
+                "sigmoid",
+                "relu",
+                "tanh",
+                "softmax"
+            ],
+            "correct_answer": 0,
+            "explanation": "Sigmoid activation can be used in hidden layers, though it's less common than ReLU due to potential vanishing gradient issues"
+        },
+        {
+            "id": 508,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "Why is proper weight initialization important in neural networks?",
+            "options": [
+                "It helps prevent vanishing/exploding gradients and speeds up convergence",
+                "It determines the final model accuracy",
+                "It replaces the need for activation functions",
+                "It automatically selects the best architecture"
+            ],
+            "correct_answer": 0,
+            "explanation": "Proper initialization ensures gradients flow well during backpropagation, preventing issues like vanishing/exploding gradients and helping the model converge faster"
+        },
+        {
+            "id": 509,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to use SGD optimizer with specific learning rate:",
+            "code_snippet": "from keras.optimizers import SGD\noptimizer = SGD(______=0.01)",
+            "options": [
+                "learning_rate",
+                "lr",
+                "rate",
+                "alpha"
+            ],
+            "correct_answer": 1,
+            "explanation": "The parameter name for setting learning rate in Keras optimizers is 'lr' (learning_rate is also accepted in newer versions)"
+        },
+        {
+            "id": 510,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the main advantage of using neural networks for regression over linear regression?",
+            "options": [
+                "Neural networks can model complex non-linear relationships",
+                "Neural networks always require less data",
+                "Neural networks are faster to train",
+                "Neural networks don't need feature scaling"
+            ],
+            "correct_answer": 0,
+            "explanation": "Neural networks with non-linear activations can learn complex, non-linear patterns in data, while linear regression is limited to linear relationships"
+        },
+        {
+            "id": 511,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "beginner",
+            "question": "In the model.fit() method, what do X_train and y_train represent?",
+            "options": [
+                "Training features and corresponding target values",
+                "Test features and predictions",
+                "Validation data and labels",
+                "Input shapes and output sizes"
+            ],
+            "correct_answer": 0,
+            "explanation": "X_train contains the input features for training, and y_train contains the corresponding target values that the model learns to predict"
+        },
+        {
+            "id": 512,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to evaluate model performance on test data:",
+            "code_snippet": "test_loss = model.______(X_test, y_test)",
+            "options": [
+                "evaluate",
+                "test",
+                "predict",
+                "score"
+            ],
+            "correct_answer": 0,
+            "explanation": "The evaluate() method returns the loss value and any metrics for the model on test data"
+        },
+        {
+            "id": 513,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "What is gradient descent and how does it relate to neural network training?",
+            "options": [
+                "An optimization algorithm that minimizes loss by updating weights in the direction of steepest descent",
+                "A method for selecting the best activation function",
+                "A technique for initializing model weights",
+                "A process for splitting data into training and test sets"
+            ],
+            "correct_answer": 0,
+            "explanation": "Gradient descent is the fundamental optimization algorithm that adjusts model weights by moving in the direction that reduces the loss function most rapidly"
+        },
+        {
+            "id": 514,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to make predictions with a trained model:",
+            "code_snippet": "predictions = model.______(X_test)",
+            "options": [
+                "predict",
+                "forward",
+                "run",
+                "test"
+            ],
+            "correct_answer": 0,
+            "explanation": "The predict() method generates output predictions for the input samples using the trained model"
+        },
+        {
+            "id": 515,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "Why might you choose different numbers of neurons in different hidden layers?",
+            "options": [
+                "To create an information bottleneck or feature hierarchy",
+                "To make the model train faster",
+                "To reduce the number of parameters",
+                "To ensure all layers have the same computational cost"
+            ],
+            "correct_answer": 0,
+            "explanation": "Using decreasing layer sizes (e.g., 64→32→16) can create a feature hierarchy where each layer extracts increasingly abstract representations"
+        },
+        {
+            "id": 516,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "beginner",
+            "question": "What is the purpose of the model.summary() method in Keras?",
+            "options": [
+                "To display the model architecture and parameter counts",
+                "To calculate model accuracy",
+                "To save the model to disk",
+                "To plot training history"
+            ],
+            "correct_answer": 0,
+            "explanation": "summary() provides a concise overview of the model architecture, including layer types, output shapes, and number of trainable parameters"
+        },
+        {
+            "id": 517,
+            "type": "code_completion",
+            "category": "neural_networks_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to show model architecture:",
+            "code_snippet": "model.______()",
+            "options": [
+                "summary",
+                "describe",
+                "architecture",
+                "info"
+            ],
+            "correct_answer": 0,
+            "explanation": "The summary() method displays the model's layer-by-layer architecture and parameter counts"
+        },
+        {
+            "id": 518,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "advanced",
+            "question": "How does backpropagation work in neural network training?",
+            "options": [
+                "It calculates gradients of the loss with respect to weights using chain rule",
+                "It initializes random weights for the network",
+                "It selects the best learning rate automatically",
+                "It determines the optimal number of layers"
+            ],
+            "correct_answer": 0,
+            "explanation": "Backpropagation efficiently computes gradients by applying the chain rule from the output layer back to the input layer, enabling weight updates via gradient descent"
+        },
+        {
+            "id": 519,
+            "type": "multiple_choice",
+            "category": "neural_networks_concepts",
+            "difficulty": "intermediate",
+            "question": "What is the relationship between model complexity and overfitting?",
+            "options": [
+                "More complex models are more prone to overfitting without proper regularization",
+                "Complex models always generalize better",
+                "Simple models overfit more easily",
+                "Model complexity doesn't affect overfitting"
+            ],
+            "correct_answer": 0,
+            "explanation": "More complex models (with more layers/neurons) have higher capacity to memorize training data, making them more susceptible to overfitting without techniques like dropout or regularization"
+        },
+        {
+            "id": 520,
+            "type": "code_completion",
+            "category": "neural_networks_advanced",
+            "difficulty": "intermediate",
+            "question": "Complete the code to create a model with decreasing layer sizes:",
+            "code_snippet": "model.add(Dense(128, activation='relu'))\nmodel.add(Dense(64, activation='relu'))\nmodel.add(Dense(______, activation='relu'))",
+            "options": [
+                "32",
+                "256",
+                "128",
+                "16"
+            ],
+            "correct_answer": 0,
+            "explanation": "A common pattern is to gradually decrease layer sizes (128→64→32) to compress information and build hierarchical feature representations"
         }
     ]
 }

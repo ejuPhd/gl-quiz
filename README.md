@@ -5,7 +5,7 @@ A Python, Flask-based quiz application testing knowledge of Linear Regression, s
 ## Features
 
 - 🎯 Three difficulty levels (Beginner, Intermediate, Advanced)
-- 📊 260+ comprehensive Generative AI & ML questions
+- 📊 500+ comprehensive Generative AI & ML questions
 - 🏆 Leaderboard system
 - 💡 Detailed explanations for each answer
 - 📱 Responsive design
