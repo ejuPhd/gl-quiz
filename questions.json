@@ -1076,6 +1076,3004 @@
             ],
             "correct_answer": 0,
             "explanation": "ElasticNet combines the benefits of both Lasso (feature selection) and Ridge (handling correlated features) regularization"
+        },
+        {
+            "id": 71,
+            "type": "multiple_choice",
+            "category": "machine_learning_fundamentals",
+            "difficulty": "beginner",
+            "question": "Which of the following is NOT considered a core machine learning technique?",
+            "options": [
+                "Supervised learning",
+                "Rule-based model",
+                "Reinforcement learning",
+                "Unsupervised learning"
+            ],
+            "correct_answer": 1,
+            "explanation": "Rule-based models rely on explicitly defined human-created rules rather than learning patterns from data, making them distinct from true machine learning techniques like supervised, unsupervised, and reinforcement learning."
+        },
+        {
+            "id": 72,
+            "type": "multiple_choice",
+            "category": "regression_basics",
+            "difficulty": "beginner",
+            "question": "What is the main goal when building a regression model to predict house prices from size?",
+            "options": [
+                "To find a relationship that can predict prices for houses not in the dataset",
+                "To memorize the exact price of every house in the dataset",
+                "To identify the largest house in the dataset",
+                "To remove houses with low prices from the dataset"
+            ],
+            "correct_answer": 0,
+            "explanation": "Regression models aim to generalize patterns from training data to make accurate predictions on new, unseen data - not to memorize the training examples."
+        },
+        {
+            "id": 73,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "beginner",
+            "question": "Why is it important to agree on a definition of the 'best' model?",
+            "options": [
+                "So that everyone writes the same code",
+                "Because one model is always the best in every situation",
+                "To enable consistent communication and evaluation",
+                "To make visualizations more appealing"
+            ],
+            "correct_answer": 2,
+            "explanation": "Agreeing on evaluation criteria ensures objective model comparison, consistent decision-making, and reproducible results across team members or researchers."
+        },
+        {
+            "id": 74,
+            "type": "multiple_choice",
+            "category": "linear_regression_basics",
+            "difficulty": "beginner",
+            "question": "How is the 'best' line determined in linear regression?",
+            "options": [
+                "By maximizing the total error between predicted and actual values",
+                "By fitting the line to the training data exactly, without any errors",
+                "By randomly guessing parameters and adjusting them to minimize errors",
+                "By making the total of all squared differences between predicted and actual values as small as possible"
+            ],
+            "correct_answer": 3,
+            "explanation": "Linear regression uses Ordinary Least Squares (OLS) to find the line that minimizes the sum of squared differences between predicted and actual values, providing the best overall fit to the data pattern."
+        },
+        {
+            "id": 75,
+            "type": "multiple_choice",
+            "category": "machine_learning_fundamentals",
+            "difficulty": "beginner",
+            "question": "What is the main purpose of building a mathematical model using data?",
+            "options": [
+                "Memorize all the data exactly",
+                "Eliminate all variation in the data",
+                "Predict new or future outcomes based on past patterns",
+                "Draw an accurate graph"
+            ],
+            "correct_answer": 2,
+            "explanation": "The goal of modeling is to generalize from existing data to make accurate predictions or decisions about new, unseen situations - capturing patterns rather than memorizing specifics."
+        },
+        {
+            "id": 76,
+            "type": "multiple_choice",
+            "category": "machine_learning_fundamentals",
+            "difficulty": "beginner",
+            "question": "How is supervised learning different from unsupervised learning?",
+            "options": [
+                "Supervised learning uses a known target (Y) to guide the model; unsupervised learning does not",
+                "Unsupervised learning uses labels, while supervised learning does not",
+                "There is no difference; both are the same",
+                "Supervised learning does not use data, while unsupervised learning does"
+            ],
+            "correct_answer": 0,
+            "explanation": "Supervised learning has a 'teacher' (known target/label) where data includes both input and correct answer, while unsupervised learning has no teacher and looks for hidden patterns without predefined answers."
+        },
+        {
+            "id": 77,
+            "type": "multiple_choice",
+            "category": "regression_basics",
+            "difficulty": "beginner",
+            "question": "Which of the following use cases is ideal for applying a linear regression model?",
+            "options": [
+                "Predicting a customer's total spend based on their income",
+                "Predicting whether a customer will buy a product (Yes/No)",
+                "Predicting the most popular product category among customers",
+                "Grouping customers based on purchasing behavior"
+            ],
+            "correct_answer": 0,
+            "explanation": "Linear regression is used for predicting continuous numerical values like total spend. The other options involve categorical outcomes or clustering, which require different techniques."
+        },
+        {
+            "id": 78,
+            "type": "multiple_choice",
+            "category": "machine_learning_fundamentals",
+            "difficulty": "beginner",
+            "question": "What is a key characteristic of unsupervised learning?",
+            "options": [
+                "It uses labeled data to create predictions",
+                "It requires that the data have a continuous output",
+                "There is no dependent variable to predict; the goal is to discover patterns in the data",
+                "The model is guided by a known target variable"
+            ],
+            "correct_answer": 2,
+            "explanation": "Unsupervised learning works with unlabeled data to discover hidden structures like groupings or patterns, without predicting a specific target variable."
+        },
+        {
+            "id": 79,
+            "type": "multiple_choice",
+            "category": "ensemble_learning",
+            "difficulty": "intermediate",
+            "question": "How does ensemble learning improve model performance?",
+            "options": [
+                "By training only one model with the highest accuracy",
+                "By using simpler models and ignoring complex ones",
+                "By training models without any data",
+                "By using multiple models and combining their predictions to improve accuracy"
+            ],
+            "correct_answer": 3,
+            "explanation": "Ensemble learning combines predictions from multiple models, reducing individual model errors and providing more reliable results through methods like voting or averaging."
+        },
+        {
+            "id": 80,
+            "type": "multiple_choice",
+            "category": "data_quality",
+            "difficulty": "intermediate",
+            "question": "What is the main difference between 'information' and 'noise' in a dataset?",
+            "options": [
+                "Noise is essential for training models; information is discarded",
+                "Noise is always visible in visualizations; information is hidden",
+                "Information leads to overfitting; noise prevents it",
+                "Information is generally consistent and predictable; noise is random and unpredictable"
+            ],
+            "correct_answer": 3,
+            "explanation": "Information represents true underlying patterns that help predictions, while noise consists of random fluctuations that don't follow meaningful patterns and can lead to overfitting."
+        },
+        {
+            "id": 81,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "What does it mean when a model is said to be overfitting?",
+            "options": [
+                "It learns both real patterns and random noise, which can hurt its performance on new data",
+                "It completely ignores all patterns and noise in the data",
+                "It is too simple and misses important patterns in the data",
+                "It is perfect and will always perform well on any future data"
+            ],
+            "correct_answer": 0,
+            "explanation": "Overfitting occurs when a model becomes too complex and memorizes training data specifics, including noise, leading to poor performance on new, unseen data."
+        },
+        {
+            "id": 82,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "beginner",
+            "question": "What is the role of a loss function in model evaluation?",
+            "options": [
+                "To visualize model predictions",
+                "To split data into training and test sets",
+                "To remove noise from the data",
+                "To measure how accurate or wrong a model's predictions are"
+            ],
+            "correct_answer": 3,
+            "explanation": "A loss function acts as a 'mistake meter' that measures prediction errors during training, helping the model adjust and improve its accuracy."
+        },
+        {
+            "id": 83,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "Why should the final model selection be based only on test data performance, not training data?",
+            "options": [
+                "Because test data always gives better accuracy",
+                "Because training data is used to teach the model and may not reflect future performance",
+                "Because training data is more expensive to compute",
+                "Because test data is always cleaner"
+            ],
+            "correct_answer": 1,
+            "explanation": "Training data can be memorized (overfitting), while test data provides an honest assessment of how the model will perform on new, unseen data in real-world applications."
+        },
+        {
+            "id": 84,
+            "type": "multiple_choice",
+            "category": "regression_metrics",
+            "difficulty": "intermediate",
+            "question": "Which of the following is NOT an evaluation metric or loss function commonly used for a regression task?",
+            "options": [
+                "F1 Score",
+                "Mean Squared Error (MSE)",
+                "Mean Absolute Error (MAE)",
+                "Root Mean Squared Error (RMSE)"
+            ],
+            "correct_answer": 0,
+            "explanation": "F1 Score is used for classification tasks to combine precision and recall. MSE, MAE, and RMSE are all common regression metrics for continuous numerical predictions."
+        },
+        {
+            "id": 85,
+            "type": "multiple_choice",
+            "category": "classification_metrics",
+            "difficulty": "intermediate",
+            "question": "In a confusion matrix of a binary classification problem, what does a False Negative (FN) represent?",
+            "options": [
+                "The model predicted positive, but the actual label was negative",
+                "The model predicted negative, but the actual label was positive",
+                "The model predicted positive, and it was correct",
+                "The model predicted negative, and it was correct"
+            ],
+            "correct_answer": 1,
+            "explanation": "A False Negative occurs when the model incorrectly predicts 'negative' for an actual positive case, representing a missed detection that can be serious in applications like medical testing."
+        },
+        {
+            "id": 86,
+            "type": "multiple_choice",
+            "category": "classification_metrics",
+            "difficulty": "intermediate",
+            "question": "What is the main reason accuracy can be misleading for imbalanced classification problems?",
+            "options": [
+                "It is based on training data only",
+                "A model can achieve high accuracy by only predicting the majority class",
+                "It requires probabilities, not predictions",
+                "It does consider false positives but ignores false negatives"
+            ],
+            "correct_answer": 1,
+            "explanation": "With imbalanced data, a naive model that always predicts the majority class can achieve high accuracy while completely failing to identify the important minority class."
+        },
+        {
+            "id": 87,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "After performing k-fold cross-validation, how do we typically report the model's performance?",
+            "options": [
+                "Take the average of the success measures across all folds",
+                "Use the result from the first fold only",
+                "Use the fold with the best performance",
+                "Use the results from the training data"
+            ],
+            "correct_answer": 0,
+            "explanation": "Averaging performance across all folds provides the most reliable and stable estimate of how the model will perform on new data, reducing the impact of any particular data split."
+        },
+        {
+            "id": 88,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "What is the main purpose of cross-validation in machine learning?",
+            "options": [
+                "To make the model more complex",
+                "To avoid using test data",
+                "To reduce the number of features",
+                "To use all the data for both training and testing (at different times), improving reliability"
+            ],
+            "correct_answer": 3,
+            "explanation": "Cross-validation rotates data through training and testing roles, providing better performance estimates without wasting data and giving more confidence in model selection."
+        },
+        {
+            "id": 89,
+            "type": "true_false",
+            "category": "python_basics",
+            "difficulty": "beginner",
+            "question": "The str.isdigit() function checks whether the string is made up of digits and returns True or False accordingly.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "correct_answer": 0,
+            "explanation": "str.isdigit() returns True only if every character in the string is a digit (0-9), and False if there are any letters, spaces, punctuation, or empty strings."
+        },
+        {
+            "id": 90,
+            "type": "multiple_choice",
+            "category": "data_preprocessing",
+            "difficulty": "beginner",
+            "question": "What will be the output of the following code: cData = cData.replace('?', np.nan)",
+            "options": [
+                "It will show error",
+                "It will replace missing values with '?'",
+                "It will replace '?' with np.nan (NaN)",
+                "It will replace np.nan (NaN) with '?'"
+            ],
+            "correct_answer": 2,
+            "explanation": "This code replaces all occurrences of the string '?' with np.nan values, which is a common data cleaning operation to convert placeholder missing values to proper NaN representation."
+        },
+        {
+            "id": 91,
+            "type": "multiple_choice",
+            "category": "data_preprocessing",
+            "difficulty": "beginner",
+            "question": "Which of the following code correctly converts the column 'horsepower' to float type?",
+            "options": [
+                "cData['horsepower'] = cData['horsepower'].astype(float)",
+                "cData['horsepower'] = cData.astype(float)",
+                "cData['horsepower'] = cData['horsepower'].astype(int)",
+                "cData['horsepower'] = cData.astype(int)"
+            ],
+            "correct_answer": 0,
+            "explanation": "The correct syntax targets only the 'horsepower' column and converts it specifically to float type using .astype(float)."
+        },
+        {
+            "id": 92,
+            "type": "multiple_choice",
+            "category": "data_preprocessing",
+            "difficulty": "intermediate",
+            "question": "What is the output of the following code: Filler = lambda x: x.fillna(x.median()); cData = cData.apply(Filler, axis=0)",
+            "options": [
+                "It will replace missing values of every column with its median",
+                "It will replace missing values of every column with its mean",
+                "It will show error",
+                "It will show only those observations which are greater than median of the column"
+            ],
+            "correct_answer": 0,
+            "explanation": "The code creates a lambda function that fills missing values with each column's median, then applies it to all columns (axis=0), effectively replacing NaN values with their respective column medians."
+        },
+        {
+            "id": 93,
+            "type": "multiple_choice",
+            "category": "data_preprocessing",
+            "difficulty": "intermediate",
+            "question": "When we set drop_first=True in pd.get_dummies(), which dummy variable is dropped?",
+            "options": [
+                "The last one of all dummy variables arranged in alphabetical order",
+                "The first one of all dummy variables arranged in alphabetical order",
+                "The middle one of all dummy variables arranged in alphabetical order",
+                "Any randomly chosen dummy variable"
+            ],
+            "correct_answer": 1,
+            "explanation": "pd.get_dummies() with drop_first=True drops the first dummy variable after sorting categories alphabetically to prevent multicollinearity (dummy variable trap) in regression models."
+        },
+        {
+            "id": 94,
+            "type": "multiple_choice",
+            "category": "data_preprocessing",
+            "difficulty": "beginner",
+            "question": "Why is it necessary to convert categorical columns to numerical values when using machine learning models?",
+            "options": [
+                "To increase the textual data in the dataset",
+                "To enhance the color scheme of the dataset",
+                "To ensure the model can process inputs effectively, as it requires numerical data for calculations",
+                "To simplify visual data representation"
+            ],
+            "correct_answer": 2,
+            "explanation": "Machine learning models perform mathematical operations and require numerical inputs. Converting categories to numbers allows models to process and learn from categorical data."
+        },
+        {
+            "id": 95,
+            "type": "multiple_choice",
+            "category": "data_preprocessing",
+            "difficulty": "beginner",
+            "question": "What is the purpose of using data.isnull().sum() in a dataset?",
+            "options": [
+                "To determine the total number of missing values in each column",
+                "To sort the data alphabetically",
+                "To calculate the sum of all values",
+                "To visualize data trends"
+            ],
+            "correct_answer": 0,
+            "explanation": "data.isnull().sum() counts missing values (NaN) in each column, providing a summary of data completeness and identifying columns that need missing value treatment."
+        },
+        {
+            "id": 96,
+            "type": "multiple_choice",
+            "category": "data_visualization",
+            "difficulty": "beginner",
+            "question": "What type of variables is the countplot function used for in data visualization?",
+            "options": [
+                "Categorical variables",
+                "Continuous variables",
+                "Numerical variables",
+                "Both Numerical and Categorical variables"
+            ],
+            "correct_answer": 0,
+            "explanation": "Countplot displays the count of observations in each category, making it ideal for categorical variables with limited distinct groups."
+        },
+        {
+            "id": 97,
+            "type": "multiple_choice",
+            "category": "linear_regression_basics",
+            "difficulty": "beginner",
+            "question": "What does the intercept represent in linear regression?",
+            "options": [
+                "The slope of the regression line",
+                "The predicted value of y when x is zero",
+                "The correlation between x and y",
+                "The error in predictions"
+            ],
+            "correct_answer": 1,
+            "explanation": "The intercept (a in y = a + bx) represents the predicted value of the dependent variable when all independent variables are zero."
+        },
+        {
+            "id": 98,
+            "type": "multiple_choice",
+            "category": "regression_metrics",
+            "difficulty": "intermediate",
+            "question": "What does the R-squared (R²) value indicate in a regression model?",
+            "options": [
+                "The complexity of the model",
+                "The number of predictors used",
+                "The percentage of variability in the dependent variable explained by the model",
+                "The total cost of the model"
+            ],
+            "correct_answer": 2,
+            "explanation": "R-squared measures the proportion of variance in the dependent variable that is predictable from the independent variables, ranging from 0% to 100%."
+        },
+        {
+            "id": 99,
+            "type": "true_false",
+            "category": "regression_metrics",
+            "difficulty": "intermediate",
+            "question": "A lesser MAPE (Mean Absolute Percentage Error) indicates a more effective model.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "correct_answer": 0,
+            "explanation": "Lower MAPE values indicate smaller percentage errors between predictions and actual values, meaning better model performance and accuracy."
+        },
+        {
+            "id": 100,
+            "type": "multiple_choice",
+            "category": "regression_metrics",
+            "difficulty": "intermediate",
+            "question": "Which error metric brings units back to the original scale while still punishing large errors?",
+            "options": [
+                "Mean Absolute Error (MAE)",
+                "Mean Squared Error (MSE)",
+                "Root Mean Squared Error (RMSE)",
+                "Mean Absolute Percentage Error (MAPE)"
+            ],
+            "correct_answer": 2,
+            "explanation": "RMSE is the square root of MSE, returning to the original units of measurement while maintaining sensitivity to larger errors due to the squaring operation."
+        },
+        {
+            "id": 101,
+            "type": "multiple_choice",
+            "category": "regression_metrics",
+            "difficulty": "intermediate",
+            "question": "Why is it important to consider the scale of the target variable when evaluating regression model errors?",
+            "options": [
+                "Because scale determines if the model is linear or nonlinear",
+                "Because it affects the training time",
+                "Because the same error can have different impacts depending on context",
+                "Because the model might crash on large values"
+            ],
+            "correct_answer": 2,
+            "explanation": "A $50,000 error means something very different when predicting house prices vs. company revenue, so error interpretation depends on the scale and context."
+        },
+        {
+            "id": 102,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "Which metric is most appropriate for understanding prediction errors as a percentage of actual values?",
+            "options": [
+                "MAE",
+                "MSE",
+                "RMSE",
+                "MAPE"
+            ],
+            "correct_answer": 3,
+            "explanation": "MAPE expresses errors as percentages of actual values, making it scale-independent and easily interpretable across different contexts."
+        },
+        {
+            "id": 103,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "beginner",
+            "question": "What is the key difference between loss functions and evaluation metrics?",
+            "options": [
+                "Loss functions are used during training; evaluation metrics are used after training",
+                "Loss functions are only for classification; evaluation metrics are only for regression",
+                "Loss functions are more accurate than evaluation metrics",
+                "There is no practical difference between them"
+            ],
+            "correct_answer": 0,
+            "explanation": "Loss functions guide model learning during training by measuring individual prediction errors, while evaluation metrics assess overall model performance on unseen data after training."
+        },
+        {
+            "id": 104,
+            "type": "multiple_choice",
+            "category": "classification_metrics",
+            "difficulty": "intermediate",
+            "question": "In a medical test scenario, what does a False Negative represent?",
+            "options": [
+                "A healthy person incorrectly diagnosed as sick",
+                "A sick person incorrectly diagnosed as healthy",
+                "A sick person correctly diagnosed as sick",
+                "A healthy person correctly diagnosed as healthy"
+            ],
+            "correct_answer": 1,
+            "explanation": "A False Negative occurs when the test fails to detect a true condition - a sick person is told they're healthy, which can have serious consequences."
+        },
+        {
+            "id": 105,
+            "type": "multiple_choice",
+            "category": "ensemble_learning",
+            "difficulty": "intermediate",
+            "question": "What is the primary advantage of ensemble methods over single models?",
+            "options": [
+                "They are always faster to train",
+                "They require less data",
+                "They reduce the impact of individual model errors through combination",
+                "They are simpler to implement"
+            ],
+            "correct_answer": 2,
+            "explanation": "Ensemble methods combine multiple models' predictions, canceling out individual errors and providing more stable, accurate results than any single model."
+        },
+        {
+            "id": 106,
+            "type": "multiple_choice",
+            "category": "linear_regression_basics",
+            "difficulty": "beginner",
+            "question": "In the linear regression equation y = a + bx, what does the 'b' coefficient represent?",
+            "options": [
+                "The predicted value when x is zero",
+                "The average error in predictions",
+                "The change in y for each one-unit change in x",
+                "The correlation between x and y"
+            ],
+            "correct_answer": 2,
+            "explanation": "The 'b' coefficient (slope) represents how much the dependent variable y changes for each one-unit increase in the independent variable x."
+        },
+        {
+            "id": 107,
+            "type": "multiple_choice",
+            "category": "data_preprocessing",
+            "difficulty": "beginner",
+            "question": "What is the main purpose of feature scaling in machine learning?",
+            "options": [
+                "To remove all missing values from the dataset",
+                "To ensure all features contribute equally to the model",
+                "To convert categorical variables to numerical",
+                "To reduce the number of features"
+            ],
+            "correct_answer": 1,
+            "explanation": "Feature scaling ensures that features with different scales contribute equally to model training, preventing features with larger ranges from dominating the learning process."
+        },
+        {
+            "id": 108,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "What does a learning curve typically show?",
+            "options": [
+                "The relationship between features and target variable",
+                "Model performance vs. training time",
+                "Training and validation performance vs. training set size",
+                "Feature importance scores"
+            ],
+            "correct_answer": 2,
+            "explanation": "Learning curves plot training and validation scores against training set size, helping diagnose whether a model suffers from overfitting or underfitting."
+        },
+        {
+            "id": 109,
+            "type": "multiple_choice",
+            "category": "classification_metrics",
+            "difficulty": "intermediate",
+            "question": "When would you prioritize recall over precision in a classification model?",
+            "options": [
+                "When false positives are more costly than false negatives",
+                "When false negatives are more costly than false positives",
+                "When both types of errors are equally important",
+                "When model interpretability is the main concern"
+            ],
+            "correct_answer": 1,
+            "explanation": "Recall should be prioritized when missing positive cases (false negatives) is more serious than false alarms, such as in medical diagnosis or fraud detection."
+        },
+        {
+            "id": 110,
+            "type": "multiple_choice",
+            "category": "machine_learning_fundamentals",
+            "difficulty": "beginner",
+            "question": "What is the primary goal of regularization in machine learning?",
+            "options": [
+                "To increase model complexity",
+                "To reduce overfitting by penalizing large coefficients",
+                "To speed up training time",
+                "To handle missing values automatically"
+            ],
+            "correct_answer": 1,
+            "explanation": "Regularization techniques like L1 (Lasso) and L2 (Ridge) prevent overfitting by adding penalty terms that shrink model coefficients toward zero."
+        },
+        {
+            "id": 111,
+            "type": "multiple_choice",
+            "category": "data_quality",
+            "difficulty": "beginner",
+            "question": "What is the difference between outliers and noise in a dataset?",
+            "options": [
+                "Outliers are always errors while noise represents true patterns",
+                "Outliers are extreme but valid values, while noise is random error",
+                "Noise can be removed but outliers must be kept",
+                "There is no practical difference between them"
+            ],
+            "correct_answer": 1,
+            "explanation": "Outliers are extreme but potentially valid observations that may represent rare cases, while noise consists of random errors or fluctuations that don't follow meaningful patterns."
+        },
+        {
+            "id": 112,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "Why is it important to use a separate validation set in addition to training and test sets?",
+            "options": [
+                "To have more data for final evaluation",
+                "For hyperparameter tuning without touching the test set",
+                "To reduce training time",
+                "To ensure all data is used for training"
+            ],
+            "correct_answer": 1,
+            "explanation": "A validation set allows for model selection and hyperparameter tuning while keeping the test set completely untouched for final, unbiased evaluation."
+        },
+        {
+            "id": 113,
+            "type": "multiple_choice",
+            "category": "regression_basics",
+            "difficulty": "beginner",
+            "question": "What assumption does linear regression make about the relationship between variables?",
+            "options": [
+                "The relationship must be perfectly linear",
+                "There must be no correlation between variables",
+                "All variables must be normally distributed",
+                "The relationship can be any complex shape"
+            ],
+            "correct_answer": 0,
+            "explanation": "Linear regression assumes a linear relationship between the independent and dependent variables, meaning changes in x produce proportional changes in y."
+        },
+        {
+            "id": 114,
+            "type": "multiple_choice",
+            "category": "data_preprocessing",
+            "difficulty": "intermediate",
+            "question": "What is the main advantage of one-hot encoding over label encoding for categorical variables?",
+            "options": [
+                "It uses less memory",
+                "It preserves the ordinal relationship between categories",
+                "It avoids implying artificial ordinal relationships",
+                "It works better with tree-based models"
+            ],
+            "correct_answer": 2,
+            "explanation": "One-hot encoding creates binary columns for each category, preventing the model from interpreting arbitrary numerical assignments as having meaningful order or magnitude."
+        },
+        {
+            "id": 115,
+            "type": "multiple_choice",
+            "category": "machine_learning_fundamentals",
+            "difficulty": "beginner",
+            "question": "What is the bias-variance tradeoff in machine learning?",
+            "options": [
+                "The balance between model simplicity and complexity",
+                "The tradeoff between training time and accuracy",
+                "The choice between different algorithms",
+                "The balance between data quantity and quality"
+            ],
+            "correct_answer": 0,
+            "explanation": "The bias-variance tradeoff describes the tension between simple models (high bias, low variance) that may underfit and complex models (low bias, high variance) that may overfit."
+        },
+        {
+            "id": 116,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "What does a ROC curve visualize?",
+            "options": [
+                "The relationship between features and target",
+                "The tradeoff between true positive rate and false positive rate",
+                "Model performance over training iterations",
+                "Feature importance rankings"
+            ],
+            "correct_answer": 1,
+            "explanation": "The ROC curve plots the true positive rate against the false positive rate at different classification thresholds, showing the tradeoff between sensitivity and specificity."
+        },
+        {
+            "id": 117,
+            "type": "multiple_choice",
+            "category": "data_preprocessing",
+            "difficulty": "beginner",
+            "question": "What is the purpose of train-test split in machine learning?",
+            "options": [
+                "To increase the amount of training data",
+                "To evaluate model performance on unseen data",
+                "To reduce feature dimensionality",
+                "To handle class imbalance"
+            ],
+            "correct_answer": 1,
+            "explanation": "Train-test split reserves a portion of data for testing, allowing evaluation of how well the model generalizes to new, unseen data rather than just memorizing training examples."
+        },
+        {
+            "id": 118,
+            "type": "multiple_choice",
+            "category": "regression_metrics",
+            "difficulty": "intermediate",
+            "question": "When comparing regression models, why might you prefer RMSE over MAE?",
+            "options": [
+                "RMSE is always smaller than MAE",
+                "RMSE is more sensitive to large errors",
+                "RMSE is easier to interpret",
+                "RMSE doesn't require scaled data"
+            ],
+            "correct_answer": 1,
+            "explanation": "RMSE penalizes larger errors more heavily due to the squaring operation, making it more sensitive to outliers and large prediction errors."
+        },
+        {
+            "id": 119,
+            "type": "multiple_choice",
+            "category": "classification_metrics",
+            "difficulty": "intermediate",
+            "question": "What is the F1-score a combination of?",
+            "options": [
+                "Accuracy and Precision",
+                "Precision and Recall",
+                "Recall and Specificity",
+                "Sensitivity and Specificity"
+            ],
+            "correct_answer": 1,
+            "explanation": "The F1-score is the harmonic mean of precision and recall, providing a single metric that balances both concerns, especially useful for imbalanced datasets."
+        },
+        {
+            "id": 120,
+            "type": "multiple_choice",
+            "category": "machine_learning_fundamentals",
+            "difficulty": "beginner",
+            "question": "What is the main difference between parametric and non-parametric models?",
+            "options": [
+                "Parametric models have fixed numbers of parameters, non-parametric don't",
+                "Non-parametric models are always more accurate",
+                "Parametric models can only handle numerical data",
+                "Non-parametric models are faster to train"
+            ],
+            "correct_answer": 0,
+            "explanation": "Parametric models make assumptions about the data distribution and have a fixed number of parameters, while non-parametric models grow in complexity with the amount of data."
+        },
+        {
+            "id": 121,
+            "type": "multiple_choice",
+            "category": "linear_regression_basics",
+            "difficulty": "beginner",
+            "question": "What does multicollinearity refer to in regression analysis?",
+            "options": [
+                "When the dependent variable has multiple categories",
+                "When independent variables are highly correlated with each other",
+                "When there are multiple dependent variables",
+                "When the regression line has multiple slopes"
+            ],
+            "correct_answer": 1,
+            "explanation": "Multicollinearity occurs when independent variables in a regression model are highly correlated, making it difficult to determine their individual effects on the dependent variable."
+        },
+        {
+            "id": 122,
+            "type": "multiple_choice",
+            "category": "data_preprocessing",
+            "difficulty": "intermediate",
+            "question": "What is the main purpose of using Stratified K-Fold cross-validation?",
+            "options": [
+                "To speed up the cross-validation process",
+                "To ensure each fold has the same proportion of class labels as the full dataset",
+                "To reduce the number of folds needed",
+                "To handle missing values automatically"
+            ],
+            "correct_answer": 1,
+            "explanation": "Stratified K-Fold preserves the percentage of samples for each class in every fold, which is especially important for imbalanced datasets to ensure representative sampling."
+        },
+        {
+            "id": 123,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "What does AUC (Area Under the Curve) represent in a ROC curve?",
+            "options": [
+                "The probability that the model will make a correct prediction",
+                "The model's ability to distinguish between classes",
+                "The average precision of the model",
+                "The training time required for the model"
+            ],
+            "correct_answer": 1,
+            "explanation": "AUC measures the entire two-dimensional area under the ROC curve, representing the model's ability to distinguish between positive and negative classes across all thresholds."
+        },
+        {
+            "id": 124,
+            "type": "multiple_choice",
+            "category": "machine_learning_fundamentals",
+            "difficulty": "beginner",
+            "question": "What is the primary goal of dimensionality reduction techniques like PCA?",
+            "options": [
+                "To increase model complexity",
+                "To reduce the number of features while preserving important information",
+                "To convert categorical variables to numerical",
+                "To handle missing values in the dataset"
+            ],
+            "correct_answer": 1,
+            "explanation": "Dimensionality reduction techniques like PCA transform high-dimensional data into a lower-dimensional space while retaining as much variance/information as possible."
+        },
+        {
+            "id": 125,
+            "type": "multiple_choice",
+            "category": "regression_metrics",
+            "difficulty": "intermediate",
+            "question": "When would Adjusted R-squared be preferred over regular R-squared?",
+            "options": [
+                "When working with classification problems",
+                "When comparing models with different numbers of predictors",
+                "When the dataset is very small",
+                "When all variables are perfectly correlated"
+            ],
+            "correct_answer": 1,
+            "explanation": "Adjusted R-squared penalizes the addition of irrelevant predictors, making it better for comparing models with different numbers of features since regular R-squared always increases with more variables."
+        },
+        {
+            "id": 126,
+            "type": "multiple_choice",
+            "category": "data_preprocessing",
+            "difficulty": "beginner",
+            "question": "What is the main difference between standardization and normalization?",
+            "options": [
+                "Standardization uses min-max scaling, normalization uses z-scores",
+                "Standardization uses z-scores, normalization uses min-max scaling",
+                "Standardization is for categorical data, normalization for numerical",
+                "There is no difference - they are the same"
+            ],
+            "correct_answer": 1,
+            "explanation": "Standardization transforms data to have mean=0 and std=1 (z-scores), while normalization scales data to a fixed range (usually 0-1) using min-max scaling."
+        },
+        {
+            "id": 127,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of a validation curve in machine learning?",
+            "options": [
+                "To show model performance over training time",
+                "To visualize the relationship between model complexity and performance",
+                "To display feature importance scores",
+                "To show the distribution of prediction errors"
+            ],
+            "correct_answer": 1,
+            "explanation": "Validation curves plot training and validation scores against different values of a hyperparameter, helping to find the optimal model complexity and avoid overfitting/underfitting."
+        },
+        {
+            "id": 128,
+            "type": "multiple_choice",
+            "category": "classification_metrics",
+            "difficulty": "intermediate",
+            "question": "In a confusion matrix, what does specificity measure?",
+            "options": [
+                "The ability to correctly identify positive cases",
+                "The ability to correctly identify negative cases",
+                "The overall accuracy of the model",
+                "The balance between precision and recall"
+            ],
+            "correct_answer": 1,
+            "explanation": "Specificity (True Negative Rate) measures the proportion of actual negatives that are correctly identified as negative: TN / (TN + FP)."
+        },
+        {
+            "id": 129,
+            "type": "multiple_choice",
+            "category": "machine_learning_fundamentals",
+            "difficulty": "beginner",
+            "question": "What is the main characteristic of semi-supervised learning?",
+            "options": [
+                "It uses only labeled data",
+                "It uses only unlabeled data",
+                "It uses both labeled and unlabeled data",
+                "It doesn't use any data"
+            ],
+            "correct_answer": 2,
+            "explanation": "Semi-supervised learning utilizes a small amount of labeled data along with a large amount of unlabeled data, combining aspects of both supervised and unsupervised learning."
+        },
+        {
+            "id": 130,
+            "type": "multiple_choice",
+            "category": "data_quality",
+            "difficulty": "beginner",
+            "question": "What is the difference between missing completely at random (MCAR) and missing at random (MAR)?",
+            "options": [
+                "MCAR depends on observed data, MAR doesn't",
+                "MAR depends on observed data, MCAR doesn't",
+                "Both depend on unobserved data",
+                "There is no practical difference"
+            ],
+            "correct_answer": 1,
+            "explanation": "MCAR means missingness doesn't depend on any data, while MAR means missingness depends on observed data but not the missing values themselves."
+        },
+        {
+            "id": 131,
+            "type": "multiple_choice",
+            "category": "regression_basics",
+            "difficulty": "intermediate",
+            "question": "What is heteroscedasticity in regression analysis?",
+            "options": [
+                "When the variance of errors is constant across observations",
+                "When the variance of errors changes across observations",
+                "When errors are normally distributed",
+                "When there is a linear relationship between variables"
+            ],
+            "correct_answer": 1,
+            "explanation": "Heteroscedasticity occurs when the variability of the residuals (errors) is not constant across all levels of the independent variables, violating a key assumption of linear regression."
+        },
+        {
+            "id": 132,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of a calibration curve in classification?",
+            "options": [
+                "To show the relationship between predicted probabilities and actual outcomes",
+                "To visualize feature importance",
+                "To measure training time efficiency",
+                "To display class distribution"
+            ],
+            "correct_answer": 0,
+            "explanation": "Calibration curves compare predicted probabilities with actual observed frequencies, showing how well a model's confidence scores align with real-world probabilities."
+        },
+        {
+            "id": 133,
+            "type": "multiple_choice",
+            "category": "data_preprocessing",
+            "difficulty": "beginner",
+            "question": "What is the main advantage of using pipelines in scikit-learn?",
+            "options": [
+                "To make code run faster",
+                "To combine multiple preprocessing steps and model training into a single object",
+                "To automatically select the best model",
+                "To handle missing values without any code"
+            ],
+            "correct_answer": 1,
+            "explanation": "Pipelines chain together multiple processing steps and the final estimator, ensuring consistent preprocessing during training and prediction while preventing data leakage."
+        },
+        {
+            "id": 134,
+            "type": "multiple_choice",
+            "category": "classification_metrics",
+            "difficulty": "intermediate",
+            "question": "What does the precision-recall curve show that the ROC curve doesn't?",
+            "options": [
+                "The tradeoff between sensitivity and specificity",
+                "Model performance with imbalanced datasets more clearly",
+                "The overall accuracy of the model",
+                "Feature correlation patterns"
+            ],
+            "correct_answer": 1,
+            "explanation": "Precision-recall curves are more informative than ROC curves for imbalanced datasets because they focus on the performance of the positive (minority) class rather than both classes equally."
+        },
+        {
+            "id": 135,
+            "type": "multiple_choice",
+            "category": "machine_learning_fundamentals",
+            "difficulty": "beginner",
+            "question": "What is transfer learning in machine learning?",
+            "options": [
+                "Training a model from scratch on new data",
+                "Using a pre-trained model as a starting point for a new task",
+                "Transferring data between different storage systems",
+                "Converting models between different programming languages"
+            ],
+            "correct_answer": 1,
+            "explanation": "Transfer learning involves taking a model trained on one task and reusing it (with fine-tuning) on a different but related task, leveraging learned features to improve performance with less data."
+        },
+        {
+            "id": 136,
+            "type": "multiple_choice",
+            "category": "model_evaluation",
+            "difficulty": "intermediate",
+            "question": "What is the purpose of using bootstrapping in machine learning?",
+            "options": [
+                "To increase training speed",
+                "To estimate the sampling distribution of a statistic by resampling with replacement",
+                "To reduce model complexity",
+                "To handle categorical variables"
+            ],
+            "correct_answer": 1,
+            "explanation": "Bootstrapping creates multiple samples by drawing with replacement from the original data, allowing estimation of statistics' variability and creating ensemble models like Random Forests."
+        },
+        {
+            "id": 137,
+            "type": "multiple_choice",
+            "category": "data_preprocessing",
+            "difficulty": "beginner",
+            "question": "What is the main risk of using mean imputation for missing values?",
+            "options": [
+                "It reduces the variance of the variable",
+                "It increases the dataset size",
+                "It creates too many new features",
+                "It only works for categorical variables"
+            ],
+            "correct_answer": 0,
+            "explanation": "Mean imputation reduces the variance of the variable and can distort relationships between variables because it doesn't account for the uncertainty of the missing values."
+        },
+        {
+            "id": 138,
+            "type": "multiple_choice",
+            "category": "regression_metrics",
+            "difficulty": "advanced",
+            "question": "What does the Durbin-Watson statistic test for in regression analysis?",
+            "options": [
+                "Multicollinearity between predictors",
+                "Autocorrelation in the residuals",
+                "Heteroscedasticity",
+                "Normality of residuals"
+            ],
+            "correct_answer": 1,
+            "explanation": "The Durbin-Watson statistic tests for autocorrelation (serial correlation) in the residuals from a regression analysis, which is important for time series data."
+        },
+        {
+            "id": 139,
+            "type": "multiple_choice",
+            "category": "classification_metrics",
+            "difficulty": "intermediate",
+            "question": "What is the difference between micro-average and macro-average F1 scores?",
+            "options": [
+                "Micro-average gives equal weight to each class, macro-average to each instance",
+                "Micro-average gives equal weight to each instance, macro-average to each class",
+                "They are calculated the same way but on different data splits",
+                "There is no practical difference"
+            ],
+            "correct_answer": 1,
+            "explanation": "Micro-averaging aggregates contributions of all classes to compute average metric (instance-based), while macro-averaging computes metric independently for each class and averages (class-based)."
+        },
+        {
+            "id": 140,
+            "type": "multiple_choice",
+            "category": "machine_learning_fundamentals",
+            "difficulty": "beginner",
+            "question": "What is the primary purpose of early stopping in neural networks?",
+            "options": [
+                "To speed up training",
+                "To prevent overfitting by stopping when validation performance deteriorates",
+                "To ensure all data is used for training",
+                "To automatically select the best optimizer"
+            ],
+            "correct_answer": 1,
+            "explanation": "Early stopping monitors validation performance during training and stops when it starts to degrade, preventing the model from overfitting to the training data."
+        },
+        {
+            "id": 141,
+            "type": "code_completion",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "beginner",
+            "question": "Complete the code to convert a pandas DataFrame to a numpy array using the recommended method:",
+            "code_snippet": "numpy_array = df.______()",
+            "options": [
+                "values",
+                "to_numpy",
+                "array",
+                "convert"
+            ],
+            "correct_answer": 1,
+            "explanation": "to_numpy() is the recommended method in newer pandas versions for converting to numpy array"
+        },
+        {
+            "id": 142,
+            "type": "code_completion",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "beginner",
+            "question": "Complete the code to convert a pandas Series to numpy array using the legacy method:",
+            "code_snippet": "series_array = series.______",
+            "options": [
+                "to_numpy()",
+                "values",
+                "array",
+                "numpy()"
+            ],
+            "correct_answer": 1,
+            "explanation": ".values is the legacy method for converting pandas Series to numpy array"
+        },
+        {
+            "id": 143,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "beginner",
+            "question": "What happens to the pandas index when converting a Series to numpy array?",
+            "options": [
+                "Index is preserved in the array",
+                "Index becomes the first column",
+                "Index is lost completely",
+                "Index is converted to array headers"
+            ],
+            "correct_answer": 2,
+            "explanation": "When converting to numpy array, the pandas index is not preserved"
+        },
+        {
+            "id": 144,
+            "type": "code_completion",
+            "category": "pandas_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to create a pandas Series with custom indices:",
+            "code_snippet": "series = pd.Series([10, 20, 30], index=['a', 'b', '______'])",
+            "options": [
+                "'c'",
+                "3",
+                "index3",
+                "third"
+            ],
+            "correct_answer": 0,
+            "explanation": "The index parameter should be a list of labels matching the data length"
+        },
+        {
+            "id": 145,
+            "type": "code_completion",
+            "category": "pandas_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to add a new column to a DataFrame:",
+            "code_snippet": "df['Grade'] = ______",
+            "options": [
+                "grades",
+                "[85, 92, 78]",
+                "{'Grade': [85, 92, 78]}",
+                "pd.Series([85, 92, 78])"
+            ],
+            "correct_answer": 1,
+            "explanation": "You can assign a list of values directly to create a new column"
+        },
+        {
+            "id": 146,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "intermediate",
+            "question": "When converting a DataFrame with mixed data types to numpy array, what happens?",
+            "options": [
+                "All data is converted to strings",
+                "Data types are preserved separately",
+                "Data is upcasted to object type",
+                "The conversion fails with an error"
+            ],
+            "correct_answer": 2,
+            "explanation": "Mixed data types in DataFrame are converted to object type in numpy array"
+        },
+        {
+            "id": 147,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "Complete the code to select specific columns from a DataFrame:",
+            "code_snippet": "selected = df[['Student Name', '______']]",
+            "options": [
+                "Grade",
+                ":Grade",
+                "['Grade']",
+                "Grade()"
+            ],
+            "correct_answer": 0,
+            "explanation": "Multiple columns are selected using a list of column names: df[['col1', 'col2']]"
+        },
+        {
+            "id": 148,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "Complete the code to select rows using loc with a condition:",
+            "code_snippet": "high_grades = df.loc[df['Grade'] > 90, ['Student Name', '______']]",
+            "options": [
+                "Grade",
+                ">90",
+                "high_grades",
+                "df['Grade']"
+            ],
+            "correct_answer": 0,
+            "explanation": "The second parameter of loc specifies which columns to select"
+        },
+        {
+            "id": 149,
+            "type": "multiple_choice",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "What is the key difference between loc and iloc?",
+            "options": [
+                "loc uses positions, iloc uses labels",
+                "loc uses labels, iloc uses positions",
+                "loc is for columns only, iloc for rows only",
+                "There is no difference"
+            ],
+            "correct_answer": 1,
+            "explanation": "loc is label-based selection, iloc is position-based selection"
+        },
+        {
+            "id": 150,
+            "type": "code_completion",
+            "category": "numpy_operations",
+            "difficulty": "beginner",
+            "question": "Complete the code to reshape a 1D numpy array to 3 rows and 4 columns:",
+            "code_snippet": "arr_2d = arr_1d.reshape(3, ______)",
+            "options": [
+                "4",
+                "12",
+                "-1",
+                "0"
+            ],
+            "correct_answer": 0,
+            "explanation": "reshape(3, 4) creates a 2D array with 3 rows and 4 columns"
+        },
+        {
+            "id": 151,
+            "type": "code_completion",
+            "category": "numpy_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to automatically calculate rows when reshaping:",
+            "code_snippet": "auto_shape = arr_1d.reshape(-1, ______)",
+            "options": [
+                "4",
+                "0",
+                "None",
+                "arr_1d.size"
+            ],
+            "correct_answer": 0,
+            "explanation": "Using -1 for one dimension lets numpy automatically calculate it based on array size"
+        },
+        {
+            "id": 152,
+            "type": "multiple_choice",
+            "category": "numpy_operations",
+            "difficulty": "intermediate",
+            "question": "What does reshape(-1) do to a multi-dimensional array?",
+            "options": [
+                "Throws an error",
+                "Flattens it to 1D",
+                "Reverses the dimensions",
+                "Creates a copy with same shape"
+            ],
+            "correct_answer": 1,
+            "explanation": "reshape(-1) flattens any array to 1D regardless of original dimensions"
+        },
+        {
+            "id": 153,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "beginner",
+            "question": "Complete the code to update all values in a Series by adding 2.50:",
+            "code_snippet": "medicine_prices ______ 2.50",
+            "options": [
+                "+=",
+                "=+",
+                "add",
+                ".add("
+            ],
+            "correct_answer": 0,
+            "explanation": "The += operator performs in-place addition to all elements in the Series"
+        },
+        {
+            "id": 154,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to filter a Series for values less than 20:",
+            "code_snippet": "affordable = medicine_prices[medicine_prices ______ 20]",
+            "options": [
+                "<",
+                ">",
+                "==",
+                "!="
+            ],
+            "correct_answer": 0,
+            "explanation": "Boolean indexing with < filters for values less than 20"
+        },
+        {
+            "id": 155,
+            "type": "multiple_choice",
+            "category": "pandas_creation",
+            "difficulty": "beginner",
+            "question": "Which method is most efficient for creating a Series with custom indices?",
+            "options": [
+                "Create with default indices then rename",
+                "Create with indices from the start",
+                "Use rename() method after creation",
+                "Convert from dictionary values only"
+            ],
+            "correct_answer": 1,
+            "explanation": "Creating Series with proper indices from the start using the index parameter is most efficient"
+        },
+        {
+            "id": 156,
+            "type": "code_completion",
+            "category": "pandas_creation",
+            "difficulty": "beginner",
+            "question": "Complete the code to create a DataFrame from a dictionary:",
+            "code_snippet": "df = pd.______({'Name': ['Alice', 'Bob'], 'Age': [25, 30]})",
+            "options": [
+                "DataFrame",
+                "Dataframe",
+                "Frame",
+                "DF"
+            ],
+            "correct_answer": 0,
+            "explanation": "pd.DataFrame() is used to create a DataFrame from a dictionary where keys become column names"
+        },
+        {
+            "id": 157,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "beginner",
+            "question": "What is the main advantage of using .to_numpy() over .values?",
+            "options": [
+                "It's faster for large datasets",
+                "It preserves the index in the array",
+                "It's the recommended method in newer pandas versions",
+                "It works with older pandas versions"
+            ],
+            "correct_answer": 2,
+            "explanation": ".to_numpy() is the recommended method in pandas 0.24+ and provides more consistency"
+        },
+        {
+            "id": 158,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "Complete the code to select columns using iloc by position:",
+            "code_snippet": "selected = df.iloc[:, [0, 2, ______]]",
+            "options": [
+                "4",
+                "'Grade'",
+                "Grade",
+                "-1"
+            ],
+            "correct_answer": 0,
+            "explanation": "iloc uses integer positions, so [0, 2, 4] selects the 1st, 3rd and 5th columns"
+        },
+        {
+            "id": 159,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to calculate the average grade in a DataFrame:",
+            "code_snippet": "average_grade = df['Grade'].______()",
+            "options": [
+                "mean",
+                "average",
+                "avg",
+                "median"
+            ],
+            "correct_answer": 0,
+            "explanation": ".mean() calculates the arithmetic mean of the values in the Series"
+        },
+        {
+            "id": 160,
+            "type": "multiple_choice",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "What is the difference between loc[1:3] and iloc[1:3] for row selection?",
+            "options": [
+                "loc includes row 3, iloc excludes row 3",
+                "loc excludes row 3, iloc includes row 3",
+                "Both include row 3",
+                "Both exclude row 3"
+            ],
+            "correct_answer": 0,
+            "explanation": "loc is inclusive of the end label, while iloc is exclusive of the end position"
+        },
+        {
+            "id": 161,
+            "type": "code_completion",
+            "category": "numpy_operations",
+            "difficulty": "beginner",
+            "question": "Complete the code to create a numpy array from a list:",
+            "code_snippet": "arr = np.______([1, 2, 3, 4, 5])",
+            "options": [
+                "array",
+                "Array",
+                "arr",
+                "np_array"
+            ],
+            "correct_answer": 0,
+            "explanation": "np.array() is used to create a numpy array from a list or other sequence"
+        },
+        {
+            "id": 162,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to find the maximum value in a Series:",
+            "code_snippet": "max_price = medicine_prices.______()",
+            "options": [
+                "max",
+                "maximum",
+                "highest",
+                "peak"
+            ],
+            "correct_answer": 0,
+            "explanation": ".max() returns the maximum value in the Series"
+        },
+        {
+            "id": 163,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "beginner",
+            "question": "When converting a DataFrame to numpy array, what is preserved from the original DataFrame?",
+            "options": [
+                "Column names and index",
+                "Only the data values",
+                "Column names but not index",
+                "Index but not column names"
+            ],
+            "correct_answer": 1,
+            "explanation": "Only the data values are preserved; both column names and index are lost in the numpy array"
+        },
+        {
+            "id": 164,
+            "type": "code_completion",
+            "category": "pandas_creation",
+            "difficulty": "intermediate",
+            "question": "Complete the code to create a Series from a dictionary:",
+            "code_snippet": "series = pd.______({'A': 1, 'B': 2, 'C': 3})",
+            "options": [
+                "Series",
+                "series",
+                "Ser",
+                "DictSeries"
+            ],
+            "correct_answer": 0,
+            "explanation": "pd.Series() can be created from a dictionary where keys become the index"
+        },
+        {
+            "id": 165,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "advanced",
+            "question": "Complete the code to select rows where Age is between 25 and 30:",
+            "code_snippet": "selected = df.loc[df['Age'].______(25, 30)]",
+            "options": [
+                "between",
+                "range",
+                "in_range",
+                "from_to"
+            ],
+            "correct_answer": 0,
+            "explanation": ".between() method selects values within the specified inclusive range"
+        },
+        {
+            "id": 166,
+            "type": "multiple_choice",
+            "category": "numpy_operations",
+            "difficulty": "intermediate",
+            "question": "What happens if you try to reshape an array with incompatible dimensions?",
+            "options": [
+                "It automatically pads with zeros",
+                "It throws a ValueError",
+                "It truncates the extra elements",
+                "It repeats the array elements"
+            ],
+            "correct_answer": 1,
+            "explanation": "Reshaping requires the product of dimensions to match the total elements, otherwise ValueError is raised"
+        },
+        {
+            "id": 167,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to sort a DataFrame by a column in descending order:",
+            "code_snippet": "df_sorted = df.sort_values('Grade', ______=False)",
+            "options": [
+                "ascending",
+                "order",
+                "direction",
+                "sort_order"
+            ],
+            "correct_answer": 0,
+            "explanation": "ascending=False parameter sorts values in descending order"
+        },
+        {
+            "id": 168,
+            "type": "code_completion",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "intermediate",
+            "question": "Complete the code to convert only specific columns to numpy array:",
+            "code_snippet": "selected_array = df[['X', 'Y']].______()",
+            "options": [
+                "to_numpy",
+                "values",
+                "numpy",
+                "array"
+            ],
+            "correct_answer": 0,
+            "explanation": "First select columns using df[['X', 'Y']], then convert to numpy array with .to_numpy()"
+        },
+        {
+            "id": 169,
+            "type": "multiple_choice",
+            "category": "pandas_basics",
+            "difficulty": "beginner",
+            "question": "What is the data type of a pandas Series containing mixed numeric and string values?",
+            "options": [
+                "object",
+                "mixed",
+                "string",
+                "variant"
+            ],
+            "correct_answer": 0,
+            "explanation": "Pandas uses 'object' dtype for Series containing mixed types or strings"
+        },
+        {
+            "id": 170,
+            "type": "code_completion",
+            "category": "numpy_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to get the shape of a numpy array:",
+            "code_snippet": "array_shape = arr.______",
+            "options": [
+                "shape",
+                "size",
+                "dim",
+                "dimensions"
+            ],
+            "correct_answer": 0,
+            "explanation": ".shape attribute returns a tuple representing the dimensions of the array"
+        },
+        {
+            "id": 171,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "advanced",
+            "question": "Complete the code to apply a custom function to each element in a Series:",
+            "code_snippet": "result = series.______(lambda x: x * 2)",
+            "options": [
+                "apply",
+                "map",
+                "transform",
+                "function"
+            ],
+            "correct_answer": 0,
+            "explanation": ".apply() method applies a function to each element in the Series"
+        },
+        {
+            "id": 172,
+            "type": "multiple_choice",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "Which method allows selection using boolean conditions?",
+            "options": [
+                "Only loc",
+                "Only iloc",
+                "Both loc and iloc",
+                "Neither loc nor iloc"
+            ],
+            "correct_answer": 0,
+            "explanation": "loc supports boolean array indexing, while iloc is primarily for integer position-based selection"
+        },
+        {
+            "id": 173,
+            "type": "code_completion",
+            "category": "pandas_creation",
+            "difficulty": "beginner",
+            "question": "Complete the code to create a single-column DataFrame:",
+            "code_snippet": "df = pd.DataFrame(students, columns=['______'])",
+            "options": [
+                "Student Name",
+                "student_name",
+                "Students",
+                "Name"
+            ],
+            "correct_answer": 0,
+            "explanation": "The columns parameter specifies the column name for the single column DataFrame"
+        },
+        {
+            "id": 174,
+            "type": "code_completion",
+            "category": "numpy_operations",
+            "difficulty": "beginner",
+            "question": "Complete the code to create a sequence of numbers with arange:",
+            "code_snippet": "arr = np.______(0, 10, 2)",
+            "options": [
+                "arange",
+                "range",
+                "sequence",
+                "linspace"
+            ],
+            "correct_answer": 0,
+            "explanation": "np.arange(start, stop, step) creates evenly spaced values within an interval"
+        },
+        {
+            "id": 175,
+            "type": "multiple_choice",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "What is the result of performing a mathematical operation on a pandas Series?",
+            "options": [
+                "A new Series with the operation applied to each element",
+                "The original Series is modified in place",
+                "A single scalar value",
+                "A DataFrame with the results"
+            ],
+            "correct_answer": 0,
+            "explanation": "Mathematical operations on Series are vectorized and return a new Series with the same index"
+        },
+        {
+            "id": 176,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to find the index of the maximum value in a Series:",
+            "code_snippet": "max_index = medicine_prices.______()",
+            "options": [
+                "idxmax",
+                "argmax",
+                "max_index",
+                "find_max"
+            ],
+            "correct_answer": 0,
+            "explanation": ".idxmax() returns the index label of the maximum value in the Series"
+        },
+        {
+            "id": 177,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "beginner",
+            "question": "What is the relationship between pandas Series and numpy arrays internally?",
+            "options": [
+                "Series are built on top of numpy arrays",
+                "They are completely independent",
+                "Numpy arrays are built on pandas Series",
+                "They share no common foundation"
+            ],
+            "correct_answer": 0,
+            "explanation": "Pandas Series are built on top of numpy arrays internally, making conversion very efficient"
+        },
+        {
+            "id": 178,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "advanced",
+            "question": "Complete the code to select rows where Department is either 'HR' or 'Finance':",
+            "code_snippet": "selected = df.loc[df['Department'].______(['HR', 'Finance'])]",
+            "options": [
+                "isin",
+                "in",
+                "contains",
+                "matches"
+            ],
+            "correct_answer": 0,
+            "explanation": ".isin() method checks if each element is contained in the provided list of values"
+        },
+        {
+            "id": 179,
+            "type": "code_completion",
+            "category": "numpy_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to get the number of dimensions of a numpy array:",
+            "code_snippet": "dims = arr.______",
+            "options": [
+                "ndim",
+                "dims",
+                "dimensions",
+                "rank"
+            ],
+            "correct_answer": 0,
+            "explanation": ".ndim attribute returns the number of array dimensions"
+        },
+        {
+            "id": 180,
+            "type": "multiple_choice",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "When using += to modify a Series, what happens to the original data?",
+            "options": [
+                "Original Series is modified in place",
+                "A new Series is created",
+                "Operation fails with error",
+                "Only a view is modified"
+            ],
+            "correct_answer": 0,
+            "explanation": "The += operator performs in-place modification of the original Series"
+        },
+        {
+            "id": 181,
+            "type": "code_completion",
+            "category": "pandas_creation",
+            "difficulty": "beginner",
+            "question": "Complete the code to rename the index of a Series:",
+            "code_snippet": "series.index = ['A', 'B', '______']",
+            "options": [
+                "'C'",
+                "2",
+                "third",
+                "index_2"
+            ],
+            "correct_answer": 0,
+            "explanation": "You can assign a new list of labels directly to the .index attribute"
+        },
+        {
+            "id": 182,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to count the number of A grades in a Series:",
+            "code_snippet": "count_a = (df['Letter Grade'] == 'A').______()",
+            "options": [
+                "sum",
+                "count",
+                "total",
+                "size"
+            ],
+            "correct_answer": 0,
+            "explanation": "Boolean Series can be summed to count True values (True=1, False=0)"
+        },
+        {
+            "id": 183,
+            "type": "multiple_choice",
+            "category": "numpy_operations",
+            "difficulty": "intermediate",
+            "question": "What is the difference between reshape and resize in numpy?",
+            "options": [
+                "reshape returns new array, resize can modify original",
+                "resize returns new array, reshape modifies original",
+                "They are identical",
+                "reshape works only with 2D arrays"
+            ],
+            "correct_answer": 0,
+            "explanation": "reshape returns a new array with new shape, while resize can modify the original array or repeat elements"
+        },
+        {
+            "id": 184,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "advanced",
+            "question": "Complete the code to select numeric columns only from a DataFrame:",
+            "code_snippet": "numeric_cols = df.______(include=['int64', 'float64'])",
+            "options": [
+                "select_dtypes",
+                "dtype_select",
+                "filter_dtypes",
+                "numeric_only"
+            ],
+            "correct_answer": 0,
+            "explanation": "select_dtypes() method selects columns based on their data types"
+        },
+        {
+            "id": 185,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "beginner",
+            "question": "Complete the code to get the data type of a Series:",
+            "code_snippet": "dtype_info = series.______",
+            "options": [
+                "dtype",
+                "dtypes",
+                "type",
+                "data_type"
+            ],
+            "correct_answer": 0,
+            "explanation": ".dtype attribute returns the data type of the Series elements"
+        },
+        {
+            "id": 186,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "beginner",
+            "question": "Which method should you use for converting to numpy array in pandas 0.24+?",
+            "options": [
+                ".values for all cases",
+                ".to_numpy() for all cases",
+                ".array for new code",
+                ".numpy() for compatibility"
+            ],
+            "correct_answer": 1,
+            "explanation": ".to_numpy() is the recommended method in pandas 0.24 and later versions"
+        },
+        {
+            "id": 187,
+            "type": "code_completion",
+            "category": "numpy_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to flatten a multi-dimensional array to 1D:",
+            "code_snippet": "flat_arr = arr_2d.______()",
+            "options": [
+                "flatten",
+                "ravel",
+                "reshape(-1)",
+                "All of the above"
+            ],
+            "correct_answer": 3,
+            "explanation": "All three methods can flatten an array to 1D, with slight differences in memory behavior"
+        },
+        {
+            "id": 188,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to update values conditionally using a boolean mask:",
+            "code_snippet": "df.loc[df['Grade'] < 70, 'Grade Status'] = '______'",
+            "options": [
+                "'F'",
+                "Fail",
+                "Failed",
+                "Failing"
+            ],
+            "correct_answer": 0,
+            "explanation": "loc with boolean mask allows conditional assignment to specific cells"
+        },
+        {
+            "id": 189,
+            "type": "multiple_choice",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "What does df.filter(regex='Name') select?",
+            "options": [
+                "Columns containing 'Name' in their names",
+                "Rows containing 'Name' in their index",
+                "Cells containing 'Name'",
+                "Only the 'Name' column exactly"
+            ],
+            "correct_answer": 0,
+            "explanation": "filter with regex parameter selects columns whose names match the regular expression pattern"
+        },
+        {
+            "id": 190,
+            "type": "code_completion",
+            "category": "pandas_creation",
+            "difficulty": "beginner",
+            "question": "Complete the code to set a custom index name for a DataFrame:",
+            "code_snippet": "df.index.name = '______'",
+            "options": [
+                "'Student ID'",
+                "Student_ID",
+                "index_name",
+                "Student ID"
+            ],
+            "correct_answer": 0,
+            "explanation": "The index.name attribute can be set to a string to name the index"
+        },
+        {
+            "id": 191,
+            "type": "code_completion",
+            "category": "numpy_operations",
+            "difficulty": "advanced",
+            "question": "Complete the code to reshape with column-major (Fortran) order:",
+            "code_snippet": "f_style = arr.reshape(3, 4, order='______')",
+            "options": [
+                "'F'",
+                "'C'",
+                "'A'",
+                "'F-style'"
+            ],
+            "correct_answer": 0,
+            "explanation": "order='F' specifies Fortran-style (column-major) memory order for reshaping"
+        },
+        {
+            "id": 192,
+            "type": "multiple_choice",
+            "category": "pandas_operations",
+            "difficulty": "beginner",
+            "question": "What is the result of accessing a specific value using series['index_label']?",
+            "options": [
+                "The value at that index position",
+                "A new Series with one element",
+                "The scalar value at that index label",
+                "A DataFrame with one row"
+            ],
+            "correct_answer": 2,
+            "explanation": "Indexing a Series with a single label returns the scalar value at that position"
+        },
+        {
+            "id": 193,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to calculate the total sum of a Series:",
+            "code_snippet": "total = medicine_prices.______()",
+            "options": [
+                "sum",
+                "total",
+                "add",
+                "aggregate"
+            ],
+            "correct_answer": 0,
+            "explanation": ".sum() method returns the sum of all values in the Series"
+        },
+        {
+            "id": 194,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "advanced",
+            "question": "Complete the code to select every other row using iloc:",
+            "code_snippet": "every_other = df.iloc[______]",
+            "options": [
+                "::2",
+                "[::2]",
+                "1::2",
+                "range(0,len(df),2)"
+            ],
+            "correct_answer": 0,
+            "explanation": "iloc[::2] uses slicing with step 2 to select every other row"
+        },
+        {
+            "id": 195,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "intermediate",
+            "question": "When converting a DataFrame with datetime columns to numpy array, what happens?",
+            "options": [
+                "Datetimes convert to Unix timestamps",
+                "Datetimes remain as datetime objects",
+                "Conversion fails with error",
+                "Datetimes convert to strings"
+            ],
+            "correct_answer": 1,
+            "explanation": "Datetime objects in pandas are preserved as datetime64 objects in numpy arrays"
+        },
+        {
+            "id": 196,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "advanced",
+            "question": "Complete the code to create a new column based on conditional logic:",
+            "code_snippet": "df['Status'] = np.______(df['Grade'] >= 90, 'Excellent', 'Good')",
+            "options": [
+                "where",
+                "select",
+                "choose",
+                "ifelse"
+            ],
+            "correct_answer": 0,
+            "explanation": "np.where(condition, value_if_true, value_if_false) performs element-wise conditional assignment"
+        },
+        {
+            "id": 197,
+            "type": "multiple_choice",
+            "category": "numpy_operations",
+            "difficulty": "intermediate",
+            "question": "What is the key requirement for successful array reshaping?",
+            "options": [
+                "All elements must be the same type",
+                "The product of new dimensions must equal total elements",
+                "Array must be 1D initially",
+                "New dimensions must be smaller than original"
+            ],
+            "correct_answer": 1,
+            "explanation": "The product of the new shape dimensions must exactly match the total number of elements in the array"
+        },
+        {
+            "id": 198,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "advanced",
+            "question": "Complete the code to select the last 3 rows of a DataFrame:",
+            "code_snippet": "last_three = df.iloc[______]",
+            "options": [
+                "-3:",
+                "[-3:]",
+                "[-3,-2,-1]",
+                "len(df)-3:"
+            ],
+            "correct_answer": 0,
+            "explanation": "Negative indexing with slicing: -3: selects from the third last element to the end"
+        },
+        {
+            "id": 199,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to calculate percentage increase between two Series:",
+            "code_snippet": "pct_increase = (new_prices - old_prices) / old_prices * ______",
+            "options": [
+                "100",
+                "1",
+                "100.0",
+                "100%"
+            ],
+            "correct_answer": 0,
+            "explanation": "Multiplying by 100 converts the decimal ratio to percentage"
+        },
+        {
+            "id": 200,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "intermediate",
+            "question": "What is the dtype of a numpy array created from a Series with mixed integers and floats?",
+            "options": [
+                "float64",
+                "object",
+                "int64",
+                "mixed"
+            ],
+            "correct_answer": 0,
+            "explanation": "When mixing integers and floats, numpy upcasts to float64 to preserve decimal precision"
+        },
+        {
+            "id": 201,
+            "type": "code_completion",
+            "category": "pandas_creation",
+            "difficulty": "advanced",
+            "question": "Complete the code to create a DataFrame with a custom index from a dictionary:",
+            "code_snippet": "df = pd.DataFrame(data, index=['A', 'B', '______'])",
+            "options": [
+                "'C'",
+                "2",
+                "row3",
+                "index_2"
+            ],
+            "correct_answer": 0,
+            "explanation": "The index parameter can be provided when creating DataFrame to set custom row labels"
+        },
+        {
+            "id": 202,
+            "type": "code_completion",
+            "category": "numpy_operations",
+            "difficulty": "advanced",
+            "question": "Complete the code to create a 3D array representing RGB image data:",
+            "code_snippet": "image_3d = pixel_data.reshape(3, 3, ______)",
+            "options": [
+                "3",
+                "4",
+                "9",
+                "1"
+            ],
+            "correct_answer": 0,
+            "explanation": "A 3x3 RGB image has shape (3, 3, 3) for 3 color channels"
+        },
+        {
+            "id": 203,
+            "type": "multiple_choice",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "What is the result of applying a lambda function with apply() on a Series?",
+            "options": [
+                "A new Series with transformed values",
+                "The original Series is modified",
+                "A single aggregated value",
+                "A DataFrame with results"
+            ],
+            "correct_answer": 0,
+            "explanation": "apply() with lambda function returns a new Series with the function applied to each element"
+        },
+        {
+            "id": 204,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "advanced",
+            "question": "Complete the code to select rows where Salary is greater than 60000 and Department is 'IT':",
+            "code_snippet": "selected = df.loc[(df['Salary'] > 60000) ______ (df['Department'] == 'IT')]",
+            "options": [
+                "&",
+                "and",
+                "&&",
+                "|"
+            ],
+            "correct_answer": 0,
+            "explanation": "Use & for element-wise logical AND (not 'and' which is for scalar boolean operations)"
+        },
+        {
+            "id": 205,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "beginner",
+            "question": "Complete the code to get basic descriptive statistics of a DataFrame:",
+            "code_snippet": "stats = df.______()",
+            "options": [
+                "describe",
+                "info",
+                "stats",
+                "summary"
+            ],
+            "correct_answer": 0,
+            "explanation": "describe() provides count, mean, std, min, max, and quartiles for numerical columns"
+        },
+        {
+            "id": 206,
+            "type": "multiple_choice",
+            "category": "numpy_operations",
+            "difficulty": "intermediate",
+            "question": "What is the advantage of using -1 in reshape operations?",
+            "options": [
+                "Automatically calculates that dimension",
+                "Reverses the array order",
+                "Creates a 1D array",
+                "Handles missing values"
+            ],
+            "correct_answer": 0,
+            "explanation": "Using -1 for one dimension lets numpy automatically calculate it based on array size and other dimensions"
+        },
+        {
+            "id": 207,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "advanced",
+            "question": "Complete the code to update values using both row and column selection with loc:",
+            "code_snippet": "df.loc[df['Age'] < 25, '______'] = 'Junior'",
+            "options": [
+                "Category",
+                "'Category'",
+                "['Category']",
+                "df['Category']"
+            ],
+            "correct_answer": 0,
+            "explanation": "loc allows selecting rows by condition and columns by name for assignment"
+        },
+        {
+            "id": 208,
+            "type": "code_completion",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "intermediate",
+            "question": "Complete the code to verify two arrays contain equal values:",
+            "code_snippet": "are_equal = np.______(series.values, numpy_array)",
+            "options": [
+                "array_equal",
+                "equal",
+                "compare",
+                "arrays_equal"
+            ],
+            "correct_answer": 0,
+            "explanation": "np.array_equal() returns True if two arrays have the same shape and elements"
+        },
+        {
+            "id": 209,
+            "type": "multiple_choice",
+            "category": "pandas_selection",
+            "difficulty": "advanced",
+            "question": "What does df.iloc[1:6:2, :3] select?",
+            "options": [
+                "Rows 1,3,5 and first 3 columns",
+                "Rows 1 through 6 and columns 0-3",
+                "Every 2nd row from 1-6 and all columns",
+                "Rows 1,3,5 and columns 1-3"
+            ],
+            "correct_answer": 0,
+            "explanation": "iloc[1:6:2] selects rows 1,3,5 (start:stop:step) and :3 selects first 3 columns"
+        },
+        {
+            "id": 210,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to find the most frequent value in a Series:",
+            "code_snippet": "mode_value = series.______()",
+            "options": [
+                "mode",
+                "most_frequent",
+                "freq",
+                "common"
+            ],
+            "correct_answer": 0,
+            "explanation": "mode() returns the most frequently occurring value in the Series"
+        },
+        {
+            "id": 211,
+            "type": "code_completion",
+            "category": "numpy_operations",
+            "difficulty": "beginner",
+            "question": "Complete the code to get the total number of elements in an array:",
+            "code_snippet": "total_elements = arr.______",
+            "options": [
+                "size",
+                "count",
+                "len",
+                "elements"
+            ],
+            "correct_answer": 0,
+            "explanation": ".size attribute returns the total number of elements in the array"
+        },
+        {
+            "id": 212,
+            "type": "multiple_choice",
+            "category": "pandas_creation",
+            "difficulty": "intermediate",
+            "question": "Which method is most readable for creating a Series with meaningful indices?",
+            "options": [
+                "From dictionary with keys as indices",
+                "Create then rename indices",
+                "Using rename() method",
+                "All are equally readable"
+            ],
+            "correct_answer": 0,
+            "explanation": "Creating from dictionary makes the relationship between values and indices immediately clear"
+        },
+        {
+            "id": 213,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "advanced",
+            "question": "Complete the code to calculate cumulative sum of a Series:",
+            "code_snippet": "cumulative = series.______()",
+            "options": [
+                "cumsum",
+                "cumulative_sum",
+                "running_total",
+                "accumulate"
+            ],
+            "correct_answer": 0,
+            "explanation": "cumsum() returns the cumulative sum of elements in the Series"
+        },
+        {
+            "id": 214,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "Complete the code to select columns by data type:",
+            "code_snippet": "numeric_data = df.______(include=['number'])",
+            "options": [
+                "select_dtypes",
+                "filter_types",
+                "dtype_select",
+                "numeric_columns"
+            ],
+            "correct_answer": 0,
+            "explanation": "select_dtypes() with include=['number'] selects all numeric columns (int and float)"
+        },
+        {
+            "id": 215,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "advanced",
+            "question": "What is the main performance benefit of pandas-to-numpy conversion?",
+            "options": [
+                "No data copying occurs",
+                "Automatic parallel processing",
+                "Built on same memory foundation",
+                "Compressed storage format"
+            ],
+            "correct_answer": 2,
+            "explanation": "Pandas is built on numpy arrays internally, so conversion is very efficient with minimal overhead"
+        },
+        {
+            "id": 216,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "beginner",
+            "question": "Complete the code to reset the index of a DataFrame:",
+            "code_snippet": "df_reset = df.______()",
+            "options": [
+                "reset_index",
+                "reindex",
+                "new_index",
+                "default_index"
+            ],
+            "correct_answer": 0,
+            "explanation": "reset_index() converts the index to a regular column and creates a new default integer index"
+        },
+        {
+            "id": 217,
+            "type": "code_completion",
+            "category": "numpy_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to create an array of random integers:",
+            "code_snippet": "random_arr = np.random.______(0, 100, 10)",
+            "options": [
+                "randint",
+                "random_int",
+                "integers",
+                "rand"
+            ],
+            "correct_answer": 0,
+            "explanation": "np.random.randint(low, high, size) generates random integers in the specified range"
+        },
+        {
+            "id": 218,
+            "type": "multiple_choice",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "What is vectorized operation in pandas?",
+            "options": [
+                "Operations applied to entire arrays without loops",
+                "Operations using vector graphics",
+                "Linear algebra operations only",
+                "Operations on geometric vectors"
+            ],
+            "correct_answer": 0,
+            "explanation": "Vectorized operations apply to entire arrays/series at once, leveraging numpy's efficient C implementation"
+        },
+        {
+            "id": 219,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "advanced",
+            "question": "Complete the code to select rows using multiple conditions with OR logic:",
+            "code_snippet": "selected = df.loc[(df['Age'] < 25) ______ (df['Grade'] > 90)]",
+            "options": [
+                "|",
+                "or",
+                "||",
+                "&"
+            ],
+            "correct_answer": 0,
+            "explanation": "Use | for element-wise logical OR (not 'or' which is for scalar boolean operations)"
+        },
+        {
+            "id": 220,
+            "type": "code_completion",
+            "category": "pandas_operations",
+            "difficulty": "intermediate",
+            "question": "Complete the code to drop rows with missing values:",
+            "code_snippet": "df_clean = df.______()",
+            "options": [
+                "dropna",
+                "remove_na",
+                "clean",
+                "fillna"
+            ],
+            "correct_answer": 0,
+            "explanation": "dropna() removes rows containing any missing/NaN values from the DataFrame"
+        },
+        {
+            "id": 221,
+            "type": "code_completion",
+            "category": "pandas_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to create an empty DataFrame:",
+            "code_snippet": "df = pd.______()",
+            "options": [
+                "DataFrame",
+                "Dataframe",
+                "EmptyDataFrame",
+                "Frame"
+            ],
+            "correct_answer": 0,
+            "explanation": "pd.DataFrame() with no arguments creates an empty DataFrame"
+        },
+        {
+            "id": 222,
+            "type": "multiple_choice",
+            "category": "pandas_basics",
+            "difficulty": "beginner",
+            "question": "What is the default index type when creating a new DataFrame?",
+            "options": [
+                "RangeIndex starting from 0",
+                "String indices",
+                "No index",
+                "Random numbers"
+            ],
+            "correct_answer": 0,
+            "explanation": "Pandas creates a RangeIndex (0, 1, 2, ...) by default for new DataFrames"
+        },
+        {
+            "id": 223,
+            "type": "code_completion",
+            "category": "pandas_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to create a Series from a single value repeated:",
+            "code_snippet": "series = pd.Series(5, index=______(5))",
+            "options": [
+                "range",
+                "list",
+                "np.arange",
+                "generate"
+            ],
+            "correct_answer": 0,
+            "explanation": "range(5) creates indices [0,1,2,3,4] for a Series with value 5 repeated"
+        },
+        {
+            "id": 224,
+            "type": "multiple_choice",
+            "category": "pandas_basics",
+            "difficulty": "intermediate",
+            "question": "What happens if you create a Series from a dictionary with duplicate keys?",
+            "options": [
+                "Later values overwrite earlier ones",
+                "Error is raised",
+                "Creates multi-index Series",
+                "Keeps both values in a list"
+            ],
+            "correct_answer": 0,
+            "explanation": "Dictionary keys must be unique, so later values overwrite earlier ones when creating Series"
+        },
+        {
+            "id": 225,
+            "type": "code_completion",
+            "category": "pandas_basics",
+            "difficulty": "intermediate",
+            "question": "Complete the code to set a column as the DataFrame index:",
+            "code_snippet": "df_indexed = df.______('Student_ID')",
+            "options": [
+                "set_index",
+                "index_set",
+                "make_index",
+                "set_index_col"
+            ],
+            "correct_answer": 0,
+            "explanation": "set_index() method sets a column as the new index of the DataFrame"
+        },
+        {
+            "id": 226,
+            "type": "multiple_choice",
+            "category": "pandas_basics",
+            "difficulty": "beginner",
+            "question": "Which method shows the first 5 rows of a DataFrame by default?",
+            "options": [
+                "head()",
+                "first()",
+                "show()",
+                "display()"
+            ],
+            "correct_answer": 0,
+            "explanation": "head() displays the first 5 rows, or specify number like head(10) for first 10 rows"
+        },
+        {
+            "id": 227,
+            "type": "code_completion",
+            "category": "pandas_basics",
+            "difficulty": "intermediate",
+            "question": "Complete the code to get DataFrame column names as a list:",
+            "code_snippet": "columns_list = df.______.tolist()",
+            "options": [
+                "columns",
+                "cols",
+                "column_names",
+                "names"
+            ],
+            "correct_answer": 0,
+            "explanation": "df.columns returns an Index object that can be converted to list with tolist()"
+        },
+        {
+            "id": 228,
+            "type": "multiple_choice",
+            "category": "pandas_basics",
+            "difficulty": "beginner",
+            "question": "What is the data type of df.shape output?",
+            "options": [
+                "Tuple",
+                "List",
+                "DataFrame",
+                "Integer"
+            ],
+            "correct_answer": 0,
+            "explanation": "df.shape returns a tuple (rows, columns) representing the dimensions"
+        },
+        {
+            "id": 229,
+            "type": "code_completion",
+            "category": "pandas_basics",
+            "difficulty": "advanced",
+            "question": "Complete the code to create a DataFrame with datetime index:",
+            "code_snippet": "dates = pd.date_range('2023-01-01', ______=5)",
+            "options": [
+                "periods",
+                "days",
+                "length",
+                "size"
+            ],
+            "correct_answer": 0,
+            "explanation": "periods parameter specifies the number of periods to generate"
+        },
+        {
+            "id": 230,
+            "type": "multiple_choice",
+            "category": "pandas_basics",
+            "difficulty": "intermediate",
+            "question": "What method provides memory usage and data type information?",
+            "options": [
+                "info()",
+                "describe()",
+                "memory()",
+                "dtypes()"
+            ],
+            "correct_answer": 0,
+            "explanation": "info() shows column data types, non-null counts, and memory usage"
+        },
+        {
+            "id": 231,
+            "type": "code_completion",
+            "category": "pandas_basics",
+            "difficulty": "beginner",
+            "question": "Complete the code to get the number of rows and columns:",
+            "code_snippet": "rows, cols = df.______",
+            "options": [
+                "shape",
+                "size",
+                "dim",
+                "dimensions"
+            ],
+            "correct_answer": 0,
+            "explanation": "df.shape returns (rows, columns) which can be unpacked into variables"
+        },
+        {
+            "id": 232,
+            "type": "multiple_choice",
+            "category": "pandas_basics",
+            "difficulty": "intermediate",
+            "question": "When creating DataFrame from dictionary, what determines column order?",
+            "options": [
+                "Insertion order (Python 3.6+)",
+                "Alphabetical order",
+                "Random order",
+                "Based on values"
+            ],
+            "correct_answer": 0,
+            "explanation": "In Python 3.6+, dictionaries maintain insertion order, which determines DataFrame column order"
+        },
+        {
+            "id": 233,
+            "type": "code_completion",
+            "category": "pandas_basics",
+            "difficulty": "advanced",
+            "question": "Complete the code to create a multi-index DataFrame:",
+            "code_snippet": "df_multi = pd.DataFrame(data, index=pd.______([['A','A','B','B'], [1,2,1,2]]))",
+            "options": [
+                "MultiIndex",
+                "MultiIndex.from_tuples",
+                "MultiIndex.from_arrays",
+                "MultiIndex.from_product"
+            ],
+            "correct_answer": 2,
+            "explanation": "MultiIndex.from_arrays() creates a multi-index from lists of arrays"
+        },
+        {
+            "id": 234,
+            "type": "multiple_choice",
+            "category": "pandas_basics",
+            "difficulty": "beginner",
+            "question": "What is the output of len(df) for a DataFrame?",
+            "options": [
+                "Number of rows",
+                "Number of columns",
+                "Total elements",
+                "Memory size"
+            ],
+            "correct_answer": 0,
+            "explanation": "len(df) returns the number of rows in the DataFrame"
+        },
+        {
+            "id": 235,
+            "type": "code_completion",
+            "category": "pandas_basics",
+            "difficulty": "intermediate",
+            "question": "Complete the code to rename DataFrame columns:",
+            "code_snippet": "df_renamed = df.______(columns={'old_name': 'new_name'})",
+            "options": [
+                "rename",
+                "rename_columns",
+                "columns_rename",
+                "set_columns"
+            ],
+            "correct_answer": 0,
+            "explanation": "rename() method with columns parameter dictionary maps old names to new names"
+        },
+        {
+            "id": 236,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "beginner",
+            "question": "Complete the code to select a single column as Series:",
+            "code_snippet": "name_series = df['______']",
+            "options": [
+                "Student Name",
+                "Student_Name",
+                "student name",
+                "StudentName"
+            ],
+            "correct_answer": 0,
+            "explanation": "Column names with spaces must be quoted when using bracket notation"
+        },
+        {
+            "id": 237,
+            "type": "multiple_choice",
+            "category": "pandas_selection",
+            "difficulty": "beginner",
+            "question": "What is the difference between df['col'] and df[['col']]?",
+            "options": [
+                "First returns Series, second returns DataFrame",
+                "First returns DataFrame, second returns Series",
+                "Both return Series",
+                "Both return DataFrame"
+            ],
+            "correct_answer": 0,
+            "explanation": "Single bracket returns Series, double brackets returns single-column DataFrame"
+        },
+        {
+            "id": 238,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "Complete the code to select rows by label range:",
+            "code_snippet": "selected = df.______['A':'C']",
+            "options": [
+                "loc",
+                "iloc",
+                "ix",
+                "at"
+            ],
+            "correct_answer": 0,
+            "explanation": "loc supports label-based slicing including string ranges"
+        },
+        {
+            "id": 239,
+            "type": "multiple_choice",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "What does df.at[5, 'Column'] access?",
+            "options": [
+                "Single value by label",
+                "Single value by position",
+                "Row by label",
+                "Column by name"
+            ],
+            "correct_answer": 0,
+            "explanation": "at[] accesses single value for row/column label pair (fast for scalars)"
+        },
+        {
+            "id": 240,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "advanced",
+            "question": "Complete the code to select rows where column contains substring:",
+            "code_snippet": "selected = df[df['Major'].______('Bio')]",
+            "options": [
+                "str.contains",
+                "contains",
+                "has",
+                "includes"
+            ],
+            "correct_answer": 0,
+            "explanation": "str.contains() checks if string contains substring, returns boolean Series"
+        },
+        {
+            "id": 241,
+            "type": "multiple_choice",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "Which method is fastest for accessing a single scalar value?",
+            "options": [
+                "at[]",
+                "loc[]",
+                "iloc[]",
+                "Direct indexing"
+            ],
+            "correct_answer": 0,
+            "explanation": "at[] is optimized for fast scalar value access compared to loc[]/iloc[]"
+        },
+        {
+            "id": 242,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "advanced",
+            "question": "Complete the code to select rows with missing values in a column:",
+            "code_snippet": "missing = df[df['Grade'].______()]",
+            "options": [
+                "isna",
+                "isnull",
+                "isna() or isnull()",
+                "missing"
+            ],
+            "correct_answer": 2,
+            "explanation": "Both isna() and isnull() return boolean Series indicating missing values"
+        },
+        {
+            "id": 243,
+            "type": "multiple_choice",
+            "category": "pandas_selection",
+            "difficulty": "beginner",
+            "question": "What does df.iloc[0] return?",
+            "options": [
+                "First row as Series",
+                "First column as Series",
+                "First element",
+                "First row as DataFrame"
+            ],
+            "correct_answer": 0,
+            "explanation": "iloc[0] selects the first row by position and returns it as a Series"
+        },
+        {
+            "id": 244,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "Complete the code to select every nth row:",
+            "code_snippet": "every_third = df.iloc[______]",
+            "options": [
+                "::3",
+                "[::3]",
+                "1::3",
+                "range(0,len(df),3)"
+            ],
+            "correct_answer": 0,
+            "explanation": "iloc[::3] uses slicing with step 3 to select every third row"
+        },
+        {
+            "id": 245,
+            "type": "multiple_choice",
+            "category": "pandas_selection",
+            "difficulty": "advanced",
+            "question": "What is the purpose of the query() method?",
+            "options": [
+                "SQL-like querying with string expressions",
+                "Fast numerical computations",
+                "Database connections",
+                "Web API queries"
+            ],
+            "correct_answer": 0,
+            "explanation": "query() allows SQL-like filtering using string expressions: df.query('Age > 25')"
+        },
+        {
+            "id": 246,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "Complete the code to select columns matching pattern:",
+            "code_snippet": "name_cols = df.______(like='Name')",
+            "options": [
+                "filter",
+                "select",
+                "loc",
+                "regex_filter"
+            ],
+            "correct_answer": 0,
+            "explanation": "filter(like='pattern') selects columns whose names contain the substring"
+        },
+        {
+            "id": 247,
+            "type": "multiple_choice",
+            "category": "pandas_selection",
+            "difficulty": "beginner",
+            "question": "How to select the last row of a DataFrame?",
+            "options": [
+                "df.iloc[-1]",
+                "df.loc[-1]",
+                "df.last()",
+                "df.end()"
+            ],
+            "correct_answer": 0,
+            "explanation": "iloc[-1] selects the last row by position (negative indexing)"
+        },
+        {
+            "id": 248,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "advanced",
+            "question": "Complete the code to select rows where values are in a list:",
+            "code_snippet": "majors = df[df['Major'].______(['Math', 'Physics'])]",
+            "options": [
+                "isin",
+                "in",
+                "contains",
+                "matches"
+            ],
+            "correct_answer": 0,
+            "explanation": "isin() checks if each element is contained in the provided list"
+        },
+        {
+            "id": 249,
+            "type": "multiple_choice",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "What does df.iat[2, 3] access?",
+            "options": [
+                "Value at row 2, column 3 by position",
+                "Value at row 2, column 3 by label",
+                "Row 2 and column 3",
+                "Columns 2 through 3"
+            ],
+            "correct_answer": 0,
+            "explanation": "iat[] accesses single value by integer position (fast scalar access)"
+        },
+        {
+            "id": 250,
+            "type": "code_completion",
+            "category": "pandas_selection",
+            "difficulty": "intermediate",
+            "question": "Complete the code to select first 3 rows and last 2 columns:",
+            "code_snippet": "subset = df.iloc[______, -2:]",
+            "options": [
+                ":3",
+                "0:3",
+                "[0,1,2]",
+                "range(3)"
+            ],
+            "correct_answer": 0,
+            "explanation": "iloc[:3, -2:] selects first 3 rows and last 2 columns using slicing"
+        },
+        {
+            "id": 251,
+            "type": "code_completion",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "beginner",
+            "question": "Complete the code to check if conversion preserved data equality:",
+            "code_snippet": "equal = np.______(df.values, df.to_numpy())",
+            "options": [
+                "array_equal",
+                "equal",
+                "allclose",
+                "compare"
+            ],
+            "correct_answer": 0,
+            "explanation": "np.array_equal() checks if two arrays have identical shapes and elements"
+        },
+        {
+            "id": 252,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "intermediate",
+            "question": "What is the main advantage of .to_numpy() over .values?",
+            "options": [
+                "More consistent behavior and options",
+                "Faster execution",
+                "Smaller memory footprint",
+                "Preserves column names"
+            ],
+            "correct_answer": 0,
+            "explanation": "to_numpy() provides more consistent behavior and options like dtype control"
+        },
+        {
+            "id": 253,
+            "type": "code_completion",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "advanced",
+            "question": "Complete the code to convert with specific data type:",
+            "code_snippet": "float_array = df.to_numpy(______='float64')",
+            "options": [
+                "dtype",
+                "type",
+                "dtype_",
+                "astype"
+            ],
+            "correct_answer": 0,
+            "explanation": "dtype parameter forces specific data type during conversion"
+        },
+        {
+            "id": 254,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "intermediate",
+            "question": "What happens when converting a DataFrame with categorical data?",
+            "options": [
+                "Categories convert to codes (integers)",
+                "Categories remain as strings",
+                "Conversion fails",
+                "Creates object array"
+            ],
+            "correct_answer": 0,
+            "explanation": "Categorical data converts to integer codes in numpy array, losing category labels"
+        },
+        {
+            "id": 255,
+            "type": "code_completion",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "beginner",
+            "question": "Complete the code to convert Series to numpy and get shape:",
+            "code_snippet": "shape = series.to_numpy().______",
+            "options": [
+                "shape",
+                "size",
+                "dim",
+                "len"
+            ],
+            "correct_answer": 0,
+            "explanation": "After conversion, use .shape attribute to get dimensions of numpy array"
+        },
+        {
+            "id": 256,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "advanced",
+            "question": "Which parameter controls memory order in to_numpy()?",
+            "options": [
+                "order",
+                "memory_order",
+                "copy",
+                "C_order"
+            ],
+            "correct_answer": 0,
+            "explanation": "order parameter controls memory layout: 'C' for row-major, 'F' for column-major"
+        },
+        {
+            "id": 257,
+            "type": "code_completion",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "intermediate",
+            "question": "Complete the code to avoid copying data during conversion:",
+            "code_snippet": "array = df.to_numpy(______=False)",
+            "options": [
+                "copy",
+                "nocopy",
+                "view",
+                "share"
+            ],
+            "correct_answer": 0,
+            "explanation": "copy=False attempts to return a view when possible to avoid data duplication"
+        },
+        {
+            "id": 258,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "beginner",
+            "question": "What is lost when converting DataFrame to numpy array?",
+            "options": [
+                "Column names and index",
+                "Only column names",
+                "Only index",
+                "Data types"
+            ],
+            "correct_answer": 0,
+            "explanation": "Both column names and index information are lost, only raw data remains"
+        },
+        {
+            "id": 259,
+            "type": "code_completion",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "advanced",
+            "question": "Complete the code to convert and preserve datetime as datetime64:",
+            "code_snippet": "dt_array = df['Date'].to_numpy(______=None)",
+            "options": [
+                "dtype",
+                "dtype_",
+                "type",
+                "convert_dates"
+            ],
+            "correct_answer": 0,
+            "explanation": "dtype=None preserves original pandas dtypes like datetime64 in numpy"
+        },
+        {
+            "id": 260,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "intermediate",
+            "question": "What is the performance benefit of pandas-numpy conversion?",
+            "options": [
+                "Enables low-level optimizations",
+                "Reduces memory usage",
+                "Automatic parallelization",
+                "Compression"
+            ],
+            "correct_answer": 0,
+            "explanation": "Numpy arrays enable low-level C/Fortran optimizations for numerical computations"
+        },
+        {
+            "id": 261,
+            "type": "code_completion",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "beginner",
+            "question": "Complete the code to verify array contents after conversion:",
+            "code_snippet": "print(\"First element:\", array[______])",
+            "options": [
+                "0,0",
+                "[0][0]",
+                "0, 0",
+                "(0,0)"
+            ],
+            "correct_answer": 0,
+            "explanation": "For 2D numpy arrays, use [row, column] indexing: array[0,0] for first element"
+        },
+        {
+            "id": 262,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "advanced",
+            "question": "When does copy=False actually return a view in to_numpy()?",
+            "options": [
+                "When data is contiguous and dtypes match",
+                "Always returns view",
+                "Never returns view",
+                "Only for numeric data"
+            ],
+            "correct_answer": 0,
+            "explanation": "copy=False returns view only when data is contiguous in memory and dtypes are compatible"
+        },
+        {
+            "id": 263,
+            "type": "code_completion",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "intermediate",
+            "question": "Complete the code to convert single column to 1D array:",
+            "code_snippet": "grades_array = df['Grade'].______()",
+            "options": [
+                "to_numpy",
+                "values",
+                "to_numpy() or values",
+                "array"
+            ],
+            "correct_answer": 2,
+            "explanation": "Both to_numpy() and .values convert Series to 1D numpy array"
+        },
+        {
+            "id": 264,
+            "type": "multiple_choice",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "beginner",
+            "question": "What is the shape of array from single-column DataFrame conversion?",
+            "options": [
+                "(n_rows, 1)",
+                "(n_rows,)",
+                "(1, n_rows)",
+                "(n_rows, n_cols)"
+            ],
+            "correct_answer": 0,
+            "explanation": "Single-column DataFrame converts to 2D array with shape (n_rows, 1)"
+        },
+        {
+            "id": 265,
+            "type": "code_completion",
+            "category": "pandas_numpy_conversion",
+            "difficulty": "advanced",
+            "question": "Complete the code to handle NA values during conversion:",
+            "code_snippet": "array = df.to_numpy(______=0)",
+            "options": [
+                "na_value",
+                "fillna",
+                "na_fill",
+                "missing_value"
+            ],
+            "correct_answer": 0,
+            "explanation": "na_value parameter specifies replacement for NA/missing values during conversion"
         }
     ]
 }
