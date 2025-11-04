@@ -4197,11 +4197,17 @@
         },
         {
             "id": 274,
-            "type": "fill_in_blank",
+            "type": "multiple_choice",
             "category": "training_fundamentals",
             "difficulty": "beginner",
             "question": "In one sentence, describe what is an epoch in the context of training a Neural Network?",
-            "correct_answer": "An epoch is one complete pass of the entire training dataset through the neural network during the training process.",
+            "options": [
+                "An epoch is one complete pass of the entire training dataset through the neural network during the training process.",
+                "An epoch is the time it takes to process one batch of data through the network.",
+                "An epoch is the final accuracy achieved after training is complete.",
+                "An epoch is the initial random initialization of the network weights."
+            ],
+            "correct_answer": 0,
             "explanation": "An epoch represents one full cycle through the entire training dataset, allowing the model to learn from all available training examples."
         },
         {
@@ -4255,7 +4261,11 @@
             "category": "model_comparison",
             "difficulty": "beginner",
             "question": "Linear regression models predict continuous outcomes by fitting lines to data, while Neural Networks handle complex patterns through interconnected nodes.",
-            "correct_answer": true,
+            "options": [
+                "True",
+                "False"
+            ],
+            "correct_answer": 0,
             "explanation": "This statement accurately distinguishes linear regression's linear modeling approach from neural networks' ability to capture complex, non-linear patterns."
         },
         {
@@ -4279,7 +4289,11 @@
             "category": "neural_networks_fundamentals",
             "difficulty": "beginner",
             "question": "Changing the weight of a neuron results in a change in the prediction value.",
-            "correct_answer": true,
+            "options": [
+                "True",
+                "False"
+            ],
+            "correct_answer": 0,
             "explanation": "Weights determine connection strengths between neurons, and changing them alters the network's computations and final predictions."
         },
         {
@@ -4423,7 +4437,11 @@
             "category": "mnist_basics",
             "difficulty": "beginner",
             "question": "Neural Networks can process the MNIST dataset to recognize handwritten digits by learning complex patterns.",
-            "correct_answer": true,
+            "options": [
+                "True",
+                "False"
+            ],
+            "correct_answer": 0,
             "explanation": "Neural networks learn to recognize digits by identifying patterns like edges, curves, and shapes from pixel inputs through training."
         },
         {
