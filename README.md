@@ -1,6 +1,6 @@
-# Machine Learning Quiz Game
+# Generative AI Learning Quiz Game
 
-A Flask-based quiz application testing knowledge of Linear Regression, scikit-learn, and machine learning concepts.
+A Python, Flask-based quiz application testing knowledge of Linear Regression, scikit-learn, and machine learning concepts.
 
 ## Features
 
@@ -13,10 +13,10 @@ A Flask-based quiz application testing knowledge of Linear Regression, scikit-le
 
 ## Technologies Used
 
-- **Backend**: Flask (Python)
+- **Backend**: Python 3.13, Flask
 - **Frontend**: HTML5, CSS3, JavaScript
-- **Database**: SQLite (session-based)
-- **Styling**: Custom CSS with gradients and animations
+- **Database**: JSON
+- **Styling**: CSS
 
 ## Installation
 
