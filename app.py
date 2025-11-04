@@ -86,7 +86,7 @@ def quiz():
                            question_num=current_idx + 1,
                            total_questions=len(questions),
                            progress_class=progress_class,
-                           progress_percent=exact_progress)  # Add this line
+                           progress_percent=exact_progress)  # Added this line
 
 
 @app.route('/submit_answer', methods=['POST'])
