@@ -4477,7 +4477,11 @@
             "category": "neural_network_types",
             "difficulty": "intermediate",
             "question": "Convolutional Neural Networks (CNN) are specialized for processing grid-like data such as images, using convolutional layers to detect spatial patterns.",
-            "correct_answer": true,
+            "options": [
+                "True",
+                "False"
+            ],
+            "correct_answer": 0,
             "explanation": "CNNs use convolutional and pooling layers to efficiently recognize spatial hierarchies and patterns in grid-like data such as images."
         },
         {
@@ -4531,7 +4535,11 @@
             "category": "neural_network_types",
             "difficulty": "advanced",
             "question": "Long Short-Term Memory (LSTM) is a type of RNN that handles long-term dependencies more effectively, suited for tasks requiring memory of past inputs over extended sequences.",
-            "correct_answer": true,
+            "options": [
+                "False",
+                "True"
+            ],
+            "correct_answer": 1,
             "explanation": "LSTMs use gating mechanisms to control information flow, allowing them to remember important information over long periods and solve the vanishing gradient problem in standard RNNs."
         },
         {
@@ -4540,7 +4548,11 @@
             "category": "neural_network_types",
             "difficulty": "advanced",
             "question": "An Autoencoder is a type of Neural Network designed for unsupervised learning that compresses input data into lower-dimensional representations and reconstructs the output, useful for dimensionality reduction and anomaly detection.",
-            "correct_answer": true,
+            "options": [
+                "True",
+                "False"
+            ],
+            "correct_answer": 0,
             "explanation": "Autoencoders consist of encoder and decoder components that learn efficient data representations through compression and reconstruction, making them valuable for dimensionality reduction and anomaly detection tasks."
         },
         {
@@ -4579,7 +4591,11 @@
             "category": "data_preprocessing",
             "difficulty": "intermediate",
             "question": "In TensorFlow, the variable num_classes must equal the number of unique classes in the dataset for one-hot encoding to work correctly.",
-            "correct_answer": true,
+            "options": [
+                "True",
+                "False"
+            ],
+            "correct_answer": 0,
             "explanation": "If num_classes is less than actual unique classes, some classes won't get encoded properly; if greater, it creates unnecessary extra columns. For MNIST, num_classes=10 matches the 10 digit classes."
         },
         {
@@ -4618,7 +4634,13 @@
             "category": "training_process",
             "difficulty": "advanced",
             "question": "Given a dataset of 1000 rows, batch size of 10, and 10 epochs, how many weight updates occur during training?",
-            "correct_answer": "1000",
+            "options": [
+                "100",
+                "1000",
+                "10000",
+                "10"
+            ],
+            "correct_answer": 1,
             "explanation": "Batches per epoch = 1000/10 = 100. Weight updates per epoch = 100. Total updates = 100 × 10 = 1000. Each batch processing results in one weight update via backpropagation."
         },
         {
@@ -4627,7 +4649,11 @@
             "category": "training_process",
             "difficulty": "intermediate",
             "question": "Increasing the number of epochs results in a proportional increase in the time taken to train the model.",
-            "correct_answer": true,
+            "options": [
+                "True",
+                "False"
+            ],
+            "correct_answer": 0,
             "explanation": "While not perfectly proportional due to hardware optimizations and convergence variations, doubling epochs typically roughly doubles training time since the model processes the entire dataset more times."
         },
         {
@@ -4636,7 +4662,13 @@
             "category": "neural_network_architecture",
             "difficulty": "intermediate",
             "question": "How many hidden layers are present in a neural network with: Dense(128), Dense(64), Dense(10) layers?",
-            "correct_answer": "2",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_answer": 1,
             "explanation": "The first Dense(128) and second Dense(64) layers are hidden layers, while Dense(10) is the output layer. Input layer is implicit from input_dim parameter."
         },
         {
@@ -4705,7 +4737,11 @@
             "category": "activation_functions",
             "difficulty": "intermediate",
             "question": "The step function is a simple threshold-based activation function with binary outputs.",
-            "correct_answer": true,
+            "options": [
+                "True",
+                "False"
+            ],
+            "correct_answer": 0,
             "explanation": "The step function outputs 1 if input exceeds a threshold, otherwise 0, making it the simplest activation function but limited for modern neural networks."
         },
         {
@@ -4744,7 +4780,11 @@
             "category": "activation_functions",
             "difficulty": "intermediate",
             "question": "Tanh activation function outputs are zero-centered, which can make learning faster and more stable in some neural networks.",
-            "correct_answer": true,
+            "options": [
+                "True",
+                "False"
+            ],
+            "correct_answer": 0,
             "explanation": "Tanh's output range of (-1,1) is zero-centered, which often helps speed up convergence during training compared to sigmoid's (0,1) range."
         },
         {
@@ -5012,7 +5052,11 @@
             "category": "data_preprocessing",
             "difficulty": "intermediate",
             "question": "Normalizing input data to a common range (like 0-1) can help neural networks train faster and more stably.",
-            "correct_answer": true,
+            "options": [
+                "True",
+                "False"
+            ],
+            "correct_answer": 0,
             "explanation": "Normalization prevents features with large scales from dominating the learning process and helps gradient-based optimization converge faster."
         },
         {
@@ -5292,7 +5336,13 @@
             "category": "convolutional_networks",
             "difficulty": "advanced",
             "question": "Given an input of size 32x32, filter size 3x3, padding 'same', and stride 1, what is the output size?",
-            "correct_answer": "32x32",
+            "options": [
+                "30x30",
+                "32x32",
+                "34x34",
+                "28x28"
+            ],
+            "correct_answer": 1,
             "explanation": "With 'same' padding and stride 1, the convolutional layer maintains the same spatial dimensions as the input (32x32)."
         },
         {
@@ -5887,7 +5937,13 @@
             "category": "convolution_math",
             "difficulty": "advanced",
             "question": "Given input size 28x28, filter size 3x3, padding 0, stride 1, what is the output size?",
-            "correct_answer": "26x26",
+            "options": [
+                "25x25",
+                "26x26",
+                "27x27",
+                "28x28"
+            ],
+            "correct_answer": 1,
             "explanation": "Output size = floor((input_size - filter_size + 2*padding)/stride) + 1 = floor((28-3+0)/1) + 1 = 25 + 1 = 26"
         },
         {

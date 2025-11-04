@@ -78,12 +78,11 @@
                 <div class="answer-comparison">
                     <div class="answer your-answer">
                         <strong>Your answer:</strong>
-                        <span>{{ result.question.options[result.user_answer] if result.user_answer is not none else "No
-                            answer" }}</span>
+                        <span>{{ result.user_answer_text }}</span>
                     </div>
                     <div class="answer correct-answer">
                         <strong>Correct answer:</strong>
-                        <span>{{ result.question.options[result.question.correct_answer] }}</span>
+                        <span>{{ result.correct_answer_text }}</span>
                     </div>
                 </div>
 

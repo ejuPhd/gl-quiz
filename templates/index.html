@@ -10,7 +10,6 @@
 
 <body>
     <div class="container">
-        <!-- SIMPLE HOMEPAGE HEADER - NOT QUIZ HEADER -->
         <header>
             <h1>🧠 Generative AI Learning Quiz</h1>
             <p>Test your knowledge of Machine Learning and Generative AI concepts with 500+ questions!</p>
@@ -20,6 +19,7 @@
             <h2>Choose Your Difficulty</h2>
             <form action="{{ url_for('start_quiz') }}" method="post">
                 <div class="difficulty-options">
+                    <!-- Fixed button with explicit type="submit" and proper value -->
                     <button type="submit" name="difficulty" value="beginner" class="difficulty-btn beginner">
                         <h3>🎯 Beginner</h3>
                         <p>Basic concepts and simple code completion</p>

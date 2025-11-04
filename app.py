@@ -5,7 +5,7 @@ from datetime import datetime
 import os
 
 app = Flask(__name__)
-app.secret_key = 'your-secret-key-here'  # Change this in production!
+app.secret_key = 'your-secret-key-here'
 
 # Load questions from JSON file
 
@@ -22,13 +22,26 @@ def get_questions_by_difficulty(questions, difficulty, count=50):
     return random.sample(filtered, min(count, len(filtered)))
 
 
-def calculate_score(questions, user_answers):
+def get_question_by_id(question_id):
+    """Get a specific question by ID from the full question set"""
+    questions = load_questions()
+    for q in questions:
+        if q['id'] == question_id:
+            return q
+    return None
+
+
+def calculate_score(question_ids, user_answers):
     """Calculate score based on difficulty and correct answers"""
     score = 0
     correct_count = 0
     difficulty_points = {'beginner': 10, 'intermediate': 20, 'advanced': 30}
 
-    for i, question in enumerate(questions):
+    questions = load_questions()
+    question_dict = {q['id']: q for q in questions}
+
+    for i, question_id in enumerate(question_ids):
+        question = question_dict[question_id]
         if user_answers.get(str(i)) == question['correct_answer']:
             score += difficulty_points[question['difficulty']]
             correct_count += 1
@@ -38,7 +51,7 @@ def calculate_score(questions, user_answers):
 
 @app.route('/')
 def index():
-    session.clear()  # Clear any existing session data
+    session.clear()
     return render_template('index.html')
 
 
@@ -47,11 +60,14 @@ def start_quiz():
     difficulty = request.form.get('difficulty', 'beginner')
     questions = load_questions()
 
-    # Select questions based on difficulty - CHANGED FROM 10 TO 50
+    # Select questions based on difficulty
     quiz_questions = get_questions_by_difficulty(questions, difficulty, 50)
 
-    # Initialize session
-    session['quiz_questions'] = quiz_questions
+    # Store only question IDs in session to avoid cookie size limits
+    question_ids = [q['id'] for q in quiz_questions]
+
+    # Initialize session with minimal data
+    session['question_ids'] = question_ids
     session['user_answers'] = {}
     session['current_question'] = 0
     session['start_time'] = datetime.now().isoformat()
@@ -63,35 +79,37 @@ def start_quiz():
 
 @app.route('/quiz')
 def quiz():
-    if 'quiz_questions' not in session:
+    if 'question_ids' not in session:
         return redirect(url_for('index'))
 
     current_idx = session['current_question']
-    questions = session['quiz_questions']
+    question_ids = session['question_ids']
 
-    if current_idx >= len(questions):
+    if current_idx >= len(question_ids):
         return redirect(url_for('results'))
 
-    question = questions[current_idx]
+    # Get the current question by ID
+    question = get_question_by_id(question_ids[current_idx])
 
-    # Calculate progress percentage and round to nearest 10 for class name
-    progress_percent = (current_idx / len(questions)) * 100
+    if not question:
+        return redirect(url_for('index'))
+
+    # Calculate progress
+    progress_percent = (current_idx / len(question_ids)) * 100
     progress_class = f"progress-{int(round(progress_percent / 10) * 10)}"
-
-    # Calculate exact progress percentage for display
-    exact_progress = (current_idx / len(questions)) * 100
+    exact_progress = (current_idx / len(question_ids)) * 100
 
     return render_template('quiz.html',
                            question=question,
-                           question_num=current_idx + 1,
-                           total_questions=len(questions),
+                           question_num=current_idx + 1,  # This shows current question number
+                           total_questions=len(question_ids),
                            progress_class=progress_class,
-                           progress_percent=exact_progress)  # Added this line
+                           progress_percent=exact_progress)
 
 
 @app.route('/submit_answer', methods=['POST'])
 def submit_answer():
-    if 'quiz_questions' not in session:
+    if 'question_ids' not in session:
         return redirect(url_for('index'))
 
     current_idx = session['current_question']
@@ -102,7 +120,7 @@ def submit_answer():
     session['current_question'] = current_idx + 1
 
     # Move to next question or show results
-    if current_idx + 1 >= len(session['quiz_questions']):
+    if current_idx + 1 >= len(session['question_ids']):
         return redirect(url_for('results'))
     else:
         return redirect(url_for('quiz'))
@@ -110,42 +128,91 @@ def submit_answer():
 
 @app.route('/results')
 def results():
-    if 'quiz_questions' not in session or 'user_answers' not in session:
+    if 'question_ids' not in session or 'user_answers' not in session:
         return redirect(url_for('index'))
 
-    questions = session['quiz_questions']
+    question_ids = session['question_ids']
     user_answers = session['user_answers']
 
     # Calculate score
-    score, correct_count = calculate_score(questions, user_answers)
+    score, correct_count = calculate_score(question_ids, user_answers)
     session['score'] = score
     session['correct_count'] = correct_count
     session['end_time'] = datetime.now().isoformat()
 
-    # Prepare results with explanations
+    # Prepare results with explanations - FIXED: Handle missing 'options' key
     results_data = []
-    for i, question in enumerate(questions):
+    questions = load_questions()
+    question_dict = {q['id']: q for q in questions}
+
+    for i, question_id in enumerate(question_ids):
+        question = question_dict[question_id]
         user_answer = user_answers.get(str(i))
         is_correct = user_answer == question['correct_answer']
+
+        # Safely handle questions that might be missing 'options' key
+        user_answer_text = "No answer"
+        if user_answer is not None:
+            if 'options' in question and user_answer < len(question['options']):
+                user_answer_text = question['options'][user_answer]
+            else:
+                user_answer_text = f"Answer #{user_answer + 1}"
+
+        correct_answer_text = f"Answer #{question['correct_answer'] + 1}"
+        if 'options' in question and question['correct_answer'] < len(question['options']):
+            correct_answer_text = question['options'][question['correct_answer']]
+
         results_data.append({
             'question': question,
             'user_answer': user_answer,
             'is_correct': is_correct,
-            'correct_answer': question['correct_answer']
+            'correct_answer': question['correct_answer'],
+            'user_answer_text': user_answer_text,
+            'correct_answer_text': correct_answer_text
         })
 
     return render_template('results.html',
                            results=results_data,
                            score=score,
                            correct_count=correct_count,
-                           total_questions=len(questions),
+                           total_questions=len(question_ids),
                            difficulty=session['difficulty'])
+
+
+def validate_questions():
+    """Check if all questions have required fields"""
+    questions = load_questions()
+    problematic_questions = []
+
+    for q in questions:
+        missing_fields = []
+        if 'id' not in q:
+            missing_fields.append('id')
+        if 'options' not in q:
+            missing_fields.append('options')
+        if 'correct_answer' not in q:
+            missing_fields.append('correct_answer')
+        if 'difficulty' not in q:
+            missing_fields.append('difficulty')
+        if 'category' not in q:
+            missing_fields.append('category')
+
+        if missing_fields:
+            problematic_questions.append({
+                'id': q.get('id', 'Unknown'),
+                'missing_fields': missing_fields
+            })
+
+    return problematic_questions
+
+# You can call this function to check your questions
+# problematic = validate_questions()
+# if problematic:
+#     print("Problematic questions found:", problematic)
 
 
 @app.route('/leaderboard')
 def leaderboard():
-    # In a real app, you'd store this in a database
-    # For now, we'll use a simple list in session
     leaderboard_data = session.get('leaderboard', [])
     return render_template('leaderboard.html', leaderboard=leaderboard_data)
 
@@ -156,7 +223,6 @@ def save_score():
     score = session.get('score', 0)
     difficulty = session.get('difficulty', 'beginner')
 
-    # Add to leaderboard
     leaderboard_entry = {
         'name': player_name,
         'score': score,
@@ -166,7 +232,6 @@ def save_score():
 
     leaderboard = session.get('leaderboard', [])
     leaderboard.append(leaderboard_entry)
-    # Sort by score descending and keep top 10
     leaderboard.sort(key=lambda x: x['score'], reverse=True)
     session['leaderboard'] = leaderboard[:10]
 
@@ -177,6 +242,16 @@ def save_score():
 def restart():
     session.clear()
     return redirect(url_for('index'))
+
+
+# Temporary: Check for problematic questions
+problematic_questions = validate_questions()
+if problematic_questions:
+    print("🚨 PROBLEMATIC QUESTIONS FOUND:")
+    for pq in problematic_questions:
+        print(f"Question ID {pq['id']} missing: {pq['missing_fields']}")
+else:
+    print("✅ All questions have required fields!")
 
 
 if __name__ == '__main__':
