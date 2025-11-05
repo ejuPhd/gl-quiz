@@ -12,6 +12,7 @@
     <div class="container">
         <header class="quiz-header">
             <div class="progress-info">
+                <!-- RESTORED: Question Counter -->
                 <div class="question-counter">
                     <h2>Question <span class="current-number">{{ question_num }}</span> of <span class="total-number">{{
                             total_questions }}</span></h2>
@@ -20,6 +21,7 @@
                     </div>
                 </div>
 
+                <!-- RESTORED: Progress Bar -->
                 <div class="progress-container">
                     <div class="progress-bar">
                         <div class="progress {{ progress_class }}"></div>
@@ -27,6 +29,21 @@
                     <div class="progress-text">
                         {{ question_num }}/{{ total_questions }} ({{ progress_percent|round|int }}%)
                     </div>
+                </div>
+            </div>
+
+            <!-- Real-time counter display (Kept your logic) -->
+            <div class="real-time-stats"
+                style="display: flex; gap: 1.5rem; text-align: center; align-items: center; margin: 1rem 0;">
+                <div class="stat">
+                    <span class="stat-value" style="color: #4CAF50; font-size: 1.5rem; font-weight: bold;">{{
+                        correct_count_rt }}</span>
+                    <span class="stat-label" style="display: block; font-size: 0.9rem; color: #666;">✅ Correct</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" style="color: #f44336; font-size: 1.5rem; font-weight: bold;">{{
+                        incorrect_count_rt }}</span>
+                    <span class="stat-label" style="display: block; font-size: 0.9rem; color: #666;">❌ Incorrect</span>
                 </div>
             </div>
 

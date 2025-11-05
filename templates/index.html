@@ -18,14 +18,21 @@
         <div class="difficulty-selection">
             <h2>Choose Your Difficulty</h2>
             <form action="{{ url_for('start_quiz') }}" method="post">
+
+                <div class="question-count-selector" style="margin-bottom: 2rem; text-align: center;">
+                    <label for="question_count"
+                        style="display: block; font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; color: #333;">
+                        Number of Questions (Max 50):
+                    </label>
+                    <input type="number" id="question_count" name="question_count" value="10" min="5" max="50" required
+                        style="padding: 10px; border: 2px solid #ccc; border-radius: 8px; width: 150px; font-size: 1rem;">
+                </div>
                 <div class="difficulty-options">
-                    <!-- Fixed button with explicit type="submit" and proper value -->
                     <button type="submit" name="difficulty" value="beginner" class="difficulty-btn beginner">
                         <h3>🎯 Beginner</h3>
                         <p>Basic concepts and simple code completion</p>
                         <ul>
-                            <li>50 questions</li>
-                            <li>10 points per question</li>
+                            <li>**10 points per question**</li>
                             <li>Perfect for newcomers</li>
                         </ul>
                     </button>
@@ -34,8 +41,7 @@
                         <h3>⚡ Intermediate</h3>
                         <p>Error debugging and conceptual questions</p>
                         <ul>
-                            <li>50 questions</li>
-                            <li>20 points per question</li>
+                            <li>**20 points per question**</li>
                             <li>For those with some experience</li>
                         </ul>
                     </button>
@@ -44,8 +50,7 @@
                         <h3>🚀 Advanced</h3>
                         <p>Complex scenarios and best practices</p>
                         <ul>
-                            <li>50 questions</li>
-                            <li>30 points per question</li>
+                            <li>**30 points per question**</li>
                             <li>Challenge for experts</li>
                         </ul>
                     </button>
