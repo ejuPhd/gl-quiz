@@ -5,7 +5,7 @@ A comprehensive Flask-based quiz application testing knowledge of Machine Learni
 ## 🚀 Features
 
 - 🎯 **Three Difficulty Levels** (Beginner, Intermediate, Advanced)
-- 📊 **500+ Comprehensive Questions** covering ML and Generative AI
+- 📊 **225+ Comprehensive Questions** covering ML and Generative AI
 - 🏆 **Leaderboard System** to track top performers
 - 💡 **Detailed Explanations** for every answer
 - 📱 **Fully Responsive Design** works on all devices
@@ -81,11 +81,11 @@ http://localhost:5000
 🎮 How to Play
 Choose Your Difficulty:
 
-Beginner: 50 questions, 10 points each (Perfect for newcomers)
+Beginner: 75 questions, 10 points each (Perfect for newcomers)
 
-Intermediate: 50 questions, 20 points each (For experienced learners)
+Intermediate: 75 questions, 20 points each (For experienced learners)
 
-Advanced: 50 questions, 30 points each (Challenge for experts)
+Advanced: 75 questions, 30 points each (Challenge for experts)
 
 Answer Questions: Read each question carefully and select the best answer
 
@@ -162,15 +162,15 @@ json
   "explanation": "Detailed explanation here..."
 }
 📊 Question Statistics
-Total Questions: 500+
+Total Questions: 225
 
-Beginner Level: 150+ questions
+Beginner Level: 75 questions
 
-Intermediate Level: 200+ questions
+Intermediate Level: 75 questions
 
-Advanced Level: 150+ questions
+Advanced Level: 75 questions
 
-Categories: 10+ ML and AI topics
+Categories: ML and AI topics
 
 🐛 Troubleshooting
 Common Issues:
@@ -206,7 +206,7 @@ text
 ## Key Updates Made:
 
 1. **Updated title** to "Generative AI Learning Quiz Game"
-2. **Increased question count** from 70+ to 500+
+2. **Reduced question count** from 500+ to 225+
 3. **Added new categories** for Generative AI and modern ML
 4. **Updated features list** to reflect all current capabilities
 5. **Enhanced project structure** with more detail
